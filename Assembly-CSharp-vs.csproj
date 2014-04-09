@@ -46,43 +46,46 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CollisionDetector.cs" />
-     <Compile Include="Assets\Damageable.cs" />
-     <Compile Include="Assets\Damager.cs" />
-     <Compile Include="Assets\PlatformerMotor.cs" />
-     <Compile Include="Assets\PlayerInputReceiver.cs" />
      <Compile Include="Assets\Scripts\BackgroundParallax.cs" />
-     <Compile Include="Assets\Scripts\BackgroundPropSpawner.cs" />
-     <Compile Include="Assets\Scripts\Bomb.cs" />
-     <Compile Include="Assets\Scripts\BombPickup.cs" />
-     <Compile Include="Assets\Scripts\CameraFollow.cs" />
-     <Compile Include="Assets\Scripts\Destroyer.cs" />
-     <Compile Include="Assets\Scripts\Enemy.cs" />
+     <Compile Include="Assets\Scripts\CounterTriggerScript.cs" />
+     <Compile Include="Assets\Scripts\ExpositionGUI.cs" />
      <Compile Include="Assets\Scripts\FighterControllerScript.cs" />
-     <Compile Include="Assets\Scripts\FollowPlayer.cs" />
-     <Compile Include="Assets\Scripts\Gun.cs" />
-     <Compile Include="Assets\Scripts\HealthPickup.cs" />
-     <Compile Include="Assets\Scripts\LayBombs.cs" />
-     <Compile Include="Assets\Scripts\Pauser.cs" />
-     <Compile Include="Assets\Scripts\PickupSpawner.cs" />
+     <Compile Include="Assets\Scripts\FighterScript.cs" />
      <Compile Include="Assets\Scripts\PlayerControl.cs" />
-     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
-     <Compile Include="Assets\Scripts\Remover.cs" />
-     <Compile Include="Assets\Scripts\Rocket.cs" />
+     <Compile Include="Assets\Scripts\Pre-Built Scripts\BackgroundPropSpawner.cs" />
+     <Compile Include="Assets\Scripts\Pre-Built Scripts\Bomb.cs" />
+     <Compile Include="Assets\Scripts\Pre-Built Scripts\BombPickup.cs" />
+     <Compile Include="Assets\Scripts\Pre-Built Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\Pre-Built Scripts\Destroyer.cs" />
+     <Compile Include="Assets\Scripts\Pre-Built Scripts\Enemy.cs" />
+     <Compile Include="Assets\Scripts\Pre-Built Scripts\FollowPlayer.cs" />
+     <Compile Include="Assets\Scripts\Pre-Built Scripts\Gun.cs" />
+     <Compile Include="Assets\Scripts\Pre-Built Scripts\HealthPickup.cs" />
+     <Compile Include="Assets\Scripts\Pre-Built Scripts\LayBombs.cs" />
+     <Compile Include="Assets\Scripts\Pre-Built Scripts\Pauser.cs" />
+     <Compile Include="Assets\Scripts\Pre-Built Scripts\PickupSpawner.cs" />
+     <Compile Include="Assets\Scripts\Pre-Built Scripts\PlayerHealth.cs" />
+     <Compile Include="Assets\Scripts\Pre-Built Scripts\Remover.cs" />
+     <Compile Include="Assets\Scripts\Pre-Built Scripts\Rocket.cs" />
+     <Compile Include="Assets\Scripts\Pre-Built Scripts\Spawner.cs" />
      <Compile Include="Assets\Scripts\Score.cs" />
      <Compile Include="Assets\Scripts\ScoreShadow.cs" />
      <Compile Include="Assets\Scripts\SetParticleSortingLayer.cs" />
-     <Compile Include="Assets\Scripts\Spawner.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\SmoothMoves\readme.txt" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
+     <None Include="Assets\Dialogues\test.txt" />
      <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
+ <Reference Include="SmoothMoves_Runtime">
+ <HintPath>Assets\SmoothMoves\Plugins\SmoothMoves\SmoothMoves_Runtime.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

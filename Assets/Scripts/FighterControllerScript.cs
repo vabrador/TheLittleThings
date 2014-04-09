@@ -8,6 +8,10 @@ public class FighterControllerScript : MonoBehaviour {
 	bool facingRight;
 	public string characterSide = "left";
 
+	public Animation punchAnim;
+	public Animation blockAnim;
+	public Animation dashAnim;
+
 	// Variables used to set how much time an opponent has
 	// to counter a move after it begins 
 	public float punchCounterZone = 1f;
@@ -34,20 +38,27 @@ public class FighterControllerScript : MonoBehaviour {
 	}
 
 	void Update() {
+		CheckForMoves();
+	}
+
+	IEnumerator CheckForMoves() {
 		if (Input.GetKeyDown (KeyCode.A)) {
 			punchStart = Time.time;
 			punching = true;
-			yield WaitForAnimation(punchAnimation);
+			yield return WaitForAnimation(punchAnim);
+			punching = false;
 		}
 		else if (Input.GetKeyDown(KeyCode.S)) {
 			blockStart = Time.time;
 			blocking = true;
-			yield WaitForAnimation(blockAnimation);
+			yield return WaitForAnimation(blockAnim);
+			blocking = false;
 		}
 		else if (Input.GetKeyDown (KeyCode.D)) {
 			dashStart = Time.time;
 			dashing = true;
-			yield WaitForAnimation(dashAnimation);
+			yield return WaitForAnimation(dashAnim);
+			dashing = false;
 		}
 	}
 
@@ -63,7 +74,7 @@ public class FighterControllerScript : MonoBehaviour {
 				Flip ();
 	}
 
-	private IEnumerator WaitForAnimation (Animation animation)
+	private IEnumerator WaitForAnimation(Animation animation)
 	{
 		do
 		{

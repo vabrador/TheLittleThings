@@ -1,0 +1,196 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 529336600, guid: 289bab7cc27a12745b5df9b71d7b06c4, type: 3}
+  m_Name: Fighter Atlas
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: e837e579a4906df449ca9001b6038baa, type: 2}
+  uvs:
+  - serializedVersion: 2
+    x: 0
+    y: .37890625
+    width: .0546875
+    height: .5234375
+  - serializedVersion: 2
+    x: .05859375
+    y: .37890625
+    width: .0546875
+    height: .50390625
+  - serializedVersion: 2
+    x: .234375
+    y: .37890625
+    width: .0546875
+    height: .40625
+  - serializedVersion: 2
+    x: .29296875
+    y: .37890625
+    width: .0546875
+    height: .40625
+  - serializedVersion: 2
+    x: .52734375
+    y: 0
+    width: .29296875
+    height: .375
+  - serializedVersion: 2
+    x: .41015625
+    y: .49609375
+    width: .0546875
+    height: .2265625
+  - serializedVersion: 2
+    x: .3515625
+    y: .49609375
+    width: .0546875
+    height: .23046875
+  - serializedVersion: 2
+    x: 0
+    y: 0
+    width: .5234375
+    height: .375
+  - serializedVersion: 2
+    x: .1171875
+    y: .37890625
+    width: .0546875
+    height: .50390625
+  - serializedVersion: 2
+    x: .3515625
+    y: .4375
+    width: .27734375
+    height: .0546875
+  - serializedVersion: 2
+    x: .3515625
+    y: .37890625
+    width: .375
+    height: .0546875
+  - serializedVersion: 2
+    x: .82421875
+    y: 0
+    width: .0546875
+    height: .375
+  - serializedVersion: 2
+    x: .94140625
+    y: 0
+    width: .0546875
+    height: .3671875
+  - serializedVersion: 2
+    x: .3515625
+    y: .73046875
+    width: .0546875
+    height: .23046875
+  - serializedVersion: 2
+    x: .8828125
+    y: 0
+    width: .0546875
+    height: .375
+  - serializedVersion: 2
+    x: .6328125
+    y: .4375
+    width: .27734375
+    height: .0546875
+  - serializedVersion: 2
+    x: .17578125
+    y: .37890625
+    width: .0546875
+    height: .484375
+  textureGUIDs:
+  - 08087bde9977b90418dae60fdd77d39a
+  - 13684efebaa6c5a41bb8217a23b4a766
+  - 1e19d74cd03a72f4a952f4994f14fe7e
+  - 29a748abf926d2949beb2d5214954b0b
+  - 32453521d13cd9848af727ffce90cc52
+  - 33b4c2973e060184989fad6f893b50e3
+  - 385fa8cdf3f07e049a0d2fbbab37993c
+  - 3c18fbac5680b6b4895a358776d857c3
+  - 3ec2a9b9f16b5b04f991f51e68d7715c
+  - 4287840a3988d984dacfd2193aed4eec
+  - 508b25ec39285c24b858e90211c024b1
+  - 5e8436cd68b263a429bfc05d2888a904
+  - 68eba54cf2d797040921ac5e499ed8a0
+  - 74b3b14128610b149a2619808b7acf9c
+  - 909f303d7a6d11e40bf3ffb97555d413
+  - 928316174861cd54aba6c2be5dbad9bd
+  - 975bc243cc65b184a97377eb1728c42c
+  textureSizes:
+  - {x: 14, y: 134}
+  - {x: 14, y: 129}
+  - {x: 14, y: 104}
+  - {x: 14, y: 104}
+  - {x: 75, y: 96}
+  - {x: 14, y: 58}
+  - {x: 14, y: 59}
+  - {x: 134, y: 96}
+  - {x: 14, y: 129}
+  - {x: 71, y: 14}
+  - {x: 96, y: 14}
+  - {x: 14, y: 96}
+  - {x: 14, y: 94}
+  - {x: 14, y: 59}
+  - {x: 14, y: 96}
+  - {x: 71, y: 14}
+  - {x: 14, y: 124}
+  defaultPivotOffsets:
+  - {x: 0, y: .5}
+  - {x: 0, y: .5}
+  - {x: 0, y: .5}
+  - {x: 0, y: .5}
+  - {x: .137142852, y: -.121118009}
+  - {x: 0, y: -.5}
+  - {x: 0, y: .5}
+  - {x: -.0267857127, y: -.478571445}
+  - {x: 0, y: .5}
+  - {x: .224999994, y: 1.46709001}
+  - {x: 0, y: 0}
+  - {x: 0, y: .5}
+  - {x: 0, y: -.5}
+  - {x: 0, y: .5}
+  - {x: 0, y: .5}
+  - {x: .224999994, y: 1.46709192}
+  - {x: 0, y: .5}
+  textureNames:
+  - TestHumanSkelly_0014_Left-Thigh
+  - TestHumanSkelly_0016_Right-Thigh
+  - TestHumanSkelly_0003_Left-Forearm
+  - TestHumanSkelly_0006_Right-Forearm
+  - TestHumanSkelly_0000_Head
+  - TestHumanSkelly_0001_Neck
+  - TestHumanSkelly_0005_Right-Hand
+  - TestHumanSkelly_0008_Torso
+  - TestHumanSkelly_0013_Left-Calf
+  - TestHumanSkelly_0011_Left-Foot
+  - TestHumanSkelly_0010_Waist
+  - TestHumanSkelly_0004_Left-Arm
+  - TestHumanSkelly_0009_Abdomen
+  - TestHumanSkelly_0002_Left-Hand
+  - TestHumanSkelly_0007_Right-Arm
+  - TestHumanSkelly_0012_Right-Foot
+  - TestHumanSkelly_0015_Right-Calf
+  texturePaths:
+  - Assets/Fighter Parts/TestHumanSkelly_0014_Left-Thigh.png
+  - Assets/Fighter Parts/TestHumanSkelly_0016_Right-Thigh.png
+  - Assets/Fighter Parts/TestHumanSkelly_0003_Left-Forearm.png
+  - Assets/Fighter Parts/TestHumanSkelly_0006_Right-Forearm.png
+  - Assets/Fighter Parts/TestHumanSkelly_0000_Head.png
+  - Assets/Fighter Parts/TestHumanSkelly_0001_Neck.png
+  - Assets/Fighter Parts/TestHumanSkelly_0005_Right-Hand.png
+  - Assets/Fighter Parts/TestHumanSkelly_0008_Torso.png
+  - Assets/Fighter Parts/TestHumanSkelly_0013_Left-Calf.png
+  - Assets/Fighter Parts/TestHumanSkelly_0011_Left-Foot.png
+  - Assets/Fighter Parts/TestHumanSkelly_0010_Waist.png
+  - Assets/Fighter Parts/TestHumanSkelly_0004_Left-Arm.png
+  - Assets/Fighter Parts/TestHumanSkelly_0009_Abdomen.png
+  - Assets/Fighter Parts/TestHumanSkelly_0002_Left-Hand.png
+  - Assets/Fighter Parts/TestHumanSkelly_0007_Right-Arm.png
+  - Assets/Fighter Parts/TestHumanSkelly_0012_Right-Foot.png
+  - Assets/Fighter Parts/TestHumanSkelly_0015_Right-Calf.png
+  lastBuildID: 20140404092230582
+  needsRebuilt: 0
+  dataVersion: 4
+  maxAtlasSize: 1024
+  padding: 1
+  forceSquare: 0

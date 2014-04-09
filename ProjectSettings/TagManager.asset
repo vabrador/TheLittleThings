@@ -21,11 +21,11 @@ TagManager:
   Builtin Layer 5: 
   Builtin Layer 6: 
   Builtin Layer 7: 
-  User Layer 8: Bombs
-  User Layer 9: Player
-  User Layer 10: Enemies
-  User Layer 11: Pickups
-  User Layer 12: Ground
+  User Layer 8: Background
+  User Layer 9: Frames
+  User Layer 10: Text
+  User Layer 11: 
+  User Layer 12: 
   User Layer 13: 
   User Layer 14: 
   User Layer 15: 
@@ -57,7 +57,7 @@ TagManager:
   - name: Background
     userID: 2
     uniqueID: 1535931219
-    locked: 1
+    locked: 0
   - name: Character
     userID: 4
     uniqueID: 2511236001

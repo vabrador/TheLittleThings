@@ -10419,6 +10419,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 155725508}
+  - 58: {fileID: 155725509}
+  - 114: {fileID: 155725510}
+  - 50: {fileID: 155725511}
   m_Layer: 0
   m_Name: Hand R
   m_TagString: Untagged
@@ -10438,6 +10441,44 @@ Transform:
   m_Children:
   - {fileID: 1361252783}
   m_Father: {fileID: 794385156}
+--- !u!58 &155725509
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 155725507}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Radius: 30
+  m_Center: {x: 0, y: -45}
+--- !u!114 &155725510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 155725507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 561c7d4171a266f4a8f2c02e7b72aa08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionSource: left hand
+--- !u!50 &155725511
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 155725507}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &167401724
 GameObject:
   m_ObjectHideFlags: 0
@@ -10503,9 +10544,11 @@ GameObject:
   - 50: {fileID: 203759811}
   - 58: {fileID: 203759810}
   - 61: {fileID: 203759809}
+  - 114: {fileID: 203759813}
+  - 114: {fileID: 203759814}
   m_Layer: 0
   m_Name: Right Fighter
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10567,15 +10610,51 @@ MonoBehaviour:
   m_GameObject: {fileID: 203759807}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d047c0a389c77914288835abf698dc65, type: 3}
+  m_Script: {fileID: 11500000, guid: c609d8aa3d1cb704dba2e4bd47abda27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fighterAnimation: {fileID: 1754434017}
-  maxSpeed: 50
+  maxSpeed: 200
   characterSide: right
-  dashLength: .25
+  stateList: []
   punchLength: .200000003
+  dashLength: .25
   blockLength: .5
+  hurtLength: .5
+  reelLength: 2
+  punchStart: 0
+  blockStart: 0
+  dashStart: 0
+  hurtStart: 0
+  reelStart: 0
+--- !u!114 &203759813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 203759807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 561c7d4171a266f4a8f2c02e7b72aa08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionSource: 
+--- !u!114 &203759814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 203759807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c1307e01bf9e74ea327bb19dd64c58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  punchStrength: 10
+  punchThresh: .5
+  blockThresh: .5
+  dashThresh: 1
+  startHealth: 100
 --- !u!1 &215800802
 GameObject:
   m_ObjectHideFlags: 0
@@ -10664,7 +10743,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 293844702}
-  - 58: {fileID: 293844703}
   m_Layer: 0
   m_Name: Hand R_Sprite
   m_TagString: Untagged
@@ -10683,17 +10761,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1108930419}
---- !u!58 &293844703
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 293844701}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Radius: 30
-  m_Center: {x: 0, y: -30}
 --- !u!43 &297488059
 Mesh:
   m_ObjectHideFlags: 0
@@ -12027,9 +12094,11 @@ GameObject:
   - 50: {fileID: 347266775}
   - 58: {fileID: 347266774}
   - 61: {fileID: 347266773}
+  - 114: {fileID: 347266776}
+  - 114: {fileID: 347266777}
   m_Layer: 0
   m_Name: Left Fighter
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12054,15 +12123,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 347266770}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d047c0a389c77914288835abf698dc65, type: 3}
+  m_Script: {fileID: 11500000, guid: c609d8aa3d1cb704dba2e4bd47abda27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fighterAnimation: {fileID: 58339193}
-  maxSpeed: 50
+  maxSpeed: 200
   characterSide: left
+  stateList: []
+  punchLength: .349999994
   dashLength: .25
-  punchLength: .200000003
   blockLength: .5
+  hurtLength: .5
+  reelLength: 2
+  punchStart: 0
+  blockStart: 0
+  dashStart: 0
+  hurtStart: 0
+  reelStart: 0
 --- !u!61 &347266773
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12100,6 +12177,34 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!114 &347266776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 347266770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 561c7d4171a266f4a8f2c02e7b72aa08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionSource: 
+--- !u!114 &347266777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 347266770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c1307e01bf9e74ea327bb19dd64c58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  punchStrength: 10
+  punchThresh: .5
+  blockThresh: .5
+  dashThresh: 1
+  startHealth: 100
 --- !u!1 &350105669
 GameObject:
   m_ObjectHideFlags: 0
@@ -13054,6 +13159,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1108930419}
+  - 58: {fileID: 1108930420}
+  - 114: {fileID: 1108930421}
+  - 50: {fileID: 1108930422}
   m_Layer: 0
   m_Name: Hand R
   m_TagString: Untagged
@@ -13073,6 +13181,44 @@ Transform:
   m_Children:
   - {fileID: 293844702}
   m_Father: {fileID: 1674009600}
+--- !u!58 &1108930420
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1108930418}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Radius: 30
+  m_Center: {x: 0, y: -45}
+--- !u!114 &1108930421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1108930418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 561c7d4171a266f4a8f2c02e7b72aa08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionSource: right hand
+--- !u!50 &1108930422
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1108930418}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &1145488840
 GameObject:
   m_ObjectHideFlags: 0
@@ -13186,6 +13332,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1222476400}
+  - 58: {fileID: 1222476401}
+  - 114: {fileID: 1222476402}
   m_Layer: 0
   m_Name: Root
   m_TagString: Untagged
@@ -13206,6 +13354,29 @@ Transform:
   - {fileID: 1302303403}
   - {fileID: 1306852967}
   m_Father: {fileID: 1754434016}
+--- !u!58 &1222476401
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1222476399}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Radius: 30
+  m_Center: {x: -175, y: 175}
+--- !u!114 &1222476402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1222476399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 561c7d4171a266f4a8f2c02e7b72aa08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionSource: right root
 --- !u!1 &1243101195
 GameObject:
   m_ObjectHideFlags: 0
@@ -13484,7 +13655,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1361252783}
-  - 58: {fileID: 1361252784}
   m_Layer: 0
   m_Name: Hand R_Sprite
   m_TagString: Untagged
@@ -13503,17 +13673,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 155725508}
---- !u!58 &1361252784
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1361252782}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Radius: 30
-  m_Center: {x: 0, y: -30}
 --- !u!1 &1441438294
 GameObject:
   m_ObjectHideFlags: 0
@@ -24021,6 +24180,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1761143320}
+  - 58: {fileID: 1761143321}
+  - 114: {fileID: 1761143322}
   m_Layer: 0
   m_Name: Root
   m_TagString: Untagged
@@ -24041,6 +24202,29 @@ Transform:
   - {fileID: 60539196}
   - {fileID: 951195432}
   m_Father: {fileID: 58339192}
+--- !u!58 &1761143321
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1761143319}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Radius: 30
+  m_Center: {x: -175, y: 175}
+--- !u!114 &1761143322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1761143319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 561c7d4171a266f4a8f2c02e7b72aa08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionSource: left root
 --- !u!1 &1784321746
 GameObject:
   m_ObjectHideFlags: 0

@@ -17,14 +17,14 @@ public class CollisionCatcherScript : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D collision) {
 		CombatScript combat;
-		Debug.Log (collisionSource + " just ran into a collision with " + collision.collider + "!");
+		Debug.Log (collisionSource + " just collided with " + collision.collider + "!");
 		if (gameObject.GetComponent<CombatScript> () == null){
 			GameObject parentObject = gameObject.transform.parent.gameObject;
-//			while (parentObject.GetComponent<CombatScript>() == null) 
-//			{
-//				parentObject = gameObject.transform.parent.gameObject;
-//				Debug.Log ("A collision is propagating up from " + gameObject + "and it just got to " + parentObject);
-//			}
+			while (parentObject.GetComponent<CombatScript>() == null) 
+			{
+				parentObject = gameObject.transform.parent.gameObject;
+				Debug.Log ("A collision is propagating up from " + gameObject + "and it just got to " + parentObject);
+			}
 			combat = parentObject.GetComponent<CombatScript>();
 		} else {
 			combat = gameObject.GetComponent<CombatScript>();

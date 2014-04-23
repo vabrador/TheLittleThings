@@ -163,7 +163,7 @@ public class MovementAnimationScript : MonoBehaviour {
 
 	public void Die() {
 		fighterAnimation.CrossFade ("Death");
-		}
+	}
 
 	// Sets all values in stateBools to false, except for those of animating
 	// and the key provided.  Essentially a helper method for the beginning of

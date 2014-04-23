@@ -12093,7 +12093,6 @@ GameObject:
   - 114: {fileID: 347266772}
   - 50: {fileID: 347266775}
   - 58: {fileID: 347266774}
-  - 61: {fileID: 347266773}
   - 114: {fileID: 347266776}
   - 114: {fileID: 347266777}
   m_Layer: 0
@@ -12140,17 +12139,6 @@ MonoBehaviour:
   dashStart: 0
   hurtStart: 0
   reelStart: 0
---- !u!61 &347266773
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 347266770}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: 200, y: 450}
-  m_Center: {x: -10, y: 50}
 --- !u!58 &347266774
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12188,7 +12176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 561c7d4171a266f4a8f2c02e7b72aa08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collisionSource: 
+  collisionSource: left parent object
 --- !u!114 &347266777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24180,8 +24168,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1761143320}
-  - 58: {fileID: 1761143321}
   - 114: {fileID: 1761143322}
+  - 61: {fileID: 1761143321}
   m_Layer: 0
   m_Name: Root
   m_TagString: Untagged
@@ -24202,8 +24190,8 @@ Transform:
   - {fileID: 60539196}
   - {fileID: 951195432}
   m_Father: {fileID: 58339192}
---- !u!58 &1761143321
-CircleCollider2D:
+--- !u!61 &1761143321
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -24211,8 +24199,8 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: 30
-  m_Center: {x: -175, y: 175}
+  m_Size: {x: 175, y: 500}
+  m_Center: {x: -10, y: 0}
 --- !u!114 &1761143322
 MonoBehaviour:
   m_ObjectHideFlags: 0

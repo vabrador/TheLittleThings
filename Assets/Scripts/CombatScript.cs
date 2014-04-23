@@ -61,40 +61,33 @@ public class CombatScript : MonoBehaviour {
 		MovementAnimationScript otherMover = otherGuy.GetComponent<MovementAnimationScript> ();
 		CombatScript otherCombat = otherGuy.GetComponent<CombatScript> ();
 		if (collision.gameObject.tag == "fighter") {
-			if (!mover.stateBools["animating"]){ // if this character is currently idle
-				if (otherMover.stateBools["punching"]){
-					GetsHurt(otherCombat.punchStrength);
-				}
-				else if (otherMover.stateBools["dashing"]){
-					GetsKnocked();
-				}
+			if (!mover.stateBools["animating"]){
+				// If you're idle and you get punched, you're hurt.  If you're idle and dashed
+				// into, you get knocked back.  Otherwise, nothing changes.
+				if (otherMover.stateBools["punching"]){	GetsHurt(otherCombat.punchStrength); }
+				else if (otherMover.stateBools["dashing"]){	GetsKnocked(); }
 				else {}
 			}
 			else if (mover.stateBools["punching"]){
-				if (otherMover.stateBools["punching"]) {
-					if (mover.punchStart > otherMover.punchStart) { GetsHurt(otherCombat.punchStrength); }
-					else {}
-				}
-				else if (otherMover.stateBools["dashing"]) { // If they're dashing when punched
-					if (!otherCombat.dashCounterable) { GetsKnocked(); }
-					else {}
-				} 
-				else if (otherMover.stateBools["blocking"]) { // If they're blocking when punched
-
-				} 
-				else if (!otherMover.stateBools["animating"]) {} // What happens if they're idle when you punch them
-				else {} // What happens if hurt or countered
+				// If you're punching at the same time, first guy to throw the punch wins.  If you
+				// throw a punch into a dash and it *isn'* counterable, you get knocked back.  If
+				// somebody blocks while your punch is counterable, you get countered.
+				if ((otherMover.stateBools["punching"]) && (mover.punchStart > otherMover.punchStart)) {GetsHurt(otherCombat.punchStrength); }
+				else if ((otherMover.stateBools["dashing"]) && (!otherCombat.dashCounterable)) { GetsKnocked(); }
+				else if ((otherMover.stateBools["blocking"]) && (punchCounterable)) { GetsCountered(); }
+				else {}
 			}
 			else if (mover.stateBools["blocking"]) {
-				if (otherMover.stateBools["punching"]){}
-				else if (otherMover.stateBools["dashing"]) {}
+				// If you're blocking and get dashed into while you're counterable, you get countered.
+				// Otherwise, not much happens.
+				if ((otherMover.stateBools["dashing"]) && (blockCounterable)) { GetsCountered(); }
 				else {}
 			}
 			else if (mover.stateBools["dashing"]) {
-				if (otherMover.stateBools["punching"]){}
-				else if (otherMover.stateBools["blocking"]){}
-				else if (otherMover.stateBools["dashing"]){}
-				else if (!otherMover.stateBools["animating"]){}
+				// If you're dashing into their punch and your dash is counterable, get countered.
+				// Otherwise, no enemy state will changes yours mid-dash
+				if ((otherMover.stateBools["punching"]) && (dashCounterable)){ GetsCountered(); }
+				else{}
 			}
 			else {
 			// Do nothing, because our character is either hurt or reeling, and in both

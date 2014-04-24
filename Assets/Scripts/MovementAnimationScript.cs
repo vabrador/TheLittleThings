@@ -111,24 +111,10 @@ public class MovementAnimationScript : MonoBehaviour {
 			fighterAnimation.CrossFade("Idle");	
 		}
 	}
-	
+
 	// Update is called whenever an Input is grabbed
 	void Update () {
-		if ((Input.GetAxis("Dash") > 0) && (!stateBools["animating"])) {
-			Dash ();
-		}
-		else if ((Input.GetAxis("Block") > 0)  && (!stateBools["animating"])) {
-			Block ();
-		}
-		else if ((Input.GetAxis("Punch") > 0) && (!stateBools["animating"])) {
-			Punch ();
-		}
-		else {
-			if (!stateBools["animating"]){
-				fighterAnimation.CrossFade ("Idle");
-			}
-		}
-	
+
 	}
 
 	// Separate functions to trigger each conceptual move or state in the game,
@@ -136,7 +122,6 @@ public class MovementAnimationScript : MonoBehaviour {
 	public void Dash() {
 		fighterAnimation.CrossFade ("Dash");
 		rigidbody2D.velocity = new Vector2(fighterMaxSpeed, 0);
-		Debug.Log (fighterMaxSpeed);
 		dashStart = Time.time;
 	}
 	
@@ -151,13 +136,13 @@ public class MovementAnimationScript : MonoBehaviour {
 	}
 	
 	public void Reel() {
-		fighterAnimation.CrossFade ("Reel");
+		fighterAnimation.CrossFade ("Countered");
 		rigidbody2D.velocity = new Vector2 ((float) (-0.25 * fighterMaxSpeed), 0);
 		reelStart = Time.time;
 	}
 
 	public void Hurt() {
-		fighterAnimation.CrossFade ("Ow");
+		fighterAnimation.CrossFade ("Hurt");
 		hurtStart = Time.time;
 	}
 

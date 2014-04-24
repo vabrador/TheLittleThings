@@ -1,10 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CollisionCatcherScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MovementAnimationScript.cs">
     <Files>
-      <File FileName="Assets\Scripts\CombatScript.cs" Line="45" Column="5" />
-      <File FileName="Assets\Scripts\MovementAnimationScript.cs" Line="107" Column="8" />
-      <File FileName="Assets\Scripts\CollisionCatcherScript.cs" Line="23" Column="5" />
+      <File FileName="Assets\Scripts\CombatScript.cs" Line="74" Column="94" />
+      <File FileName="Assets\Scripts\MovementAnimationScript.cs" Line="152" Column="24" />
+      <File FileName="Assets\Scripts\CollisionCatcherScript.cs" Line="31" Column="8" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

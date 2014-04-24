@@ -1210,6 +1210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   punchStrength: 10
+  counterStrength: 5
   punchThresh: .5
   blockThresh: .5
   dashThresh: 1

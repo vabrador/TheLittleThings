@@ -52,6 +52,8 @@
      <Compile Include="Assets\Scripts\ExpositionGUI.cs" />
      <Compile Include="Assets\Scripts\HealthScript.cs" />
      <Compile Include="Assets\Scripts\MovementAnimationScript.cs" />
+     <Compile Include="Assets\Scripts\P1_controls.cs" />
+     <Compile Include="Assets\Scripts\P2_controls.cs" />
      <Compile Include="Assets\Scripts\PlayerControl.cs" />
      <Compile Include="Assets\Scripts\Pre-Built Scripts\BackgroundPropSpawner.cs" />
      <Compile Include="Assets\Scripts\Pre-Built Scripts\Bomb.cs" />

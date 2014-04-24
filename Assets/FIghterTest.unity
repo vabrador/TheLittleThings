@@ -395,7 +395,7 @@ MonoBehaviour:
   - {r: 1, g: 1, b: 1, a: 1}
   - {r: 1, g: 1, b: 1, a: 1}
   - {r: 1, g: 1, b: 1, a: 1}
-  animationData: {fileID: 11400000, guid: 5968b8d99e26f76489aab4d9673af5e7, type: 2}
+  animationData: {fileID: 0}
   animationDataGUID: 5968b8d99e26f76489aab4d9673af5e7
   mMaterialSource:
   - {fileID: 2100000, guid: e837e579a4906df449ca9001b6038baa, type: 2}
@@ -14196,7 +14196,7 @@ MonoBehaviour:
   - {r: 1, g: 1, b: 1, a: 1}
   - {r: 1, g: 1, b: 1, a: 1}
   - {r: 1, g: 1, b: 1, a: 1}
-  animationData: {fileID: 11400000, guid: 5968b8d99e26f76489aab4d9673af5e7, type: 2}
+  animationData: {fileID: 0}
   animationDataGUID: 5968b8d99e26f76489aab4d9673af5e7
   mMaterialSource:
   - {fileID: 2100000, guid: e837e579a4906df449ca9001b6038baa, type: 2}

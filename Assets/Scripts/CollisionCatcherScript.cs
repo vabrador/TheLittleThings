@@ -17,11 +17,10 @@ public class CollisionCatcherScript : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D collision) {
-		Debug.Log (collisionSource + " got into a collision!");
 		CombatScript combat;
-		GameObject thisGuy = GetToParent (gameObject);
+		GameObject thisGuy = gameObject.transform.root.gameObject;
 		combat = thisGuy.GetComponent<CombatScript> ();
-		GameObject otherGuy = GetToParent (collision.gameObject);
+		GameObject otherGuy = collision.gameObject.transform.root.gameObject;
 //		Debug.Log ("The collidee ended up at " + thisGuy + ", the collider ended up at " + otherGuy);
 		if ((combat != null) && (otherGuy.GetComponent<CombatScript>() != null)) {
 //			Debug.Log ("A collision happened between " + thisGuy + " and " + otherGuy + ", and it's going to the CombatScripts!");
@@ -31,17 +30,4 @@ public class CollisionCatcherScript : MonoBehaviour {
 //			Debug.Log ("A collision happened between " + thisGuy + " and " + otherGuy + ", but they didn't have CombatScripts.");
 		}
 	}
-
-	GameObject GetToParent(GameObject child) {
-		GameObject originalObject = child;
-		GameObject parent = child;
-		try {
-			while (parent.transform.parent.gameObject != null) {
-				parent = parent.transform.parent.gameObject;
-			}
-			return parent; // This line will never get used because we're supposed to always step to null, but if it isn't there Unity bitches.
-		} catch (System.NullReferenceException ex) {
-			return parent;
-		}
-		}
-	}
+}

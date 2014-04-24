@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: -1545704558, guid: 289bab7cc27a12745b5df9b71d7b06c4, type: 3}
   m_Name: Linda
   m_EditorClassIdentifier: 
-  buildID: 201404232141329441
+  buildID: 201404232149463518
   needsRebuilt: 1
   boneDataList:
   - active: 1
@@ -69,6 +69,11 @@ MonoBehaviour:
     boneColor:
       blendingWeight: 0
       color: {r: 1, g: 1, b: 1, a: 1}
+  - active: 1
+    boneName: Scarf
+    boneColor:
+      blendingWeight: 0
+      color: {r: 1, g: 1, b: 1, a: 1}
   dfsBoneNodeList:
   - parentBoneIndex: -1
     boneDataIndex: 0
@@ -94,13 +99,16 @@ MonoBehaviour:
   - parentBoneIndex: 6
     boneDataIndex: 8
     depth: 3
+  - parentBoneIndex: 1
+    boneDataIndex: 11
+    depth: 2
   - parentBoneIndex: 0
     boneDataIndex: 2
     depth: 1
-  - parentBoneIndex: 8
+  - parentBoneIndex: 9
     boneDataIndex: 9
     depth: 2
-  - parentBoneIndex: 8
+  - parentBoneIndex: 9
     boneDataIndex: 10
     depth: 2
   animationClips:
@@ -319,7 +327,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 10
       - boneDataIndex: 1
         frame: 10
         userTriggerCallback: 0
@@ -418,7 +426,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 10
       mixTransform: 0
       visible: 1
       colorRCurveSerialized:
@@ -531,7 +539,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 9
       - boneDataIndex: 2
         frame: 10
         userTriggerCallback: 0
@@ -630,7 +638,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 9
       mixTransform: 0
       visible: 1
       colorRCurveSerialized:
@@ -743,7 +751,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 4
       - boneDataIndex: 3
         frame: 10
         userTriggerCallback: 0
@@ -842,7 +850,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 4
       mixTransform: 0
       visible: 1
       colorRCurveSerialized:
@@ -955,7 +963,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 0
       - boneDataIndex: 4
         frame: 10
         userTriggerCallback: 0
@@ -1054,7 +1062,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 0
       mixTransform: 0
       visible: 1
       colorRCurveSerialized:
@@ -1167,7 +1175,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 7
       - boneDataIndex: 5
         frame: 10
         userTriggerCallback: 0
@@ -1266,7 +1274,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 7
       mixTransform: 0
       visible: 1
       colorRCurveSerialized:
@@ -1379,7 +1387,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 5
       - boneDataIndex: 6
         frame: 10
         userTriggerCallback: 0
@@ -1478,7 +1486,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 5
       mixTransform: 0
       visible: 1
       colorRCurveSerialized:
@@ -1591,7 +1599,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 3
       - boneDataIndex: 7
         frame: 10
         userTriggerCallback: 0
@@ -1690,7 +1698,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 3
       mixTransform: 0
       visible: 1
       colorRCurveSerialized:
@@ -1803,7 +1811,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 1
       - boneDataIndex: 8
         frame: 10
         userTriggerCallback: 0
@@ -1902,7 +1910,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 1
       mixTransform: 0
       visible: 1
       colorRCurveSerialized:
@@ -2015,7 +2023,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 6
       - boneDataIndex: 9
         frame: 10
         userTriggerCallback: 0
@@ -2114,7 +2122,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 6
       mixTransform: 0
       visible: 1
       colorRCurveSerialized:
@@ -2227,7 +2235,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 2
       - boneDataIndex: 10
         frame: 10
         userTriggerCallback: 0
@@ -2311,6 +2319,218 @@ MonoBehaviour:
         atlas: {fileID: 11400000, guid: d40cab53c4bd45448b10e7b509d87c76, type: 2}
         useTextureGUID: 1
         textureGUID: d0853a63bc1bc1647ab861a1afd94a89
+        usePivotOffset: 1
+        pivotOffset: {x: 0, y: 0}
+        useDefaultPivot: 1
+        useDepth: 1
+        depth: 0
+        useCollider: 1
+        collider:
+          type: 0
+          center: {x: 0, y: 0, z: 0}
+          boxSize: {x: 0, y: 0, z: 0}
+          sphereRadius: 0
+          useAnimationLayer: 1
+          layer: 0
+          isTrigger: 1
+          tag: 
+        textureIndex: 2
+      mixTransform: 0
+      visible: 1
+      colorRCurveSerialized:
+        keyframes: []
+      colorGCurveSerialized:
+        keyframes: []
+      colorBCurveSerialized:
+        keyframes: []
+      colorACurveSerialized:
+        keyframes: []
+      colorBlendWeightCurveSerialized:
+        keyframes: []
+    - boneDataIndex: 11
+      keyframes:
+      - boneDataIndex: 11
+        frame: 0
+        userTriggerCallback: 0
+        userTriggerTag: 
+        useKeyframeType: 1
+        keyframeType: 1
+        localPosition:
+          val: {x: 0, y: 0}
+          inTangentX: 0
+          outTangentX: 0
+          tangentModeX: 0
+          inTangentY: 0
+          outTangentY: 0
+          tangentModeY: 0
+          useX: 0
+          useY: 0
+        localPosition3:
+          val: {x: -42, y: 158, z: 0}
+          inTangentX: 0
+          outTangentX: 0
+          tangentModeX: 0
+          inTangentY: 0
+          outTangentY: 0
+          tangentModeY: 0
+          inTangentZ: 0
+          outTangentZ: 0
+          tangentModeZ: 0
+          useX: 1
+          useY: 1
+          useZ: 1
+        localRotation:
+          val: 0
+          inTangent: 0
+          outTangent: 0
+          tangentMode: 0
+          use: 1
+        localScale3:
+          val: {x: 1, y: 1, z: 1}
+          inTangentX: 0
+          outTangentX: 0
+          tangentModeX: 0
+          inTangentY: 0
+          outTangentY: 0
+          tangentModeY: 0
+          inTangentZ: 0
+          outTangentZ: 0
+          tangentModeZ: 0
+          useX: 1
+          useY: 1
+          useZ: 1
+        imageScale:
+          val: {x: 1, y: 1}
+          inTangentX: 0
+          outTangentX: 0
+          tangentModeX: 0
+          inTangentY: 0
+          outTangentY: 0
+          tangentModeY: 0
+          useX: 1
+          useY: 1
+        color:
+          val: {r: 1, g: 1, b: 1, a: 1}
+          inTangentR: 0
+          outTangentR: 0
+          tangentModeR: 0
+          inTangentG: 0
+          outTangentG: 0
+          tangentModeG: 0
+          inTangentB: 0
+          outTangentB: 0
+          tangentModeB: 0
+          inTangentA: 0
+          outTangentA: 0
+          tangentModeA: 0
+          use: 1
+          blendWeight: 0
+          inTangentBlendWeight: 0
+          outTangentBlendWeight: 0
+          tangentModeBlendWeight: 0
+        useAtlas: 1
+        atlas: {fileID: 11400000, guid: d40cab53c4bd45448b10e7b509d87c76, type: 2}
+        useTextureGUID: 1
+        textureGUID: 6be11b806b0bd664e871b3d240d42bb5
+        usePivotOffset: 1
+        pivotOffset: {x: 0, y: 0}
+        useDefaultPivot: 1
+        useDepth: 1
+        depth: 0
+        useCollider: 1
+        collider:
+          type: 0
+          center: {x: 0, y: 0, z: 0}
+          boxSize: {x: 0, y: 0, z: 0}
+          sphereRadius: 0
+          useAnimationLayer: 1
+          layer: 0
+          isTrigger: 1
+          tag: 
+        textureIndex: -1
+      - boneDataIndex: 11
+        frame: 10
+        userTriggerCallback: 0
+        userTriggerTag: 
+        useKeyframeType: 1
+        keyframeType: 1
+        localPosition:
+          val: {x: 0, y: 0}
+          inTangentX: 0
+          outTangentX: 0
+          tangentModeX: 0
+          inTangentY: 0
+          outTangentY: 0
+          tangentModeY: 0
+          useX: 0
+          useY: 0
+        localPosition3:
+          val: {x: -42, y: 158, z: 0}
+          inTangentX: 0
+          outTangentX: 0
+          tangentModeX: 0
+          inTangentY: 0
+          outTangentY: 0
+          tangentModeY: 0
+          inTangentZ: 0
+          outTangentZ: 0
+          tangentModeZ: 0
+          useX: 1
+          useY: 1
+          useZ: 1
+        localRotation:
+          val: 0
+          inTangent: 0
+          outTangent: 0
+          tangentMode: 0
+          use: 1
+        localScale3:
+          val: {x: 1, y: 1, z: 1}
+          inTangentX: 0
+          outTangentX: 0
+          tangentModeX: 0
+          inTangentY: 0
+          outTangentY: 0
+          tangentModeY: 0
+          inTangentZ: 0
+          outTangentZ: 0
+          tangentModeZ: 0
+          useX: 1
+          useY: 1
+          useZ: 1
+        imageScale:
+          val: {x: 1, y: 1}
+          inTangentX: 0
+          outTangentX: 0
+          tangentModeX: 0
+          inTangentY: 0
+          outTangentY: 0
+          tangentModeY: 0
+          useX: 1
+          useY: 1
+        color:
+          val: {r: 1, g: 1, b: 1, a: 1}
+          inTangentR: 0
+          outTangentR: 0
+          tangentModeR: 0
+          inTangentG: 0
+          outTangentG: 0
+          tangentModeG: 0
+          inTangentB: 0
+          outTangentB: 0
+          tangentModeB: 0
+          inTangentA: 0
+          outTangentA: 0
+          tangentModeA: 0
+          use: 1
+          blendWeight: 0
+          inTangentBlendWeight: 0
+          outTangentBlendWeight: 0
+          tangentModeBlendWeight: 0
+        useAtlas: 1
+        atlas: {fileID: 11400000, guid: d40cab53c4bd45448b10e7b509d87c76, type: 2}
+        useTextureGUID: 1
+        textureGUID: 6be11b806b0bd664e871b3d240d42bb5
         usePivotOffset: 1
         pivotOffset: {x: 0, y: 0}
         useDefaultPivot: 1

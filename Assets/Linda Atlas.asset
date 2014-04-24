@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 529336600, guid: 289bab7cc27a12745b5df9b71d7b06c4, type: 3}
+  m_Name: Linda Atlas
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 22d8f5263c39471468883fed76b0eeb1, type: 2}
+  uvs:
+  - serializedVersion: 2
+    x: .713867188
+    y: 0
+    width: .211914062
+    height: .375
+  - serializedVersion: 2
+    x: 0
+    y: .662109375
+    width: .163085938
+    height: .333984375
+  - serializedVersion: 2
+    x: .5703125
+    y: 0
+    width: .142578125
+    height: .55859375
+  - serializedVersion: 2
+    x: .368164062
+    y: .7265625
+    width: .137695312
+    height: .13671875
+  - serializedVersion: 2
+    x: .483398438
+    y: .5234375
+    width: .05859375
+    height: .099609375
+  - serializedVersion: 2
+    x: .213867188
+    y: .703125
+    width: .149414062
+    height: .236328125
+  - serializedVersion: 2
+    x: .213867188
+    y: 0
+    width: .153320312
+    height: .701171875
+  - serializedVersion: 2
+    x: .368164062
+    y: .5234375
+    width: .114257812
+    height: .201171875
+  - serializedVersion: 2
+    x: .713867188
+    y: .376953125
+    width: .263671875
+    height: .1875
+  - serializedVersion: 2
+    x: 0
+    y: 0
+    width: .212890625
+    height: .66015625
+  - serializedVersion: 2
+    x: .368164062
+    y: 0
+    width: .201171875
+    height: .521484375
+  textureGUIDs:
+  - 57b6498e0ad20c4418e2ca8303715f37
+  - 30c8fe73d49187449a2ef6d765e821a5
+  - d0853a63bc1bc1647ab861a1afd94a89
+  - dc965d900f2a0cf418370fb39ef14de2
+  - a1af174fcaaf2d4448e9c1aaa48ca191
+  - fb811a1a6f044cc4bbda4fda2ac45ac9
+  - 5dfd0bb63df5cd244b9787b3b2c9c7d2
+  - feb2fb919fef5e24a9df45f28ad3813b
+  - 6be11b806b0bd664e871b3d240d42bb5
+  - 465fd150efeccae418cbace8c628db43
+  - 78bac413777ad6f499425b64828dfdd5
+  textureSizes:
+  - {x: 217, y: 192}
+  - {x: 167, y: 171}
+  - {x: 146, y: 286}
+  - {x: 141, y: 70}
+  - {x: 60, y: 51}
+  - {x: 153, y: 121}
+  - {x: 157, y: 359}
+  - {x: 117, y: 103}
+  - {x: 270, y: 96}
+  - {x: 218, y: 338}
+  - {x: 206, y: 267}
+  defaultPivotOffsets:
+  - {x: .123214282, y: -.381445318}
+  - {x: .14464286, y: -.340068907}
+  - {x: -.219007909, y: .475155264}
+  - {x: -.358928561, y: 0}
+  - {x: .0749999955, y: -.384453773}
+  - {x: -.241071448, y: .311599761}
+  - {x: .287603348, y: .461180121}
+  - {x: .433928549, y: .322520792}
+  - {x: .133928567, y: .10546875}
+  - {x: .0505584367, y: .437888205}
+  - {x: .0905671492, y: -.237577632}
+  textureNames:
+  - LindaIdle_Head
+  - LindaIdle_LeftForearm
+  - LindaIdle_LeftLeg
+  - LindaIdle_LeftUpperArm
+  - LindaIdle_Neck
+  - LindaIdle_RightForearm
+  - LindaIdle_RightLeg
+  - LindaIdle_RightUpperArm
+  - LindaIdle_Scarf
+  - LindaIdle_Skirt
+  - LindaIdle_Torso
+  texturePaths:
+  - Assets/Linda Parts/LindaIdle_Head.png
+  - Assets/Linda Parts/LindaIdle_LeftForearm.png
+  - Assets/Linda Parts/LindaIdle_LeftLeg.png
+  - Assets/Linda Parts/LindaIdle_LeftUpperArm.png
+  - Assets/Linda Parts/LindaIdle_Neck.png
+  - Assets/Linda Parts/LindaIdle_RightForearm.png
+  - Assets/Linda Parts/LindaIdle_RightLeg.png
+  - Assets/Linda Parts/LindaIdle_RightUpperArm.png
+  - Assets/Linda Parts/LindaIdle_Scarf.png
+  - Assets/Linda Parts/LindaIdle_Skirt.png
+  - Assets/Linda Parts/LindaIdle_Torso.png
+  lastBuildID: 20140423211724790
+  needsRebuilt: 0
+  dataVersion: 4
+  maxAtlasSize: 1024
+  padding: 1
+  forceSquare: 0

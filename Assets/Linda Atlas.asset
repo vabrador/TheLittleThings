@@ -14,115 +14,220 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 22d8f5263c39471468883fed76b0eeb1, type: 2}
   uvs:
   - serializedVersion: 2
-    x: .7734375
-    y: 0
-    width: .211914062
+    x: .425292969
+    y: .283203125
+    width: .105957031
     height: .09375
   - serializedVersion: 2
-    x: .592773438
-    y: .245117188
-    width: .163085938
+    x: .425292969
+    y: .432617188
+    width: .0815429688
     height: .0834960938
   - serializedVersion: 2
-    x: .213867188
-    y: .383300781
-    width: .142578125
+    x: .275390625
+    y: .396972656
+    width: .0712890625
     height: .139648438
   - serializedVersion: 2
-    x: .357421875
-    y: .430664062
-    width: .137695312
+    x: .348144531
+    y: .657714844
+    width: .0688476562
     height: .0341796875
   - serializedVersion: 2
-    x: .916015625
-    y: .182617188
-    width: .05859375
+    x: .8359375
+    y: .240234375
+    width: .029296875
     height: .0249023438
   - serializedVersion: 2
-    x: .765625
-    y: .182617188
-    width: .149414062
+    x: .348144531
+    y: .458984375
+    width: .0747070312
     height: .0590820312
   - serializedVersion: 2
-    x: 0
-    y: .548828125
-    width: .153320312
+    x: .348144531
+    y: .283203125
+    width: .0766601562
     height: .175292969
   - serializedVersion: 2
-    x: .756835938
-    y: .310058594
-    width: .114257812
+    x: .285644531
+    y: .750976562
+    width: .0571289062
     height: .0502929688
   - serializedVersion: 2
-    x: .357421875
-    y: .383300781
-    width: .263671875
+    x: .694824219
+    y: .377441406
+    width: .131835938
     height: .046875
   - serializedVersion: 2
-    x: 0
-    y: .383300781
-    width: .212890625
+    x: .168457031
+    y: .396972656
+    width: .106445312
     height: .165039062
   - serializedVersion: 2
-    x: .563476562
-    y: .113769531
-    width: .201171875
+    x: .886230469
+    y: .126464844
+    width: .100585938
     height: .130371094
   - serializedVersion: 2
-    x: .293945312
-    y: .245117188
-    width: .297851562
+    x: .168457031
+    y: .921875
+    width: .148925781
     height: .0600585938
   - serializedVersion: 2
-    x: .756835938
-    y: .245117188
-    width: .208984375
+    x: .507324219
+    y: .432617188
+    width: .104492188
     height: .064453125
   - serializedVersion: 2
-    x: 0
-    y: 0
-    width: .413085938
+    x: .679199219
+    y: .126464844
+    width: .206542969
     height: .11328125
   - serializedVersion: 2
     x: 0
-    y: .113769531
-    width: .3359375
+    y: .283203125
+    width: .16796875
     height: .130859375
   - serializedVersion: 2
-    x: .336914062
-    y: .113769531
-    width: .225585938
+    x: .874023438
+    y: 0
+    width: .112792969
     height: .122558594
   - serializedVersion: 2
-    x: .592773438
-    y: .329101562
-    width: .146484375
+    x: .348144531
+    y: .518554688
+    width: .0732421875
     height: .0473632812
   - serializedVersion: 2
-    x: .4140625
-    y: 0
-    width: .358398438
+    x: .168457031
+    y: .283203125
+    width: .179199219
     height: .11328125
   - serializedVersion: 2
-    x: .872070312
-    y: .310058594
-    width: .11328125
+    x: .283691406
+    y: .826660156
+    width: .056640625
     height: .03515625
   - serializedVersion: 2
-    x: .293945312
-    y: .305664062
-    width: .243164062
+    x: .658203125
+    y: .283203125
+    width: .121582031
     height: .0595703125
   - serializedVersion: 2
     x: 0
-    y: .245117188
-    width: .29296875
+    y: .584472656
+    width: .146484375
     height: .137695312
   - serializedVersion: 2
-    x: .765625
-    y: .113769531
-    width: .209960938
+    x: .780273438
+    y: .283203125
+    width: .104980469
     height: .068359375
+  - serializedVersion: 2
+    x: .168457031
+    y: .686523438
+    width: .116699219
+    height: .139648438
+  - serializedVersion: 2
+    x: .471191406
+    y: 0
+    width: .207519531
+    height: .119628906
+  - serializedVersion: 2
+    x: .168457031
+    y: .5625
+    width: .133300781
+    height: .123535156
+  - serializedVersion: 2
+    x: .425292969
+    y: .377441406
+    width: .126464844
+    height: .0546875
+  - serializedVersion: 2
+    x: .679199219
+    y: 0
+    width: .194335938
+    height: .125976562
+  - serializedVersion: 2
+    x: .312011719
+    y: 0
+    width: .158691406
+    height: .266601562
+  - serializedVersion: 2
+    x: 0
+    y: .849609375
+    width: .1328125
+    height: .128417969
+  - serializedVersion: 2
+    x: .552246094
+    y: .377441406
+    width: .142089844
+    height: .0458984375
+  - serializedVersion: 2
+    x: .348144531
+    y: .56640625
+    width: .0654296875
+    height: .052734375
+  - serializedVersion: 2
+    x: 0
+    y: .414550781
+    width: .120605469
+    height: .169433594
+  - serializedVersion: 2
+    x: 0
+    y: .72265625
+    width: .156738281
+    height: .126464844
+  - serializedVersion: 2
+    x: .168457031
+    y: .826660156
+    width: .114746094
+    height: .0947265625
+  - serializedVersion: 2
+    x: .827148438
+    y: .377441406
+    width: .125
+    height: .03515625
+  - serializedVersion: 2
+    x: .348144531
+    y: .619628906
+    width: .0732421875
+    height: .0375976562
+  - serializedVersion: 2
+    x: 0
+    y: 0
+    width: .311523438
+    height: .282714844
+  - serializedVersion: 2
+    x: .531738281
+    y: .283203125
+    width: .125976562
+    height: .0649414062
+  - serializedVersion: 2
+    x: .885742188
+    y: .283203125
+    width: .105957031
+    height: .0654296875
+  - serializedVersion: 2
+    x: .612304688
+    y: .432617188
+    width: .0869140625
+    height: .0498046875
+  - serializedVersion: 2
+    x: .285644531
+    y: .686523438
+    width: .0610351562
+    height: .0639648438
+  - serializedVersion: 2
+    x: .471191406
+    y: .120117188
+    width: .178222656
+    height: .139160156
+  - serializedVersion: 2
+    x: .679199219
+    y: .240234375
+    width: .15625
+    height: .0356445312
   textureGUIDs:
   - 57b6498e0ad20c4418e2ca8303715f37
   - 30c8fe73d49187449a2ef6d765e821a5
@@ -146,6 +251,27 @@ MonoBehaviour:
   - 1a9afbb87e04dee44a153a7efc3497a9
   - b61e679dcaf11f649893f6c1edf58aa2
   - e6701069a99a56e47b5f9758c9f6009d
+  - 0184741db3e5a6f4aa86e53aa18f792a
+  - 025e7c49c377133479cb0ad54c4fd020
+  - 19923043571836d4b966036a09b1db9e
+  - 4b1aba2b66817b4429e14c3118b1340d
+  - 50796e48a992a9444ab8b345bad8cd9e
+  - 568f4bc79c4cb73489c73e6b54b01b53
+  - 5956bb2201a3198428aa8e09287a18a9
+  - 7f95c697241a4954d976b688510edf96
+  - 8ddb2620b6fa32442b6c3de10e52d07c
+  - 929f4cc79267bd243864a5874ce8d347
+  - b6e5ddc58969d024d9d1ec35395735ac
+  - bda90c11ac0b1224592b7fad865d176a
+  - bdb2e2632a2735e4796bf0dcf40b292d
+  - d36e1a2b50fe8244aaa8396584c1f223
+  - dce4c90d6481e2f4699c5c20f3b93197
+  - eca679b62fd0ca746b70baef3b7cf45e
+  - ee851bb26a323fb4e9a330517788cc9f
+  - f6e0fe39df1ea3e4888eca3f295f1266
+  - f9414f176d26ef646a5568d5b9cc94a6
+  - f97162768634e014e8b60a1190500628
+  - fa478dafc4944ba46a929753ab91f7f0
   textureSizes:
   - {x: 217, y: 192}
   - {x: 167, y: 171}
@@ -169,6 +295,27 @@ MonoBehaviour:
   - {x: 249, y: 122}
   - {x: 300, y: 282}
   - {x: 215, y: 140}
+  - {x: 239, y: 286}
+  - {x: 425, y: 245}
+  - {x: 273, y: 253}
+  - {x: 259, y: 112}
+  - {x: 398, y: 258}
+  - {x: 325, y: 546}
+  - {x: 272, y: 263}
+  - {x: 291, y: 94}
+  - {x: 134, y: 108}
+  - {x: 247, y: 347}
+  - {x: 321, y: 259}
+  - {x: 235, y: 194}
+  - {x: 256, y: 72}
+  - {x: 150, y: 77}
+  - {x: 638, y: 579}
+  - {x: 258, y: 133}
+  - {x: 217, y: 134}
+  - {x: 178, y: 102}
+  - {x: 125, y: 131}
+  - {x: 365, y: 285}
+  - {x: 320, y: 73}
   defaultPivotOffsets:
   - {x: .123214282, y: -.381445318}
   - {x: .14464286, y: -.340068907}
@@ -192,6 +339,27 @@ MonoBehaviour:
   - {x: -.466071427, y: .317081392}
   - {x: -.262499988, y: -.17097263}
   - {x: .133928567, y: -.213903069}
+  - {x: -.367914945, y: .447204947}
+  - {x: .375, y: .436771154}
+  - {x: -.16607143, y: -.404644251}
+  - {x: .257142872, y: -.123883933}
+  - {x: .423214287, y: .413205981}
+  - {x: 0, y: 0}
+  - {x: -.0642857105, y: -.398913622}
+  - {x: .278571427, y: 0}
+  - {x: .375, y: .232638896}
+  - {x: .327218533, y: .479813665}
+  - {x: -.0857142881, y: -.252302796}
+  - {x: .0803571418, y: -.447763264}
+  - {x: -.423214287, y: 0}
+  - {x: -.385714263, y: .0417439677}
+  - {x: 0, y: 0}
+  - {x: -.41785717, y: -.228625149}
+  - {x: .439285696, y: .338339537}
+  - {x: -.219642848, y: .439390749}
+  - {x: .353571415, y: .362936199}
+  - {x: -.0237749312, y: .471953243}
+  - {x: -.466071457, y: .0234833658}
   textureNames:
   - LindaIdle_Head
   - LindaIdle_LeftForearm
@@ -215,6 +383,27 @@ MonoBehaviour:
   - LindaAttack_LeftForearm
   - LindaAttack_Torso
   - LindaAttack_Scarf
+  - LindaBlock_LeftLeg
+  - LindaDash_Skirt
+  - LindaDash_Torso
+  - LindaBlock_Scarf
+  - LindaDash_LeftLeg
+  - LindaBlock_Shield
+  - LindaDash_Head
+  - LindaDash_Scarf
+  - LindaBlock_RightUpperArm
+  - LindaBlock_RightLeg
+  - LindaBlock_Torso
+  - LindaBlock_Head
+  - LindaDash_LeftUpperArm
+  - LindaBlock_LeftUpperArm
+  - LindaDash_Chair
+  - LindaBlock_LeftForearm
+  - LindaDash_RightForearm
+  - LindaBlock_RightForearm
+  - LindaDash_RightUpperArm
+  - LindaBlock_Skirt
+  - LindaDash_Forearm
   texturePaths:
   - Assets/Linda Parts/LindaIdle_Head.png
   - Assets/Linda Parts/LindaIdle_LeftForearm.png
@@ -238,7 +427,28 @@ MonoBehaviour:
   - Assets/Linda Parts/LindaAttack_LeftForearm.png
   - Assets/Linda Parts/LindaAttack_Torso.png
   - Assets/Linda Parts/LindaAttack_Scarf.png
-  lastBuildID: 20140425151542699
+  - Assets/Linda Parts/LindaBlock_LeftLeg.png
+  - Assets/Linda Parts/LindaDash_Skirt.png
+  - Assets/Linda Parts/LindaDash_Torso.png
+  - Assets/Linda Parts/LindaBlock_Scarf.png
+  - Assets/Linda Parts/LindaDash_LeftLeg.png
+  - Assets/Linda Parts/LindaBlock_Shield.png
+  - Assets/Linda Parts/LindaDash_Head.png
+  - Assets/Linda Parts/LindaDash_Scarf.png
+  - Assets/Linda Parts/LindaBlock_RightUpperArm.png
+  - Assets/Linda Parts/LindaBlock_RightLeg.png
+  - Assets/Linda Parts/LindaBlock_Torso.png
+  - Assets/Linda Parts/LindaBlock_Head.png
+  - Assets/Linda Parts/LindaDash_LeftUpperArm.png
+  - Assets/Linda Parts/LindaBlock_LeftUpperArm.png
+  - Assets/Linda Parts/LindaDash_Chair.png
+  - Assets/Linda Parts/LindaBlock_LeftForearm.png
+  - Assets/Linda Parts/LindaDash_RightForearm.png
+  - Assets/Linda Parts/LindaBlock_RightForearm.png
+  - Assets/Linda Parts/LindaDash_RightUpperArm.png
+  - Assets/Linda Parts/LindaBlock_Skirt.png
+  - Assets/Linda Parts/LindaDash_Forearm.png
+  lastBuildID: 20140426152201865
   needsRebuilt: 0
   dataVersion: 4
   maxAtlasSize: 1024

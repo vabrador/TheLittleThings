@@ -14,68 +14,68 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 22d8f5263c39471468883fed76b0eeb1, type: 2}
   uvs:
   - serializedVersion: 2
-    x: .425292969
+    x: .879394531
     y: .283203125
     width: .105957031
     height: .09375
   - serializedVersion: 2
-    x: .425292969
-    y: .432617188
+    x: .521484375
+    y: .58984375
     width: .0815429688
     height: .0834960938
   - serializedVersion: 2
-    x: .275390625
-    y: .396972656
+    x: .442871094
+    y: .665039062
     width: .0712890625
     height: .139648438
   - serializedVersion: 2
-    x: .348144531
-    y: .657714844
+    x: .521484375
+    y: .956542969
     width: .0688476562
     height: .0341796875
   - serializedVersion: 2
-    x: .8359375
-    y: .240234375
+    x: .886230469
+    y: .254394531
     width: .029296875
     height: .0249023438
   - serializedVersion: 2
-    x: .348144531
-    y: .458984375
+    x: .521484375
+    y: .832519531
     width: .0747070312
     height: .0590820312
   - serializedVersion: 2
-    x: .348144531
-    y: .283203125
+    x: .309570312
+    y: .666015625
     width: .0766601562
     height: .175292969
   - serializedVersion: 2
-    x: .285644531
-    y: .750976562
+    x: .603515625
+    y: .805664062
     width: .0571289062
     height: .0502929688
   - serializedVersion: 2
-    x: .694824219
-    y: .377441406
+    x: .850097656
+    y: .58984375
     width: .131835938
     height: .046875
   - serializedVersion: 2
-    x: .168457031
-    y: .396972656
+    x: 0
+    y: .76953125
     width: .106445312
     height: .165039062
   - serializedVersion: 2
-    x: .886230469
-    y: .126464844
+    x: .309570312
+    y: .841796875
     width: .100585938
     height: .130371094
   - serializedVersion: 2
-    x: .168457031
-    y: .921875
+    x: .141113281
+    y: .933105469
     width: .148925781
     height: .0600585938
   - serializedVersion: 2
-    x: .507324219
-    y: .432617188
+    x: .860351562
+    y: .520996094
     width: .104492188
     height: .064453125
   - serializedVersion: 2
@@ -84,7 +84,7 @@ MonoBehaviour:
     width: .206542969
     height: .11328125
   - serializedVersion: 2
-    x: 0
+    x: .141113281
     y: .283203125
     width: .16796875
     height: .130859375
@@ -94,38 +94,38 @@ MonoBehaviour:
     width: .112792969
     height: .122558594
   - serializedVersion: 2
-    x: .348144531
-    y: .518554688
+    x: .442871094
+    y: .944824219
     width: .0732421875
     height: .0473632812
   - serializedVersion: 2
-    x: .168457031
+    x: .309570312
     y: .283203125
     width: .179199219
     height: .11328125
   - serializedVersion: 2
-    x: .283691406
-    y: .826660156
+    x: .603515625
+    y: .856445312
     width: .056640625
     height: .03515625
   - serializedVersion: 2
-    x: .658203125
-    y: .283203125
+    x: 0
+    y: .935058594
     width: .121582031
     height: .0595703125
   - serializedVersion: 2
-    x: 0
-    y: .584472656
+    x: .141113281
+    y: .549804688
     width: .146484375
     height: .137695312
   - serializedVersion: 2
-    x: .780273438
-    y: .283203125
+    x: .521484375
+    y: .520996094
     width: .104980469
     height: .068359375
   - serializedVersion: 2
-    x: .168457031
-    y: .686523438
+    x: .309570312
+    y: .525878906
     width: .116699219
     height: .139648438
   - serializedVersion: 2
@@ -134,13 +134,13 @@ MonoBehaviour:
     width: .207519531
     height: .119628906
   - serializedVersion: 2
-    x: .168457031
-    y: .5625
+    x: .442871094
+    y: .396972656
     width: .133300781
     height: .123535156
   - serializedVersion: 2
-    x: .425292969
-    y: .377441406
+    x: .733398438
+    y: .520996094
     width: .126464844
     height: .0546875
   - serializedVersion: 2
@@ -154,43 +154,43 @@ MonoBehaviour:
     width: .158691406
     height: .266601562
   - serializedVersion: 2
-    x: 0
-    y: .849609375
+    x: .309570312
+    y: .396972656
     width: .1328125
     height: .128417969
   - serializedVersion: 2
-    x: .552246094
-    y: .377441406
+    x: .707519531
+    y: .58984375
     width: .142089844
     height: .0458984375
   - serializedVersion: 2
-    x: .348144531
-    y: .56640625
+    x: .603515625
+    y: .704589844
     width: .0654296875
     height: .052734375
   - serializedVersion: 2
     x: 0
-    y: .414550781
+    y: .449707031
     width: .120605469
     height: .169433594
   - serializedVersion: 2
-    x: 0
-    y: .72265625
+    x: .141113281
+    y: .687988281
     width: .156738281
     height: .126464844
   - serializedVersion: 2
-    x: .168457031
-    y: .826660156
+    x: .6484375
+    y: .283203125
     width: .114746094
     height: .0947265625
   - serializedVersion: 2
-    x: .827148438
-    y: .377441406
+    x: .772460938
+    y: .462402344
     width: .125
     height: .03515625
   - serializedVersion: 2
-    x: .348144531
-    y: .619628906
+    x: .665039062
+    y: .479980469
     width: .0732421875
     height: .0375976562
   - serializedVersion: 2
@@ -199,23 +199,23 @@ MonoBehaviour:
     width: .311523438
     height: .282714844
   - serializedVersion: 2
-    x: .531738281
-    y: .283203125
+    x: .772460938
+    y: .396972656
     width: .125976562
     height: .0649414062
   - serializedVersion: 2
-    x: .885742188
-    y: .283203125
+    x: .626953125
+    y: .520996094
     width: .105957031
     height: .0654296875
   - serializedVersion: 2
-    x: .612304688
-    y: .432617188
+    x: .603515625
+    y: .654296875
     width: .0869140625
     height: .0498046875
   - serializedVersion: 2
-    x: .285644531
-    y: .686523438
+    x: .521484375
+    y: .892089844
     width: .0610351562
     height: .0639648438
   - serializedVersion: 2
@@ -228,6 +228,101 @@ MonoBehaviour:
     y: .240234375
     width: .15625
     height: .0356445312
+  - serializedVersion: 2
+    x: .442871094
+    y: .520996094
+    width: .078125
+    height: .143554688
+  - serializedVersion: 2
+    x: .442871094
+    y: .805175781
+    width: .0708007812
+    height: .139160156
+  - serializedVersion: 2
+    x: 0
+    y: .619628906
+    width: .12109375
+    height: .149414062
+  - serializedVersion: 2
+    x: .489257812
+    y: .283203125
+    width: .158691406
+    height: .104980469
+  - serializedVersion: 2
+    x: .38671875
+    y: .666015625
+    width: .0454101562
+    height: .0825195312
+  - serializedVersion: 2
+    x: .898925781
+    y: .396972656
+    width: .06640625
+    height: .109863281
+  - serializedVersion: 2
+    x: .665039062
+    y: .396972656
+    width: .106933594
+    height: .0825195312
+  - serializedVersion: 2
+    x: .521484375
+    y: .759277344
+    width: .0620117188
+    height: .0727539062
+  - serializedVersion: 2
+    x: .576660156
+    y: .396972656
+    width: .087890625
+    height: .100585938
+  - serializedVersion: 2
+    x: .886230469
+    y: .126464844
+    width: .104003906
+    height: .127441406
+  - serializedVersion: 2
+    x: .8359375
+    y: .240234375
+    width: .0483398438
+    height: .0390625
+  - serializedVersion: 2
+    x: .141113281
+    y: .414550781
+    width: .150878906
+    height: .134765625
+  - serializedVersion: 2
+    x: .603515625
+    y: .58984375
+    width: .103515625
+    height: .0639648438
+  - serializedVersion: 2
+    x: .603515625
+    y: .7578125
+    width: .0688476562
+    height: .0473632812
+  - serializedVersion: 2
+    x: 0
+    y: .283203125
+    width: .140625
+    height: .166015625
+  - serializedVersion: 2
+    x: .763671875
+    y: .283203125
+    width: .115234375
+    height: .0869140625
+  - serializedVersion: 2
+    x: .141113281
+    y: .814941406
+    width: .157226562
+    height: .117675781
+  - serializedVersion: 2
+    x: .521484375
+    y: .673828125
+    width: .0698242188
+    height: .0849609375
+  - serializedVersion: 2
+    x: .106933594
+    y: .76953125
+    width: .0327148438
+    height: .0673828125
   textureGUIDs:
   - 57b6498e0ad20c4418e2ca8303715f37
   - 30c8fe73d49187449a2ef6d765e821a5
@@ -272,6 +367,25 @@ MonoBehaviour:
   - f9414f176d26ef646a5568d5b9cc94a6
   - f97162768634e014e8b60a1190500628
   - fa478dafc4944ba46a929753ab91f7f0
+  - 037a028b2c104184f9c73ed5af548314
+  - 10ee8f91491a5524da692ce1e0a01e8d
+  - 1c578cc2ee082924aad9924d41cc2145
+  - 2fa49ec71fa37c442ae47f1a250e5c02
+  - 36ac57636f72c1940aa6f6222ed1a6c9
+  - 452ef60f44deaf546b71117f4194decc
+  - 8f99f5304c128054c9660723c5137b5b
+  - 950d8222c0bdd5047a00f86594479d47
+  - 96cb4b5b83d4cc74e98d4137d64e17f0
+  - edf101d645dc1624e9c164cc5de81e48
+  - 0a9294dd7de562044bf7358988c2ffee
+  - 0e65e867c2296654e9f20734e281595b
+  - 20da00f0f32a84043b1bd331f8aaf654
+  - 2fea7867678cdc6479aa35cb9e2c199c
+  - 44d95a42c704fab449e77c20d0f7b282
+  - 5667d677eedd2fb43aed05203a8bb9e3
+  - 76d7d0e6c9dae9f40835a9a9ea78bfa2
+  - a4d0af43ec3d3624eabff7ae8e8a4c17
+  - bc0a07a09d5011e4b9a528d03bda9b6c
   textureSizes:
   - {x: 217, y: 192}
   - {x: 167, y: 171}
@@ -316,6 +430,25 @@ MonoBehaviour:
   - {x: 125, y: 131}
   - {x: 365, y: 285}
   - {x: 320, y: 73}
+  - {x: 160, y: 294}
+  - {x: 145, y: 285}
+  - {x: 248, y: 306}
+  - {x: 325, y: 215}
+  - {x: 93, y: 169}
+  - {x: 136, y: 225}
+  - {x: 219, y: 169}
+  - {x: 127, y: 149}
+  - {x: 180, y: 206}
+  - {x: 213, y: 261}
+  - {x: 99, y: 80}
+  - {x: 309, y: 276}
+  - {x: 212, y: 131}
+  - {x: 141, y: 97}
+  - {x: 288, y: 340}
+  - {x: 236, y: 178}
+  - {x: 322, y: 241}
+  - {x: 143, y: 174}
+  - {x: 67, y: 138}
   defaultPivotOffsets:
   - {x: .123214282, y: -.381445318}
   - {x: .14464286, y: -.340068907}
@@ -360,6 +493,25 @@ MonoBehaviour:
   - {x: .353571415, y: .362936199}
   - {x: -.0237749312, y: .471953243}
   - {x: -.466071457, y: .0234833658}
+  - {x: -.333831519, y: .437888175}
+  - {x: .238059536, y: .461180121}
+  - {x: -.160939693, y: .465838522}
+  - {x: .20892857, y: .032392025}
+  - {x: -.431727141, y: .377329201}
+  - {x: .369930595, y: .433229804}
+  - {x: -.428571403, y: .374873191}
+  - {x: .398970515, y: .20962733}
+  - {x: -.182142869, y: -.435332894}
+  - {x: -.131287724, y: -.214285731}
+  - {x: -.460714281, y: -.0662946403}
+  - {x: .0374999978, y: -.239906818}
+  - {x: -.117857151, y: -.173391491}
+  - {x: .198214278, y: .24140279}
+  - {x: -.395962715, y: .447204947}
+  - {x: .107142866, y: -.411958277}
+  - {x: -.369642884, y: .400829881}
+  - {x: -.402445376, y: .400621116}
+  - {x: .201492533, y: .279503107}
   textureNames:
   - LindaIdle_Head
   - LindaIdle_LeftForearm
@@ -404,6 +556,25 @@ MonoBehaviour:
   - LindaDash_RightUpperArm
   - LindaBlock_Skirt
   - LindaDash_Forearm
+  - LindaCountered_LeftLeg
+  - LindaCountered_RightLeg
+  - LindaCountered_Skirt
+  - LindaCountered_Scarf
+  - LindaCountered_LeftUpperArm
+  - LindaCountered_RightForearm
+  - LindaCountered_LeftForearm
+  - LindaCountered_RightUpperArm
+  - LindaCountered_Head
+  - LindaCountered_Torso
+  - LindaHurt1_LeftUpperArm
+  - LindaHurt1_Torso
+  - LindaHurt1_Scarf
+  - LindaHurt1_LeftForearm
+  - LindaHurt1_LeftLeg
+  - LindaHurt1_Head
+  - LindaHurt1_Skirt
+  - LindaHurt1_RightForearm
+  - LindaHurt1_RightUpperArm
   texturePaths:
   - Assets/Linda Parts/LindaIdle_Head.png
   - Assets/Linda Parts/LindaIdle_LeftForearm.png
@@ -448,7 +619,26 @@ MonoBehaviour:
   - Assets/Linda Parts/LindaDash_RightUpperArm.png
   - Assets/Linda Parts/LindaBlock_Skirt.png
   - Assets/Linda Parts/LindaDash_Forearm.png
-  lastBuildID: 20140426152201865
+  - Assets/Linda Parts/LindaCountered_LeftLeg.png
+  - Assets/Linda Parts/LindaCountered_RightLeg.png
+  - Assets/Linda Parts/LindaCountered_Skirt.png
+  - Assets/Linda Parts/LindaCountered_Scarf.png
+  - Assets/Linda Parts/LindaCountered_LeftUpperArm.png
+  - Assets/Linda Parts/LindaCountered_RightForearm.png
+  - Assets/Linda Parts/LindaCountered_LeftForearm.png
+  - Assets/Linda Parts/LindaCountered_RightUpperArm.png
+  - Assets/Linda Parts/LindaCountered_Head.png
+  - Assets/Linda Parts/LindaCountered_Torso.png
+  - Assets/Linda Parts/LindaHurt1_LeftUpperArm.png
+  - Assets/Linda Parts/LindaHurt1_Torso.png
+  - Assets/Linda Parts/LindaHurt1_Scarf.png
+  - Assets/Linda Parts/LindaHurt1_LeftForearm.png
+  - Assets/Linda Parts/LindaHurt1_LeftLeg.png
+  - Assets/Linda Parts/LindaHurt1_Head.png
+  - Assets/Linda Parts/LindaHurt1_Skirt.png
+  - Assets/Linda Parts/LindaHurt1_RightForearm.png
+  - Assets/Linda Parts/LindaHurt1_RightUpperArm.png
+  lastBuildID: 20140427171859834
   needsRebuilt: 0
   dataVersion: 4
   maxAtlasSize: 1024

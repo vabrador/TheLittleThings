@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: -1545704558, guid: 289bab7cc27a12745b5df9b71d7b06c4, type: 3}
   m_Name: Linda
   m_EditorClassIdentifier: 
-  buildID: 201404271908063205
+  buildID: 201404291715573658
   needsRebuilt: 0
   boneDataList:
   - active: 1
@@ -22220,7 +22220,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 54
       - boneDataIndex: 1
         frame: 8
         userTriggerCallback: 0
@@ -24142,7 +24142,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 56
       - boneDataIndex: 8
         frame: 8
         userTriggerCallback: 0
@@ -33606,7 +33606,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 10
+        textureIndex: 63
       - boneDataIndex: 1
         frame: 2
         userTriggerCallback: 0
@@ -33705,7 +33705,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 10
+        textureIndex: 63
       - boneDataIndex: 1
         frame: 8
         userTriggerCallback: 0
@@ -33804,7 +33804,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 10
+        textureIndex: 63
       mixTransform: 0
       visible: 1
       colorRCurveSerialized:
@@ -33977,7 +33977,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 9
+        textureIndex: 69
       - boneDataIndex: 2
         frame: 2
         userTriggerCallback: 0
@@ -34076,7 +34076,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 9
+        textureIndex: 69
       - boneDataIndex: 2
         frame: 8
         userTriggerCallback: 0
@@ -34175,7 +34175,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 9
+        textureIndex: 69
       mixTransform: 0
       visible: 1
       colorRCurveSerialized:
@@ -34659,7 +34659,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 0
+        textureIndex: 72
       - boneDataIndex: 4
         frame: 2
         userTriggerCallback: 0
@@ -34758,7 +34758,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 0
+        textureIndex: 72
       - boneDataIndex: 4
         frame: 8
         userTriggerCallback: 0
@@ -34857,7 +34857,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 0
+        textureIndex: 72
       mixTransform: 0
       visible: 1
       colorRCurveSerialized:
@@ -35030,7 +35030,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 7
+        textureIndex: 71
       - boneDataIndex: 5
         frame: 2
         userTriggerCallback: 0
@@ -35129,7 +35129,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 7
+        textureIndex: 71
       - boneDataIndex: 5
         frame: 8
         userTriggerCallback: 0
@@ -35228,7 +35228,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 7
+        textureIndex: 71
       mixTransform: 0
       visible: 1
       colorRCurveSerialized:
@@ -35401,7 +35401,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 5
+        textureIndex: 70
       - boneDataIndex: 6
         frame: 2
         userTriggerCallback: 0
@@ -35500,7 +35500,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 5
+        textureIndex: 70
       - boneDataIndex: 6
         frame: 8
         userTriggerCallback: 0
@@ -35599,7 +35599,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 5
+        textureIndex: 70
       mixTransform: 0
       visible: 1
       colorRCurveSerialized:
@@ -35772,7 +35772,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 3
+        textureIndex: 64
       - boneDataIndex: 7
         frame: 2
         userTriggerCallback: 0
@@ -35871,7 +35871,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 3
+        textureIndex: 64
       - boneDataIndex: 7
         frame: 8
         userTriggerCallback: 0
@@ -35970,7 +35970,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 3
+        textureIndex: 64
       mixTransform: 0
       visible: 1
       colorRCurveSerialized:
@@ -36143,7 +36143,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 1
+        textureIndex: 73
       - boneDataIndex: 8
         frame: 2
         userTriggerCallback: 0
@@ -36242,7 +36242,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 1
+        textureIndex: 73
       - boneDataIndex: 8
         frame: 8
         userTriggerCallback: 0
@@ -36341,7 +36341,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 1
+        textureIndex: 73
       mixTransform: 0
       visible: 1
       colorRCurveSerialized:
@@ -36514,7 +36514,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 6
+        textureIndex: 66
       - boneDataIndex: 9
         frame: 2
         userTriggerCallback: 0
@@ -36613,7 +36613,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 6
+        textureIndex: 66
       - boneDataIndex: 9
         frame: 8
         userTriggerCallback: 0
@@ -36712,7 +36712,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 6
+        textureIndex: 66
       mixTransform: 0
       visible: 1
       colorRCurveSerialized:
@@ -36885,7 +36885,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 2
+        textureIndex: 62
       - boneDataIndex: 10
         frame: 2
         userTriggerCallback: 0
@@ -36984,7 +36984,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 2
+        textureIndex: 62
       - boneDataIndex: 10
         frame: 8
         userTriggerCallback: 0
@@ -37083,7 +37083,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 2
+        textureIndex: 62
       mixTransform: 0
       visible: 1
       colorRCurveSerialized:
@@ -37256,7 +37256,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 8
+        textureIndex: 68
       - boneDataIndex: 11
         frame: 2
         userTriggerCallback: 0
@@ -37355,7 +37355,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 8
+        textureIndex: 68
       - boneDataIndex: 11
         frame: 8
         userTriggerCallback: 0
@@ -37454,7 +37454,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 8
+        textureIndex: 68
       mixTransform: 0
       visible: 1
       colorRCurveSerialized:
@@ -38461,7 +38461,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 65
       - boneDataIndex: 15
         frame: 2
         userTriggerCallback: 0
@@ -38560,7 +38560,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 65
       - boneDataIndex: 15
         frame: 8
         userTriggerCallback: 0
@@ -38659,7 +38659,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 65
       mixTransform: 0
       visible: 1
       colorRCurveSerialized:
@@ -38832,7 +38832,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 67
       - boneDataIndex: 16
         frame: 2
         userTriggerCallback: 0
@@ -38931,7 +38931,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 67
       - boneDataIndex: 16
         frame: 8
         userTriggerCallback: 0
@@ -39030,7 +39030,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 67
       mixTransform: 0
       visible: 1
       colorRCurveSerialized:
@@ -39439,7 +39439,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 10
+        textureIndex: 77
       - boneDataIndex: 1
         frame: 2
         userTriggerCallback: 0
@@ -39538,7 +39538,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 77
       - boneDataIndex: 1
         frame: 4
         userTriggerCallback: 0
@@ -39637,7 +39637,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 10
+        textureIndex: 77
       - boneDataIndex: 1
         frame: 7
         userTriggerCallback: 0
@@ -39736,7 +39736,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 77
       - boneDataIndex: 1
         frame: 10
         userTriggerCallback: 0
@@ -39835,7 +39835,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 10
+        textureIndex: 77
       mixTransform: 0
       visible: 1
       colorRCurveSerialized:
@@ -40008,7 +40008,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 9
+        textureIndex: 80
       - boneDataIndex: 2
         frame: 10
         userTriggerCallback: 0
@@ -40107,7 +40107,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 9
+        textureIndex: 80
       mixTransform: 0
       visible: 1
       colorRCurveSerialized:
@@ -40472,7 +40472,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 0
+        textureIndex: 81
       - boneDataIndex: 4
         frame: 2
         userTriggerCallback: 0
@@ -40571,7 +40571,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 0
+        textureIndex: 81
       - boneDataIndex: 4
         frame: 4
         userTriggerCallback: 0
@@ -40670,7 +40670,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 0
+        textureIndex: 81
       - boneDataIndex: 4
         frame: 7
         userTriggerCallback: 0
@@ -40769,7 +40769,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 0
+        textureIndex: 81
       - boneDataIndex: 4
         frame: 10
         userTriggerCallback: 0
@@ -40868,7 +40868,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 0
+        textureIndex: 81
       mixTransform: 0
       visible: 1
       colorRCurveSerialized:
@@ -41081,7 +41081,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 7
+        textureIndex: 76
       - boneDataIndex: 5
         frame: 2
         userTriggerCallback: 0
@@ -41180,7 +41180,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 7
+        textureIndex: 76
       - boneDataIndex: 5
         frame: 3
         userTriggerCallback: 0
@@ -41279,7 +41279,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 7
+        textureIndex: 76
       - boneDataIndex: 5
         frame: 4
         userTriggerCallback: 0
@@ -41378,7 +41378,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 7
+        textureIndex: 76
       - boneDataIndex: 5
         frame: 5
         userTriggerCallback: 0
@@ -41477,7 +41477,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 7
+        textureIndex: 76
       - boneDataIndex: 5
         frame: 6
         userTriggerCallback: 0
@@ -41576,7 +41576,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 7
+        textureIndex: 76
       - boneDataIndex: 5
         frame: 8
         userTriggerCallback: 0
@@ -41675,7 +41675,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 7
+        textureIndex: 76
       - boneDataIndex: 5
         frame: 9
         userTriggerCallback: 0
@@ -41774,7 +41774,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 7
+        textureIndex: 76
       - boneDataIndex: 5
         frame: 10
         userTriggerCallback: 0
@@ -41873,7 +41873,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 7
+        textureIndex: 76
       mixTransform: 0
       visible: 1
       colorRCurveSerialized:
@@ -42166,7 +42166,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 5
+        textureIndex: 78
       - boneDataIndex: 6
         frame: 2
         userTriggerCallback: 0
@@ -42265,7 +42265,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 5
+        textureIndex: 78
       - boneDataIndex: 6
         frame: 3
         userTriggerCallback: 0
@@ -42364,7 +42364,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 5
+        textureIndex: 78
       - boneDataIndex: 6
         frame: 4
         userTriggerCallback: 0
@@ -42463,7 +42463,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 5
+        textureIndex: 78
       - boneDataIndex: 6
         frame: 5
         userTriggerCallback: 0
@@ -42562,7 +42562,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 5
+        textureIndex: 78
       - boneDataIndex: 6
         frame: 6
         userTriggerCallback: 0
@@ -42661,7 +42661,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 5
+        textureIndex: 78
       - boneDataIndex: 6
         frame: 8
         userTriggerCallback: 0
@@ -42760,7 +42760,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 5
+        textureIndex: 78
       - boneDataIndex: 6
         frame: 9
         userTriggerCallback: 0
@@ -42859,7 +42859,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 5
+        textureIndex: 78
       - boneDataIndex: 6
         frame: 10
         userTriggerCallback: 0
@@ -42958,7 +42958,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 5
+        textureIndex: 78
       mixTransform: 0
       visible: 1
       colorRCurveSerialized:
@@ -43251,7 +43251,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 3
+        textureIndex: 79
       - boneDataIndex: 7
         frame: 1
         userTriggerCallback: 0
@@ -43350,7 +43350,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 3
+        textureIndex: 79
       - boneDataIndex: 7
         frame: 2
         userTriggerCallback: 0
@@ -43449,7 +43449,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 3
+        textureIndex: 79
       - boneDataIndex: 7
         frame: 4
         userTriggerCallback: 0
@@ -43548,7 +43548,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 3
+        textureIndex: 79
       - boneDataIndex: 7
         frame: 5
         userTriggerCallback: 0
@@ -43647,7 +43647,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 3
+        textureIndex: 79
       - boneDataIndex: 7
         frame: 6
         userTriggerCallback: 0
@@ -43746,7 +43746,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 3
+        textureIndex: 79
       - boneDataIndex: 7
         frame: 7
         userTriggerCallback: 0
@@ -43845,7 +43845,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 3
+        textureIndex: 79
       - boneDataIndex: 7
         frame: 8
         userTriggerCallback: 0
@@ -43944,7 +43944,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 3
+        textureIndex: 79
       - boneDataIndex: 7
         frame: 10
         userTriggerCallback: 0
@@ -44043,7 +44043,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 3
+        textureIndex: 79
       mixTransform: 0
       visible: 1
       colorRCurveSerialized:
@@ -44336,7 +44336,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 1
+        textureIndex: 82
       - boneDataIndex: 8
         frame: 1
         userTriggerCallback: 0
@@ -44435,7 +44435,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 1
+        textureIndex: 82
       - boneDataIndex: 8
         frame: 2
         userTriggerCallback: 0
@@ -44534,7 +44534,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 1
+        textureIndex: 82
       - boneDataIndex: 8
         frame: 4
         userTriggerCallback: 0
@@ -44633,7 +44633,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 1
+        textureIndex: 82
       - boneDataIndex: 8
         frame: 5
         userTriggerCallback: 0
@@ -44732,7 +44732,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 1
+        textureIndex: 82
       - boneDataIndex: 8
         frame: 6
         userTriggerCallback: 0
@@ -44831,7 +44831,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 1
+        textureIndex: 82
       - boneDataIndex: 8
         frame: 7
         userTriggerCallback: 0
@@ -44930,7 +44930,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 1
+        textureIndex: 82
       - boneDataIndex: 8
         frame: 8
         userTriggerCallback: 0
@@ -45029,7 +45029,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 1
+        textureIndex: 82
       - boneDataIndex: 8
         frame: 10
         userTriggerCallback: 0
@@ -45128,7 +45128,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 1
+        textureIndex: 82
       mixTransform: 0
       visible: 1
       colorRCurveSerialized:
@@ -45845,7 +45845,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 8
+        textureIndex: 75
       - boneDataIndex: 11
         frame: 10
         userTriggerCallback: 0
@@ -45944,7 +45944,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: 8
+        textureIndex: 75
       mixTransform: 0
       visible: 1
       colorRCurveSerialized:
@@ -46097,7 +46097,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 74
       - boneDataIndex: 12
         frame: 1
         userTriggerCallback: 0
@@ -46196,7 +46196,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 74
       - boneDataIndex: 12
         frame: 2
         userTriggerCallback: 0
@@ -46295,7 +46295,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 74
       - boneDataIndex: 12
         frame: 4
         userTriggerCallback: 0
@@ -46394,7 +46394,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 74
       - boneDataIndex: 12
         frame: 5
         userTriggerCallback: 0
@@ -46493,7 +46493,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 74
       - boneDataIndex: 12
         frame: 6
         userTriggerCallback: 0
@@ -46592,7 +46592,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 74
       - boneDataIndex: 12
         frame: 7
         userTriggerCallback: 0
@@ -46691,7 +46691,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 74
       - boneDataIndex: 12
         frame: 8
         userTriggerCallback: 0
@@ -46790,7 +46790,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 74
       - boneDataIndex: 12
         frame: 10
         userTriggerCallback: 0
@@ -46889,7 +46889,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 74
       mixTransform: 0
       visible: 1
       colorRCurveSerialized:
@@ -47182,7 +47182,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 83
       - boneDataIndex: 13
         frame: 3
         userTriggerCallback: 0
@@ -47281,7 +47281,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 83
       - boneDataIndex: 13
         frame: 4
         userTriggerCallback: 0
@@ -47380,7 +47380,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 83
       - boneDataIndex: 13
         frame: 6
         userTriggerCallback: 0
@@ -47479,7 +47479,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 83
       - boneDataIndex: 13
         frame: 7
         userTriggerCallback: 0
@@ -47578,7 +47578,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 83
       - boneDataIndex: 13
         frame: 9
         userTriggerCallback: 0
@@ -47677,7 +47677,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 83
       - boneDataIndex: 13
         frame: 10
         userTriggerCallback: 0
@@ -47776,7 +47776,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 83
       mixTransform: 0
       visible: 1
       colorRCurveSerialized:
@@ -48605,7 +48605,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 84
       - boneDataIndex: 17
         frame: 2
         userTriggerCallback: 0
@@ -48704,7 +48704,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 84
       - boneDataIndex: 17
         frame: 3
         userTriggerCallback: 0
@@ -48803,7 +48803,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 84
       - boneDataIndex: 17
         frame: 4
         userTriggerCallback: 0
@@ -48902,7 +48902,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 84
       - boneDataIndex: 17
         frame: 5
         userTriggerCallback: 0
@@ -49001,7 +49001,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 84
       - boneDataIndex: 17
         frame: 6
         userTriggerCallback: 0
@@ -49100,7 +49100,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 84
       - boneDataIndex: 17
         frame: 8
         userTriggerCallback: 0
@@ -49199,7 +49199,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 84
       - boneDataIndex: 17
         frame: 9
         userTriggerCallback: 0
@@ -49298,7 +49298,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 84
       - boneDataIndex: 17
         frame: 10
         userTriggerCallback: 0
@@ -49397,7 +49397,7 @@ MonoBehaviour:
           layer: 0
           isTrigger: 1
           tag: 
-        textureIndex: -1
+        textureIndex: 84
       mixTransform: 0
       visible: 1
       colorRCurveSerialized:

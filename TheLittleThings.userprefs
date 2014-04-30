@@ -1,9 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\P1_controls.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\Reverb\reverb\Assets\Scripts\Audio\AudioManager.js">
     <Files>
-      <File FileName="Assets\Scripts\MovementAnimationScript.cs" Line="16" Column="3" />
-      <File FileName="Assets\Scripts\P1_controls.cs" Line="1" Column="1" />
+      <File FileName="..\..\Reverb\reverb\Assets\Scripts\Audio\MicrophoneInput.cs" Line="63" Column="21" />
+      <File FileName="..\..\Reverb\reverb\Assets\Scripts\Networking\NetworkManager.cs" Line="10" Column="35" />
+      <File FileName="..\..\Reverb\reverb\Assets\Scripts\Audio\AudioManager.js" Line="19" Column="27" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -1,10 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MovementAnimationScript.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\Reverb\reverb\Assets\Scripts\Audio\AudioManager.js">
     <Files>
-      <File FileName="Assets\Scripts\CombatScript.cs" Line="74" Column="94" />
-      <File FileName="Assets\Scripts\MovementAnimationScript.cs" Line="152" Column="24" />
-      <File FileName="Assets\Scripts\CollisionCatcherScript.cs" Line="31" Column="8" />
+      <File FileName="..\..\Reverb\reverb\Assets\Scripts\Audio\MicrophoneInput.cs" Line="63" Column="21" />
+      <File FileName="..\..\Reverb\reverb\Assets\Scripts\Networking\NetworkManager.cs" Line="10" Column="35" />
+      <File FileName="..\..\Reverb\reverb\Assets\Scripts\Audio\AudioManager.js" Line="19" Column="27" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

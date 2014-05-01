@@ -95,9 +95,9 @@ public class MovementAnimationScript : MonoBehaviour {
 		// animation should be true, the rest should all be false.
 		if (fighterAnimation.IsPlaying("Dash")) {
 			makeOtherAnimsFalse("dashing");
-		} else if (fighterAnimation.IsPlaying ("Reeling")) {
+		} else if (fighterAnimation.IsPlaying ("Countered")) {
 			makeOtherAnimsFalse("reeling");
-		} else if (fighterAnimation.IsPlaying("Hurting")) {
+		} else if (fighterAnimation.IsPlaying("Hurt1") || fighterAnimation.IsPlaying("Hurt2")) {
 			makeOtherAnimsFalse("hurting");
 		} else if (fighterAnimation.IsPlaying("Punch")) {
 			makeOtherAnimsFalse("punching");
@@ -116,7 +116,7 @@ public class MovementAnimationScript : MonoBehaviour {
 		      (stateBools["reeling"] && reelDone) || (stateBools["punching"] && punchDone) ||
 		      (stateBools["hurting"] && hurtDone) || (stateBools["specialing"] && specialDone)))
 		{
-			fighterAnimation.CrossFade("Idle"); 
+			fighterAnimation.Play("Idle"); 
 		}
 	}
 	
@@ -128,34 +128,35 @@ public class MovementAnimationScript : MonoBehaviour {
 	// Separate functions to trigger each conceptual move or state in the game,
 	// separating functionality & allowing them to be called from other scripts.
 	public void Dash() {
-		fighterAnimation.CrossFade ("Dash");
+		fighterAnimation.Play("Dash");
 		rigidbody2D.velocity = new Vector2(fighterMaxSpeed, 0);
 		dashStart = Time.time;
 	}
 	
 	public void Block() {
-		fighterAnimation.CrossFade ("Block");
+		fighterAnimation.Play("Block");
 		blockStart = Time.time;
 	}
 	
 	public void Punch() {
-		fighterAnimation.CrossFade ("Punch");
+		fighterAnimation.Play("Punch");
 		punchStart = Time.time;
 	}
 	
 	public void Special() {
-		fighterAnimation.CrossFade("Special");
+		fighterAnimation.Play("Special");
 		specialStart = Time.time;
 	}
 	
 	public void Reel() {
-		fighterAnimation.CrossFade ("Countered");
+		fighterAnimation.Play ("Countered");
 		rigidbody2D.velocity = new Vector2 ((float) (-0.25 * fighterMaxSpeed), 0);
 		reelStart = Time.time;
 	}
 	
 	public void Hurt() {
-		fighterAnimation.CrossFade ("Hurt");
+		if (Random.value > 0.5) { fighterAnimation.Play("Hurt1"); }
+		else { fighterAnimation.Play("Hurt2"); }
 		hurtStart = Time.time;
 	}
 	

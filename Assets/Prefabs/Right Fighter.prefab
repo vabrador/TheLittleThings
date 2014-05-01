@@ -1051,7 +1051,7 @@ Rigidbody2D:
   m_Mass: 20
   m_LinearDrag: 10
   m_AngularDrag: .0500000007
-  m_GravityScale: 1
+  m_GravityScale: 20
   m_FixedAngle: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1181,11 +1181,13 @@ MonoBehaviour:
   blockLength: .5
   hurtLength: .5
   reelLength: 2
+  specialLength: 3
   punchStart: 0
   blockStart: 0
   dashStart: 0
   hurtStart: 0
   reelStart: 0
+  specialStart: 0
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1209,8 +1211,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97c1307e01bf9e74ea327bb19dd64c58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  centerPoint: {fileID: 0}
+  edgePoint: {fileID: 0}
   punchStrength: 10
   counterStrength: 5
+  maxSpecialStrength: 30
   punchThresh: .5
   blockThresh: .5
   dashThresh: 1

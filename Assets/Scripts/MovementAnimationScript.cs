@@ -7,14 +7,14 @@ public class MovementAnimationScript : MonoBehaviour {
 	// fighterAnimation is our animator
 	public BoneAnimation fighterAnimation;
 	public float maxSpeed = 10f;
-
-
+	
+	
 	// characterSide & facingLeft help determine fighter orientation in code.
 	public string characterSide = "left";
-	bool facingLeft {
+	public bool facingLeft {
 		get{ return characterSide == "right"; }
 	}
-
+	
 	// Corrects the direction of max velocity for what side a fighter is on
 	float fighterMaxSpeed {
 		get { 
@@ -22,7 +22,7 @@ public class MovementAnimationScript : MonoBehaviour {
 			else return maxSpeed;
 		}
 	}
-
+	
 	// Booleans to track animation state -- punchling, blocking,
 	// dashing, hurting (just got hit), or reeling.  In general,
 	// all animations are states we keep track of.
@@ -32,13 +32,14 @@ public class MovementAnimationScript : MonoBehaviour {
 		{"punching", false},
 		{"blocking", false},
 		{"dashing" , false},
+		{"specialing", false},
 		{"hurting", false},
 		{"reeling", false}
 	};
 	// A list of the state keys so we can iterate through the entries in the
 	// dictionary without iterating through the dictionary itself.
 	public List<string> stateList = new List<string>();
-
+	
 	// Animations are of odd lengths and can't be easily changed, so these variables
 	// manually set their lengths and let us change them after the fact.
 	public float punchLength = 1f;
@@ -46,7 +47,8 @@ public class MovementAnimationScript : MonoBehaviour {
 	public float blockLength = 2f;
 	public float hurtLength = 0.5f;
 	public float reelLength = 2f;
-
+	public float specialLength = 3f;
+	
 	// Variables to keep track of when the most recent move
 	// of each type started.
 	public float punchStart = 0f;
@@ -54,7 +56,8 @@ public class MovementAnimationScript : MonoBehaviour {
 	public float dashStart = 0f;
 	public float hurtStart = 0f;
 	public float reelStart = 0f;
-
+	public float specialStart = 0f;
+	
 	// Since animations are of weird lengths and can't be easily modified,
 	// these properties calculate whether an animation should be "done"
 	// using the start & length variables.
@@ -66,6 +69,9 @@ public class MovementAnimationScript : MonoBehaviour {
 	}
 	bool blockDone {
 		get{ return (Time.time - blockStart) < blockLength;  }
+	}
+	bool specialDone {
+		get{ return (Time.time - specialStart) < specialLength; }
 	}
 	bool hurtDone {
 		get{ return (Time.time - hurtStart) < hurtLength;  }
@@ -81,7 +87,7 @@ public class MovementAnimationScript : MonoBehaviour {
 		if (!facingLeft)
 			Flip ();
 	}
-
+	
 	// Update is called once per frame
 	void FixedUpdate() {
 		// Set all of the animation booleans in the dictionary based
@@ -97,26 +103,28 @@ public class MovementAnimationScript : MonoBehaviour {
 			makeOtherAnimsFalse("punching");
 		} else if (fighterAnimation.IsPlaying("Block")) {
 			makeOtherAnimsFalse("blocking");
+		} else if (fighterAnimation.IsPlaying("Special")) {
+			makeOtherAnimsFalse("specialing");
 		} else {
 			foreach (var state in stateList) {
 				stateBools[state] = false;
 			}
 		}
-
+		
 		// When any animation has gone long enough, smoothly crossfade to idle
 		if (!((stateBools["dashing"] && dashDone) || (stateBools["blocking"] && blockDone) ||
-		    (stateBools["reeling"] && reelDone) || (stateBools["punching"] && punchDone) ||
-		    (stateBools["hurting"] && hurtDone)))
+		      (stateBools["reeling"] && reelDone) || (stateBools["punching"] && punchDone) ||
+		      (stateBools["hurting"] && hurtDone) || (stateBools["specialing"] && specialDone)))
 		{
-			fighterAnimation.CrossFade("Idle");	
+			fighterAnimation.CrossFade("Idle"); 
 		}
 	}
-
+	
 	// Update is called whenever an Input is grabbed
 	void Update () {
-
+		
 	}
-
+	
 	// Separate functions to trigger each conceptual move or state in the game,
 	// separating functionality & allowing them to be called from other scripts.
 	public void Dash() {
@@ -135,21 +143,26 @@ public class MovementAnimationScript : MonoBehaviour {
 		punchStart = Time.time;
 	}
 	
+	public void Special() {
+		fighterAnimation.CrossFade("Special");
+		specialStart = Time.time;
+	}
+	
 	public void Reel() {
 		fighterAnimation.CrossFade ("Countered");
 		rigidbody2D.velocity = new Vector2 ((float) (-0.25 * fighterMaxSpeed), 0);
 		reelStart = Time.time;
 	}
-
+	
 	public void Hurt() {
 		fighterAnimation.CrossFade ("Hurt");
 		hurtStart = Time.time;
 	}
-
+	
 	public void Die() {
 		fighterAnimation.CrossFade ("Death");
 	}
-
+	
 	// Sets all values in stateBools to false, except for those of animating
 	// and the key provided.  Essentially a helper method for the beginning of
 	// FixedUpdate().
@@ -163,7 +176,7 @@ public class MovementAnimationScript : MonoBehaviour {
 			throw new System.ArgumentException("The parameter given wasn't in stateBool.");
 		}
 	}
-
+	
 	
 	// Helper method to invert the opposing identical character on the field.  Useful
 	// while prototyping, but will be phased out once we have real art.
@@ -172,6 +185,6 @@ public class MovementAnimationScript : MonoBehaviour {
 		localScale.x *= -1;
 		transform.localScale = localScale;
 	}
-
-
+	
+	
 }

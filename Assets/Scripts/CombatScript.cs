@@ -75,6 +75,7 @@ public class CombatScript : MonoBehaviour {
 	// collision between them will be mirrored (i.e. if the left fighter hits the right fighter
 	// they'll both receive a collision), the script only dictates effects on this gameObject.
 	public void receiveCollision(GameObject otherGuy) {
+		Debug.Log (gameObject + " just received a collision!");
 		MovementAnimationScript otherMover = otherGuy.GetComponent<MovementAnimationScript> ();
 		CombatScript otherCombat = otherGuy.GetComponent<CombatScript> ();
 		int otherCounter = otherCombat.counterStrength;

@@ -95,11 +95,14 @@ public class MovementAnimationScript : MonoBehaviour {
 		// animation should be true, the rest should all be false.
 		if (fighterAnimation.IsPlaying("Dash")) {
 			makeOtherAnimsFalse("dashing");
+			float currentSpeed = Mathf.Abs((1 - ((Time.time - punchStart) / punchLength)) * maxSpeed);
+			rigidbody2D.velocity = new Vector2(currentSpeed, 0);
+//			Debug.Log("Moving with a speed of " + currentSpeed);
 		} else if (fighterAnimation.IsPlaying ("Countered")) {
 			makeOtherAnimsFalse("reeling");
 		} else if (fighterAnimation.IsPlaying("Hurt1") || fighterAnimation.IsPlaying("Hurt2")) {
 			makeOtherAnimsFalse("hurting");
-		} else if (fighterAnimation.IsPlaying("Punch")) {
+		} else if (fighterAnimation.IsPlaying("Attack")) {
 			makeOtherAnimsFalse("punching");
 		} else if (fighterAnimation.IsPlaying("Block")) {
 			makeOtherAnimsFalse("blocking");
@@ -139,7 +142,7 @@ public class MovementAnimationScript : MonoBehaviour {
 	}
 	
 	public void Punch() {
-		fighterAnimation.Play("Punch");
+		fighterAnimation.Play("Attack");
 		punchStart = Time.time;
 	}
 	

@@ -14,70 +14,220 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: c111b930a9ff8bc48afc0623c28a28e9, type: 2}
   uvs:
   - serializedVersion: 2
-    x: .340820312
-    y: 0
-    width: .115234375
-    height: .392578125
+    x: .377441406
+    y: .204589844
+    width: .0576171875
+    height: .196289062
   - serializedVersion: 2
-    x: .727539062
-    y: .243164062
-    width: .116210938
-    height: .140625
+    x: .427246094
+    y: .783203125
+    width: .0581054688
+    height: .0703125
+  - serializedVersion: 2
+    x: .577148438
+    y: .142578125
+    width: .0893554688
+    height: .0395507812
+  - serializedVersion: 2
+    x: .427246094
+    y: .650390625
+    width: .0522460938
+    height: .132324219
+  - serializedVersion: 2
+    x: .896484375
+    y: 0
+    width: .0981445312
+    height: .126953125
+  - serializedVersion: 2
+    x: .427246094
+    y: .528808594
+    width: .0590820312
+    height: .12109375
+  - serializedVersion: 2
+    x: .162597656
+    y: .423339844
+    width: .169921875
+    height: .206054688
+  - serializedVersion: 2
+    x: .487792969
+    y: .401367188
+    width: .0751953125
+    height: .0986328125
+  - serializedVersion: 2
+    x: .680664062
+    y: 0
+    width: .119628906
+    height: .117675781
+  - serializedVersion: 2
+    x: .377441406
+    y: .401367188
+    width: .0493164062
+    height: .155273438
+  - serializedVersion: 2
+    x: .896484375
+    y: .127441406
+    width: .080078125
+    height: .076171875
+  - serializedVersion: 2
+    x: .643066406
+    y: .401367188
+    width: .0747070312
+    height: .0961914062
+  - serializedVersion: 2
+    x: .532226562
+    y: .204589844
+    width: .0590820312
+    height: .177246094
+  - serializedVersion: 2
+    x: .718261719
+    y: .401367188
+    width: .0756835938
+    height: .09375
+  - serializedVersion: 2
+    x: .8828125
+    y: .204589844
+    width: .0810546875
+    height: .10546875
+  - serializedVersion: 2
+    x: .749511719
+    y: .276855469
+    width: .0498046875
+    height: .0634765625
   - serializedVersion: 2
     x: 0
-    y: .904296875
-    width: .178710938
-    height: .0791015625
+    y: .423339844
+    width: .162109375
+    height: .233398438
   - serializedVersion: 2
-    x: .846679688
+    x: .80078125
     y: 0
-    width: .104492188
-    height: .264648438
+    width: .0952148438
+    height: .134765625
   - serializedVersion: 2
-    x: 0
-    y: .649414062
-    width: .196289062
-    height: .25390625
+    x: .680664062
+    y: .118164062
+    width: .087890625
+    height: .0776367188
   - serializedVersion: 2
-    x: .727539062
+    x: .478027344
     y: 0
-    width: .118164062
-    height: .2421875
-  - serializedVersion: 2
-    x: 0
-    y: 0
-    width: .33984375
-    height: .412109375
-  - serializedVersion: 2
-    x: .576171875
-    y: 0
-    width: .150390625
-    height: .197265625
-  - serializedVersion: 2
-    x: 0
-    y: .413085938
-    width: .239257812
-    height: .235351562
-  - serializedVersion: 2
-    x: .197265625
-    y: .649414062
     width: .0986328125
-    height: .310546875
-  - serializedVersion: 2
-    x: .340820312
-    y: .393554688
-    width: .16015625
     height: .15234375
   - serializedVersion: 2
-    x: .576171875
-    y: .198242188
-    width: .149414062
-    height: .192382812
+    x: .377441406
+    y: .557128906
+    width: .0483398438
+    height: .150390625
   - serializedVersion: 2
-    x: .45703125
+    x: .563476562
+    y: .401367188
+    width: .0791015625
+    height: .09375
+  - serializedVersion: 2
+    x: .577148438
     y: 0
-    width: .118164062
-    height: .354492188
+    width: .103027344
+    height: .142089844
+  - serializedVersion: 2
+    x: .163085938
+    y: .657226562
+    width: .143066406
+    height: .158691406
+  - serializedVersion: 2
+    x: .427246094
+    y: .401367188
+    width: .0600585938
+    height: .126953125
+  - serializedVersion: 2
+    x: .667480469
+    y: .276855469
+    width: .0815429688
+    height: .106445312
+  - serializedVersion: 2
+    x: .435546875
+    y: .3203125
+    width: .072265625
+    height: .078125
+  - serializedVersion: 2
+    x: .667480469
+    y: .204589844
+    width: .139160156
+    height: .0717773438
+  - serializedVersion: 2
+    x: .306640625
+    y: .779785156
+    width: .0693359375
+    height: .0361328125
+  - serializedVersion: 2
+    x: 0
+    y: 0
+    width: .376953125
+    height: .422851562
+  - serializedVersion: 2
+    x: 0
+    y: .859375
+    width: .119140625
+    height: .135253906
+  - serializedVersion: 2
+    x: .8828125
+    y: .310546875
+    width: .0678710938
+    height: .0810546875
+  - serializedVersion: 2
+    x: .377441406
+    y: 0
+    width: .100097656
+    height: .204101562
+  - serializedVersion: 2
+    x: .591796875
+    y: .204589844
+    width: .0751953125
+    height: .133300781
+  - serializedVersion: 2
+    x: .300292969
+    y: .81640625
+    width: .0649414062
+    height: .169433594
+  - serializedVersion: 2
+    x: .478027344
+    y: .152832031
+    width: .0966796875
+    height: .046875
+  - serializedVersion: 2
+    x: .807128906
+    y: .204589844
+    width: .0751953125
+    height: .128417969
+  - serializedVersion: 2
+    x: .80078125
+    y: .135253906
+    width: .0766601562
+    height: .044921875
+  - serializedVersion: 2
+    x: .163085938
+    y: .81640625
+    width: .13671875
+    height: .147460938
+  - serializedVersion: 2
+    x: .591796875
+    y: .338378906
+    width: .0561523438
+    height: .0454101562
+  - serializedVersion: 2
+    x: .306640625
+    y: .657226562
+    width: .06640625
+    height: .122070312
+  - serializedVersion: 2
+    x: .435546875
+    y: .204589844
+    width: .0961914062
+    height: .115234375
+  - serializedVersion: 2
+    x: 0
+    y: .657226562
+    width: .162597656
+    height: .201660156
   textureGUIDs:
   - 0443e73f67dbbec438c0ff8234a2b132
   - 3ce34b80a73af024aac6f628a39a26cb
@@ -92,6 +242,36 @@ MonoBehaviour:
   - a42fdfcb9e4ad584ab89350c959f45ff
   - d84cc27c984b6a34098aa5750262536d
   - fa74b7c67ae0e024599fea6cc58345d1
+  - 0bba2a207800adf4ab7ebfe8077b3595
+  - 1612419f8a8520e43a94ecd6284a649a
+  - 1e5f0ace472f5e84baf8dfc907b3d79f
+  - 25c6a9352bb422342878081da87ec742
+  - 26bb7299eb3d89e448a464eacde7ec2b
+  - 34c021393f90e464c97a615947c7d2b9
+  - 34fe57eb4d7ae5b41851226cb6eb3a5a
+  - 36fb7a14729261e489d2a6f1a59401b9
+  - 3cf4aa0562d7af246bdd57953169eb8d
+  - 48b9af7ac5b65a546b636203cd1065cf
+  - a86357f75e087b64c9627e341c6992c7
+  - cf4a40d8cd39dea49837dd5f74225d94
+  - ddf805b7e13571d499cd121541b90851
+  - de008d67d355c7049b1e99c4e90cb6e5
+  - e8bb2d6c67812c2498bac7cd85a74a16
+  - 12eda7f214002ea42857bcf6272e592e
+  - 4704eb71cda9b2741b0b588c25156b84
+  - 4dc7c3191cbc29942b862b95d6427660
+  - 6779b7c467db7734c9a56649faa46dfb
+  - 778494d5b8bd27b498cb4bd93fca265a
+  - 830100f54a5327b47938c9a32912bcfc
+  - 852b7657b06538140b0f29033fa1edf7
+  - 8949f7d87342d59448e07b3d5857acd4
+  - a011ae143bc744b4a88c62400d60e8ae
+  - a2870151d8488704eb02d30dceef66ec
+  - bf0b21b431f923449ad6e4a21e43c960
+  - bfc9468bca885eb4f85d0fca6033b042
+  - e564762aa12242c4285573d5c12b4abe
+  - e7616f542edbdf64d856c20057a7c514
+  - f18a738c5def8a149891317f9f8165dc
   textureSizes:
   - {x: 118, y: 402}
   - {x: 119, y: 144}
@@ -106,11 +286,41 @@ MonoBehaviour:
   - {x: 164, y: 156}
   - {x: 153, y: 197}
   - {x: 121, y: 363}
+  - {x: 155, y: 192}
+  - {x: 166, y: 216}
+  - {x: 102, y: 130}
+  - {x: 332, y: 478}
+  - {x: 195, y: 276}
+  - {x: 180, y: 159}
+  - {x: 202, y: 312}
+  - {x: 99, y: 308}
+  - {x: 162, y: 192}
+  - {x: 211, y: 291}
+  - {x: 293, y: 325}
+  - {x: 123, y: 260}
+  - {x: 167, y: 218}
+  - {x: 148, y: 160}
+  - {x: 285, y: 147}
+  - {x: 142, y: 74}
+  - {x: 772, y: 866}
+  - {x: 244, y: 277}
+  - {x: 139, y: 166}
+  - {x: 205, y: 418}
+  - {x: 154, y: 273}
+  - {x: 133, y: 347}
+  - {x: 198, y: 96}
+  - {x: 154, y: 263}
+  - {x: 157, y: 92}
+  - {x: 280, y: 302}
+  - {x: 115, y: 93}
+  - {x: 136, y: 250}
+  - {x: 197, y: 236}
+  - {x: 333, y: 413}
   defaultPivotOffsets:
   - {x: .12223012, y: .406622916}
   - {x: -.039459262, y: -.107142858}
   - {x: -.321428567, y: .338888884}
-  - {x: .271361828, y: .41925469}
+  - {x: .271361828, y: .405279517}
   - {x: -.235005111, y: .381987572}
   - {x: .124120943, y: .279503107}
   - {x: .180766746, y: -.372670799}
@@ -120,6 +330,36 @@ MonoBehaviour:
   - {x: -.262499988, y: .281593412}
   - {x: -.071976617, y: -.335403711}
   - {x: .111801252, y: .405279517}
+  - {x: -.0692446381, y: -.321428567}
+  - {x: -.363690794, y: .354037255}
+  - {x: -.0059371572, y: -.232919246}
+  - {x: -.00670695258, y: -.363354057}
+  - {x: .316483498, y: .409937888}
+  - {x: -.348214298, y: .382075489}
+  - {x: .309390545, y: .377329201}
+  - {x: -.246376812, y: -.451863378}
+  - {x: -.18219462, y: -.177018628}
+  - {x: -.346928269, y: .409937888}
+  - {x: 0, y: 0}
+  - {x: -.226480827, y: .405279487}
+  - {x: .291888267, y: .288819879}
+  - {x: .401785731, y: .386517882}
+  - {x: -.267857134, y: .0103862975}
+  - {x: -.444642842, y: -.102799229}
+  - {x: -.133928582, y: -.4059304}
+  - {x: .0535714254, y: -.0188757088}
+  - {x: -.394990832, y: -.0791925415}
+  - {x: -.0949856117, y: .321428597}
+  - {x: -.173418969, y: .335403711}
+  - {x: -.133692145, y: .386645943}
+  - {x: -.353571415, y: .364620537}
+  - {x: .318222135, y: .419254661}
+  - {x: -.310714275, y: .393109471}
+  - {x: .0535714254, y: 0}
+  - {x: -.332142889, y: -.331221223}
+  - {x: .205516994, y: .368012428}
+  - {x: -.212062925, y: -.354037255}
+  - {x: -.288875818, y: -.293478251}
   textureNames:
   - GeorgeIdle_RightThigh
   - GeorgeIdle_Neck
@@ -134,6 +374,36 @@ MonoBehaviour:
   - GeorgeIdle_RightFoot
   - GeorgeIdle_Head
   - GeorgeIdle_LeftThigh
+  - GeorgeAttack_Head
+  - GeorgeAttack_LeftUpperArm
+  - GeorgeAttack_Neck
+  - GeorgeAttack_Torso
+  - GeorgeAttack_RightCalf
+  - GeorgeAttack_LeftFoot
+  - GeorgeAttack_RightThigh
+  - GeorgeAttack_LeftHand
+  - GeorgeAttack_LeftForearm
+  - GeorgeAttack_LeftThigh
+  - GeorgeAttack_Swipe
+  - GeorgeAttack_LeftCalf
+  - GeorgeAttack_RightUpperArm
+  - GeorgeAttack_RightFoot
+  - GeorgeAttack_RightForearm
+  - GeorgeDash_RightHand
+  - GeorgeDash_Segway
+  - GeorgeDash_SegwayLeftWheel
+  - GeorgeDash_RightForearm
+  - GeorgeDash_RightThigh
+  - GeorgeDash_RightUpperArm
+  - GeorgeDash_LeftThigh
+  - GeorgeDash_RightFoot
+  - GeorgeDash_RightCalf
+  - GeorgeDash_LeftFoot
+  - GeorgeDash_SegwayRightWheel
+  - GeorgeDash_LeftHand
+  - GeorgeDash_LeftCalf
+  - GeorgeDash_Head
+  - GeorgeDash_Torso
   texturePaths:
   - Assets/George Parts/GeorgeIdle_RightThigh.png
   - Assets/George Parts/GeorgeIdle_Neck.png
@@ -148,7 +418,37 @@ MonoBehaviour:
   - Assets/George Parts/GeorgeIdle_RightFoot.png
   - Assets/George Parts/GeorgeIdle_Head.png
   - Assets/George Parts/GeorgeIdle_LeftThigh.png
-  lastBuildID: 20140430200438125
+  - Assets/George Parts/GeorgeAttack_Head.png
+  - Assets/George Parts/GeorgeAttack_LeftUpperArm.png
+  - Assets/George Parts/GeorgeAttack_Neck.png
+  - Assets/George Parts/GeorgeAttack_Torso.png
+  - Assets/George Parts/GeorgeAttack_RightCalf.png
+  - Assets/George Parts/GeorgeAttack_LeftFoot.png
+  - Assets/George Parts/GeorgeAttack_RightThigh.png
+  - Assets/George Parts/GeorgeAttack_LeftHand.png
+  - Assets/George Parts/GeorgeAttack_LeftForearm.png
+  - Assets/George Parts/GeorgeAttack_LeftThigh.png
+  - Assets/George Parts/GeorgeAttack_Swipe.png
+  - Assets/George Parts/GeorgeAttack_LeftCalf.png
+  - Assets/George Parts/GeorgeAttack_RightUpperArm.png
+  - Assets/George Parts/GeorgeAttack_RightFoot.png
+  - Assets/George Parts/GeorgeAttack_RightForearm.png
+  - Assets/George Parts/GeorgeDash_RightHand.png
+  - Assets/George Parts/GeorgeDash_Segway.png
+  - Assets/George Parts/GeorgeDash_SegwayLeftWheel.png
+  - Assets/George Parts/GeorgeDash_RightForearm.png
+  - Assets/George Parts/GeorgeDash_RightThigh.png
+  - Assets/George Parts/GeorgeDash_RightUpperArm.png
+  - Assets/George Parts/GeorgeDash_LeftThigh.png
+  - Assets/George Parts/GeorgeDash_RightFoot.png
+  - Assets/George Parts/GeorgeDash_RightCalf.png
+  - Assets/George Parts/GeorgeDash_LeftFoot.png
+  - Assets/George Parts/GeorgeDash_SegwayRightWheel.png
+  - Assets/George Parts/GeorgeDash_LeftHand.png
+  - Assets/George Parts/GeorgeDash_LeftCalf.png
+  - Assets/George Parts/GeorgeDash_Head.png
+  - Assets/George Parts/GeorgeDash_Torso.png
+  lastBuildID: 2014050215473520
   needsRebuilt: 0
   dataVersion: 4
   maxAtlasSize: 1024

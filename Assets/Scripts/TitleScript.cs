@@ -4,18 +4,19 @@ using System.Collections;
 public class TitleScript : MonoBehaviour {
 	
 	public GUISkin skin;
-	public float halfScreenWidth = Screen.width / 2;
-	public float halfScreenHeight = Screen.height / 2;
-	public float buttonWidth = 320;
-	public float buttonHeight = 200;
+	public Texture screenTexture;
+	public Texture startTexture;
 	
 	public void OnGUI() {
 		GUI.skin = skin;
-		float buttonX = halfScreenWidth - 160;
-		float buttonY = halfScreenHeight * 6 / 10;
-		if (GUI.Button(new Rect(buttonX, buttonY, buttonWidth, buttonHeight), "Start Game")) {
-			Application.LoadLevel("The Beginning");
+		float startButtonX = Screen.width * 27 / 40;
+		float startButtonY = Screen.height / 5;
+		float startButtonWidth = 186;
+		float startButtonHeight = 82;
+
+		GUI.Label(new Rect(0, 0, Screen.width, Screen.height), screenTexture);
+		if (GUI.Button(new Rect(startButtonX, startButtonY, startButtonWidth, startButtonHeight), startTexture)) {
+			Application.LoadLevel("TheBeginning");
 		}
-	}
-	
+	}	
 }

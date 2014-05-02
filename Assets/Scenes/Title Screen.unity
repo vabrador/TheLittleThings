@@ -101,6 +101,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac7863c348ce799408eb095eb19167ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skin: {fileID: 0}
+  halfScreenWidth: 0
+  halfScreenHeight: 0
 --- !u!4 &1679499375
 Transform:
   m_ObjectHideFlags: 0

@@ -20,6 +20,9 @@ public class P1_controls : MonoBehaviour {
 		else if ((Input.GetAxis("P1 - Punch") > 0) && (!mover.stateBools["animating"])) {
 			mover.Punch ();
 		}
+		else if ((Input.GetAxis("P1 - Special") > 0) && (!mover.stateBools["animating"])) {
+			mover.Special();
+		}
 		else {
 			if (!mover.stateBools["animating"]){
 				mover.fighterAnimation.CrossFade ("Idle");

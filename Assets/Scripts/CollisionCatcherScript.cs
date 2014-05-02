@@ -14,7 +14,7 @@ public class CollisionCatcherScript : MonoBehaviour {
 		GameObject parent = gameObject.transform.root.gameObject;
 		parentCombat = parent.GetComponent<CombatScript> ();
 		parentMover = parent.GetComponent<MovementAnimationScript> ();
-		parentMover.fighterAnimation.RegisterCollisionDelegate (parentCombat.receiveCollision);
+		parentMover.fighterAnimation.RegisterColliderTriggerDelegate (parentCombat.receiveCollision);
 	}
 	
 	// Update is called once per frame

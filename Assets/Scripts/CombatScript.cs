@@ -36,7 +36,7 @@ public class CombatScript : MonoBehaviour {
 	
 	// Health info
 	public int startHealth = 100;
-	int currentHealth;
+	public int currentHealth;
 	
 	// Properties to check whether the move is in the "counterable" zone
 	bool punchCounterable {
@@ -54,7 +54,7 @@ public class CombatScript : MonoBehaviour {
 	void Start () {
 		currentHealth = startHealth;
 		mover = GetComponent<MovementAnimationScript> ();
-		mover.fighterAnimation.RegisterCollisionDelegate (receiveCollision);
+		mover.fighterAnimation.RegisterColliderTriggerDelegate (receiveCollision);
 	}
 	
 	// Update is called once per frame
@@ -69,8 +69,8 @@ public class CombatScript : MonoBehaviour {
 	// Note that since each fighter will have its own version of the script running and every
 	// collision between them will be mirrored (i.e. if the left fighter hits the right fighter
 	// they'll both receive a collision), the script only dictates effects on this gameObject.
-	public void receiveCollision(CollisionEvent collisionEvent) {
-		GameObject otherGuy = collisionEvent.collision.gameObject.transform.root.gameObject;
+	public void receiveCollision(ColliderTriggerEvent collisionTriggerEvent) {
+		GameObject otherGuy = collisionTriggerEvent.otherCollider.gameObject.transform.root.gameObject;
 		Debug.Log (gameObject + " just received a collision!");
 		MovementAnimationScript otherMover = otherGuy.GetComponent<MovementAnimationScript> ();
 		CombatScript otherCombat = otherGuy.GetComponent<CombatScript> ();

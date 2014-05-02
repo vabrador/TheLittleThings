@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using SmoothMoves;
 
 public class CombatScript : MonoBehaviour {
 	// Reference to the MovementAnimationScript on this GameObject.
@@ -53,18 +54,12 @@ public class CombatScript : MonoBehaviour {
 	void Start () {
 		currentHealth = startHealth;
 		mover = GetComponent<MovementAnimationScript> ();
+		mover.fighterAnimation.RegisterCollisionDelegate (receiveCollision);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		
-	}
-	
-	void OnCollisionEnter2D(Collision2D collision) {
-		//Debug.Log ("There was just a collision between " + gameObject + " and " + collision.collider);
-		if (collision.gameObject.tag == "fighter") {
-			
-		}
 	}
 	
 	// Function which CollisionCatcherScript passes collisions to.  Handles the logic of what
@@ -74,7 +69,8 @@ public class CombatScript : MonoBehaviour {
 	// Note that since each fighter will have its own version of the script running and every
 	// collision between them will be mirrored (i.e. if the left fighter hits the right fighter
 	// they'll both receive a collision), the script only dictates effects on this gameObject.
-	public void receiveCollision(GameObject otherGuy) {
+	public void receiveCollision(CollisionEvent collisionEvent) {
+		GameObject otherGuy = collisionEvent.collision.gameObject.transform.root.gameObject;
 		Debug.Log (gameObject + " just received a collision!");
 		MovementAnimationScript otherMover = otherGuy.GetComponent<MovementAnimationScript> ();
 		CombatScript otherCombat = otherGuy.GetComponent<CombatScript> ();

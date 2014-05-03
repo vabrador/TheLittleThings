@@ -35,7 +35,7 @@ public class CombatScript : MonoBehaviour {
 	
 	// Health info
 	public int startHealth = 100;
-	int currentHealth;
+	public int currentHealth;
 	
 	// Properties to check whether the move is in the "counterable" zone
 	bool punchCounterable {

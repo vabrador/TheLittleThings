@@ -9,9 +9,15 @@ public class CombatScript : MonoBehaviour {
 	// Points used to calculate Special damage
 	public Transform centerPoint;
 	public Transform edgePoint;
+
+	// Bool to turn on auto-damage function
+	public bool autodamage;
+
+	// Start time
+	public float startTime;
 	
 	// Amount of damage done by punch, counter, special
-	public int punchStrength = 10;
+	public int attackStrength = 10;
 	public int counterStrength = 5;
 	public int maxSpecialStrength = 30;
 	
@@ -30,7 +36,7 @@ public class CombatScript : MonoBehaviour {
 	
 	// Threshold amount of time after a move is begun when the opponent
 	// can still counter it.
-	public float punchThresh = 0.5f;
+	public float attackThresh = 0.5f;
 	public float blockThresh = 0.5f;
 	public float dashThresh = 1f;
 	
@@ -40,7 +46,7 @@ public class CombatScript : MonoBehaviour {
 	
 	// Properties to check whether the move is in the "counterable" zone
 	bool punchCounterable {
-		get { return (Time.time - mover.punchStart) < punchThresh; }
+		get { return (Time.time - mover.attackStart) < attackThresh; }
 	}
 	bool blockCounterable {
 		get { return (Time.time - mover.blockStart) < blockThresh; }
@@ -53,32 +59,35 @@ public class CombatScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		currentHealth = startHealth;
+		startTime = Time.time;
 		mover = GetComponent<MovementAnimationScript> ();
-		mover.fighterAnimation.RegisterColliderTriggerDelegate (receiveCollision);
+		mover.fighterAnimation.RegisterColliderTriggerDelegate (receiveColliderTriggerEvent);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+		AutoDamageChar ();
 	}
 	
-	// Function which CollisionCatcherScript passes collisions to.  Handles the logic of what
-	// should happen based on the respective state and start times.  Specifically deals with
+	// Handles the logic of what should happen based on the respective state and start times.  Specifically deals with
 	// activating the hurt or countered states and subtracting health.
 	//
 	// Note that since each fighter will have its own version of the script running and every
 	// collision between them will be mirrored (i.e. if the left fighter hits the right fighter
 	// they'll both receive a collision), the script only dictates effects on this gameObject.
-	public void receiveCollision(ColliderTriggerEvent collisionTriggerEvent) {
-		GameObject otherGuy = collisionTriggerEvent.otherCollider.gameObject.transform.root.gameObject;
-		Debug.Log (gameObject + " just received a collision!");
-		MovementAnimationScript otherMover = otherGuy.GetComponent<MovementAnimationScript> ();
-		CombatScript otherCombat = otherGuy.GetComponent<CombatScript> ();
+
+
+	public void performCollisionResponse(GameObject otherChar){
+		MovementAnimationScript otherMover = otherChar.GetComponent<MovementAnimationScript> ();
+		CombatScript otherCombat = otherChar.GetComponent<CombatScript> ();
 		int otherCounter = otherCombat.counterStrength;
+//		Debug.Log ("Collision happened: " + gameObject + "'s attackState: " + mover.stateBools["attacking"]);
+//		Debug.Log (otherChar + "'s attackState: " + otherMover.stateBools["attacking"]);
+			
 		if (!mover.stateBools["animating"]){
 			// If you're idle and you get punched, you're hurt.  If you're idle and dashed
 			// into, you get knocked back.  Otherwise, nothing changes.
-			if (otherMover.stateBools["punching"]){ GetsHurt(otherCombat.punchStrength); }
+			if (otherMover.stateBools["attacking"]){ GetsHurt(otherCombat.attackStrength); }
 			else if (otherMover.stateBools["dashing"]){ GetsKnocked(); }
 			else if (otherMover.stateBools["specialing"]){ GetsHurt(otherCombat.specialStrength); }
 			else {}
@@ -87,11 +96,11 @@ public class CombatScript : MonoBehaviour {
 			// If you're in the process of a special attack, you're pretty much invulnerable.
 			// Therefore, nothing happens to your character.
 		}
-		else if (mover.stateBools["punching"]){
-			// If you're punching at the same time, first guy to throw the punch wins.  If you
+		else if (mover.stateBools["attacking"]){
+			// If you're attacking at the same time, first guy to throw the punch wins.  If you
 			// throw a punch into a dash and it *isn'* counterable, you get knocked back.  If
 			// somebody blocks while your punch is counterable, you get countered.
-			if ((otherMover.stateBools["punching"]) && (mover.punchStart >= otherMover.punchStart)) { GetsHurt(otherCombat.punchStrength); }
+			if ((otherMover.stateBools["attacking"]) && (mover.attackStart >= otherMover.attackStart)) { GetsHurt(otherCombat.attackStrength); }
 			else if ((otherMover.stateBools["dashing"]) && (!otherCombat.dashCounterable)) { GetsKnocked(); }
 			else if ((otherMover.stateBools["blocking"]) && (punchCounterable)) { GetsCountered(otherCounter); }
 			else if (otherMover.stateBools["specialing"]){ GetsHurt(otherCombat.specialStrength); }
@@ -107,7 +116,7 @@ public class CombatScript : MonoBehaviour {
 		else if (mover.stateBools["dashing"]) {
 			// If you're dashing into their punch and your dash is counterable, get countered.
 			// Otherwise, no enemy state will changes yours mid-dash
-			if ((otherMover.stateBools["punching"]) && (dashCounterable)) { GetsCountered(otherCounter); }
+			if ((otherMover.stateBools["attacking"]) && (dashCounterable)) { GetsCountered(otherCounter); }
 			else if (otherMover.stateBools["specialing"]){ GetsHurt(otherCombat.specialStrength); }
 			else{}
 		}
@@ -116,7 +125,29 @@ public class CombatScript : MonoBehaviour {
 			// cases are safe from being hit or moved anymore than they already are.
 		}
 	}
-	
+
+
+	//////////////////////////////////////////////////
+	////// FUNCTIONS TO CATCH COLLISION EVENTS ///////
+	//////////////////////////////////////////////////
+
+	// Function which CollisionCatcherScript passes colliderTriggerEvents to.  
+	public void receiveColliderTriggerEvent(ColliderTriggerEvent colliderTriggerEvent) {
+		GameObject otherChar = colliderTriggerEvent.otherCollider.gameObject.transform.root.gameObject;
+		performCollisionResponse (otherChar);
+	}
+
+	// Function which CollisionCatcherScript passes collisions to.  
+	public void receiveCollision(Collision2D collision) {
+		GameObject otherChar = collision.gameObject.transform.root.gameObject;
+		performCollisionResponse (otherChar);
+	}
+
+
+	//////////////////////////////////////////////////
+	// FUNCTIONS TO CHANGE HEALTH & VARY ANIMATIONS //
+	//////////////////////////////////////////////////
+
 	// Subtracts from the health and triggers whatever happens upon Death
 	void TakeDamage(int damageAmount) {
 		Debug.Log (gameObject + " just lost " + damageAmount + " health!");
@@ -144,6 +175,10 @@ public class CombatScript : MonoBehaviour {
 		Debug.Log (gameObject + " triggered the GetsHurt function!");
 		TakeDamage (damageAmount);
 		mover.Hurt ();
+	}
+
+	void AutoDamageChar(){
+		if ((autodamage) && ((Time.time - startTime) % 3 < 1)) TakeDamage(5);
 	}
 	
 }

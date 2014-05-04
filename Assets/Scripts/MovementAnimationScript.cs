@@ -18,8 +18,13 @@ public class MovementAnimationScript : MonoBehaviour {
 	// Corrects the direction of max velocity for what side a fighter is on
 	float fighterMaxSpeed {
 		get { 
-			if (facingLeft) return -1 * maxSpeed;
-			else return maxSpeed;
+			float currentSpeed = ( 1 - (Time.time - attackStart)/(attackLength) ) * maxSpeed;
+//			Debug.Log ("currentSpeed with no transform = " + currentSpeed);
+			if (!facingLeft){ 
+				currentSpeed *= -1;
+//				Debug.Log ("Saying " + fighterAnimation + " speed should be " + currentSpeed);
+			}
+			return currentSpeed;
 		}
 	}
 	
@@ -29,7 +34,7 @@ public class MovementAnimationScript : MonoBehaviour {
 	public Dictionary<string, bool> stateBools = new Dictionary<string, bool>()
 	{
 		{"animating", false},
-		{"punching", false},
+		{"attacking", false},
 		{"blocking", false},
 		{"dashing" , false},
 		{"specialing", false},
@@ -42,7 +47,7 @@ public class MovementAnimationScript : MonoBehaviour {
 	
 	// Animations are of odd lengths and can't be easily changed, so these variables
 	// manually set their lengths and let us change them after the fact.
-	public float punchLength = 1f;
+	public float attackLength = 1f;
 	public float dashLength = 2f;
 	public float blockLength = 2f;
 	public float hurtLength = 0.5f;
@@ -51,7 +56,7 @@ public class MovementAnimationScript : MonoBehaviour {
 	
 	// Variables to keep track of when the most recent move
 	// of each type started.
-	public float punchStart = 0f;
+	public float attackStart = 0f;
 	public float blockStart = 0f;
 	public float dashStart = 0f;
 	public float hurtStart = 0f;
@@ -61,8 +66,8 @@ public class MovementAnimationScript : MonoBehaviour {
 	// Since animations are of weird lengths and can't be easily modified,
 	// these properties calculate whether an animation should be "done"
 	// using the start & length variables.
-	bool punchDone {
-		get{ return (Time.time - punchStart) < punchLength;  }
+	bool attackDone {
+		get{ return (Time.time - attackStart) < attackLength;  }
 	}
 	bool dashDone {
 		get{ return (Time.time - dashStart) < dashLength;  }
@@ -84,8 +89,8 @@ public class MovementAnimationScript : MonoBehaviour {
 	void Start () {
 		stateList = new List<string>(stateBools.Keys);
 		stateBools["animating"] = false;
-		if (!facingLeft)
-			Flip ();
+//		if (facingLeft)
+//			Flip ();
 	}
 	
 	// Update is called once per frame
@@ -95,15 +100,15 @@ public class MovementAnimationScript : MonoBehaviour {
 		// animation should be true, the rest should all be false.
 		if (fighterAnimation.IsPlaying("Dash")) {
 			makeOtherAnimsFalse("dashing");
-			float currentSpeed = Mathf.Abs((1 - ((Time.time - punchStart) / punchLength)) * maxSpeed);
+			float currentSpeed = Mathf.Abs((1 - ((Time.time - dashStart) / dashLength))) * fighterMaxSpeed;
 			rigidbody2D.velocity = new Vector2(currentSpeed, 0);
-//			Debug.Log("Moving with a speed of " + currentSpeed);
+			Debug.Log(fighterAnimation + " moving with a speed of " + currentSpeed);
 		} else if (fighterAnimation.IsPlaying ("Countered")) {
 			makeOtherAnimsFalse("reeling");
 		} else if (fighterAnimation.IsPlaying("Hurt1") || fighterAnimation.IsPlaying("Hurt2")) {
 			makeOtherAnimsFalse("hurting");
 		} else if (fighterAnimation.IsPlaying("Attack")) {
-			makeOtherAnimsFalse("punching");
+			makeOtherAnimsFalse("attacking");
 		} else if (fighterAnimation.IsPlaying("Block")) {
 			makeOtherAnimsFalse("blocking");
 		} else if (fighterAnimation.IsPlaying("Special")) {
@@ -116,7 +121,7 @@ public class MovementAnimationScript : MonoBehaviour {
 		
 		// When any animation has gone long enough, smoothly crossfade to idle
 		if (!((stateBools["dashing"] && dashDone) || (stateBools["blocking"] && blockDone) ||
-		      (stateBools["reeling"] && reelDone) || (stateBools["punching"] && punchDone) ||
+		      (stateBools["reeling"] && reelDone) || (stateBools["attacking"] && attackDone) ||
 		      (stateBools["hurting"] && hurtDone) || (stateBools["specialing"] && specialDone)))
 		{
 			fighterAnimation.Play("Idle"); 
@@ -132,7 +137,7 @@ public class MovementAnimationScript : MonoBehaviour {
 	// separating functionality & allowing them to be called from other scripts.
 	public void Dash() {
 		fighterAnimation.Play("Dash");
-		rigidbody2D.velocity = new Vector2(fighterMaxSpeed, 0);
+//		rigidbody2D.velocity = new Vector2(fighterMaxSpeed, 0);
 		dashStart = Time.time;
 	}
 	
@@ -143,7 +148,7 @@ public class MovementAnimationScript : MonoBehaviour {
 	
 	public void Punch() {
 		fighterAnimation.Play("Attack");
-		punchStart = Time.time;
+		attackStart = Time.time;
 	}
 	
 	public void Special() {

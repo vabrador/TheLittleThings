@@ -1,0 +1,876 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 529336600, guid: 289bab7cc27a12745b5df9b71d7b06c4, type: 3}
+  m_Name: Linda Atlas
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 22d8f5263c39471468883fed76b0eeb1, type: 2}
+  uvs:
+  - serializedVersion: 2
+    x: .772949219
+    y: .356689453
+    width: .105957031
+    height: .046875
+  - serializedVersion: 2
+    x: .66796875
+    y: .439453125
+    width: .0815429688
+    height: .0417480469
+  - serializedVersion: 2
+    x: .922851562
+    y: .198486328
+    width: .0712890625
+    height: .0698242188
+  - serializedVersion: 2
+    x: .141113281
+    y: .264160156
+    width: .0688476562
+    height: .0170898438
+  - serializedVersion: 2
+    x: .930664062
+    y: .0366210938
+    width: .029296875
+    height: .0124511719
+  - serializedVersion: 2
+    x: .197265625
+    y: .489990234
+    width: .0747070312
+    height: .0295410156
+  - serializedVersion: 2
+    x: 0
+    y: .439453125
+    width: .0766601562
+    height: .0876464844
+  - serializedVersion: 2
+    x: .942382812
+    y: .480957031
+    width: .0571289062
+    height: .0251464844
+  - serializedVersion: 2
+    x: .854980469
+    y: .439453125
+    width: .131835938
+    height: .0234375
+  - serializedVersion: 2
+    x: 0
+    y: .356689453
+    width: .106445312
+    height: .0825195312
+  - serializedVersion: 2
+    x: .444335938
+    y: .356689453
+    width: .100585938
+    height: .0651855469
+  - serializedVersion: 2
+    x: .744628906
+    y: .322509766
+    width: .148925781
+    height: .0300292969
+  - serializedVersion: 2
+    x: .75
+    y: .439453125
+    width: .104492188
+    height: .0322265625
+  - serializedVersion: 2
+    x: 0
+    y: .141601562
+    width: .206542969
+    height: .056640625
+  - serializedVersion: 2
+    x: .141113281
+    y: .198486328
+    width: .16796875
+    height: .0654296875
+  - serializedVersion: 2
+    x: .631347656
+    y: .281738281
+    width: .112792969
+    height: .0612792969
+  - serializedVersion: 2
+    x: .0615234375
+    y: .52734375
+    width: .0732421875
+    height: .0236816406
+  - serializedVersion: 2
+    x: .20703125
+    y: .141601562
+    width: .179199219
+    height: .056640625
+  - serializedVersion: 2
+    x: .352539062
+    y: .509277344
+    width: .056640625
+    height: .017578125
+  - serializedVersion: 2
+    x: .412109375
+    y: .470458984
+    width: .121582031
+    height: .0297851562
+  - serializedVersion: 2
+    x: .4609375
+    y: .198486328
+    width: .146484375
+    height: .0688476562
+  - serializedVersion: 2
+    x: .657226562
+    y: .400390625
+    width: .104980469
+    height: .0341796875
+  - serializedVersion: 2
+    x: .514160156
+    y: .281738281
+    width: .116699219
+    height: .0698242188
+  - serializedVersion: 2
+    x: .471191406
+    y: 0
+    width: .207519531
+    height: .0598144531
+  - serializedVersion: 2
+    x: .254882812
+    y: .281738281
+    width: .133300781
+    height: .0617675781
+  - serializedVersion: 2
+    x: .541015625
+    y: .439453125
+    width: .126464844
+    height: .02734375
+  - serializedVersion: 2
+    x: .679199219
+    y: .0495605469
+    width: .194335938
+    height: .0629882812
+  - serializedVersion: 2
+    x: .312011719
+    y: 0
+    width: .158691406
+    height: .133300781
+  - serializedVersion: 2
+    x: .121582031
+    y: .281738281
+    width: .1328125
+    height: .0642089844
+  - serializedVersion: 2
+    x: .765136719
+    y: .257568359
+    width: .142089844
+    height: .0229492188
+  - serializedVersion: 2
+    x: .0615234375
+    y: .551269531
+    width: .0654296875
+    height: .0263671875
+  - serializedVersion: 2
+    x: .874023438
+    y: .0495605469
+    width: .120605469
+    height: .0847167969
+  - serializedVersion: 2
+    x: .607910156
+    y: .198486328
+    width: .156738281
+    height: .0632324219
+  - serializedVersion: 2
+    x: .87109375
+    y: .141601562
+    width: .114746094
+    height: .0473632812
+  - serializedVersion: 2
+    x: .854980469
+    y: .463134766
+    width: .125
+    height: .017578125
+  - serializedVersion: 2
+    x: .204589844
+    y: .52734375
+    width: .0732421875
+    height: .0187988281
+  - serializedVersion: 2
+    x: 0
+    y: 0
+    width: .311523438
+    height: .141357422
+  - serializedVersion: 2
+    x: .285644531
+    y: .439453125
+    width: .125976562
+    height: .0324707031
+  - serializedVersion: 2
+    x: .772949219
+    y: .403808594
+    width: .105957031
+    height: .0327148438
+  - serializedVersion: 2
+    x: .854980469
+    y: .480957031
+    width: .0869140625
+    height: .0249023438
+  - serializedVersion: 2
+    x: 0
+    y: .52734375
+    width: .0610351562
+    height: .0319824219
+  - serializedVersion: 2
+    x: .471191406
+    y: .0600585938
+    width: .178222656
+    height: .0695800781
+  - serializedVersion: 2
+    x: .607910156
+    y: .261962891
+    width: .15625
+    height: .0178222656
+  - serializedVersion: 2
+    x: .913085938
+    y: .281738281
+    width: .078125
+    height: .0717773438
+  - serializedVersion: 2
+    x: .879394531
+    y: .356689453
+    width: .0708007812
+    height: .0695800781
+  - serializedVersion: 2
+    x: 0
+    y: .281738281
+    width: .12109375
+    height: .0747070312
+  - serializedVersion: 2
+    x: .587402344
+    y: .141601562
+    width: .158691406
+    height: .0524902344
+  - serializedVersion: 2
+    x: .950683594
+    y: .356689453
+    width: .0454101562
+    height: .0412597656
+  - serializedVersion: 2
+    x: .285644531
+    y: .472167969
+    width: .06640625
+    height: .0549316406
+  - serializedVersion: 2
+    x: .0771484375
+    y: .479980469
+    width: .106933594
+    height: .0412597656
+  - serializedVersion: 2
+    x: .930664062
+    y: 0
+    width: .0620117188
+    height: .0363769531
+  - serializedVersion: 2
+    x: .197265625
+    y: .439453125
+    width: .087890625
+    height: .0502929688
+  - serializedVersion: 2
+    x: .33984375
+    y: .356689453
+    width: .104003906
+    height: .0637207031
+  - serializedVersion: 2
+    x: .615722656
+    y: .500976562
+    width: .0483398438
+    height: .01953125
+  - serializedVersion: 2
+    x: .309570312
+    y: .198486328
+    width: .150878906
+    height: .0673828125
+  - serializedVersion: 2
+    x: .75
+    y: .471923828
+    width: .103515625
+    height: .0319824219
+  - serializedVersion: 2
+    x: .135253906
+    y: .52734375
+    width: .0688476562
+    height: .0236816406
+  - serializedVersion: 2
+    x: 0
+    y: .198486328
+    width: .140625
+    height: .0830078125
+  - serializedVersion: 2
+    x: .657226562
+    y: .356689453
+    width: .115234375
+    height: .0434570312
+  - serializedVersion: 2
+    x: .765136719
+    y: .198486328
+    width: .157226562
+    height: .0588378906
+  - serializedVersion: 2
+    x: .66796875
+    y: .481445312
+    width: .0698242188
+    height: .0424804688
+  - serializedVersion: 2
+    x: .615722656
+    y: .467041016
+    width: .0327148438
+    height: .0336914062
+  - serializedVersion: 2
+    x: .0771484375
+    y: .439453125
+    width: .119628906
+    height: .0402832031
+  - serializedVersion: 2
+    x: .746582031
+    y: .141601562
+    width: .124023438
+    height: .0554199219
+  - serializedVersion: 2
+    x: .75
+    y: .504150391
+    width: .072265625
+    height: .0205078125
+  - serializedVersion: 2
+    x: .541015625
+    y: .467041016
+    width: .07421875
+    height: .0458984375
+  - serializedVersion: 2
+    x: .388671875
+    y: .281738281
+    width: .125
+    height: .0654296875
+  - serializedVersion: 2
+    x: .352539062
+    y: .472167969
+    width: .0576171875
+    height: .0368652344
+  - serializedVersion: 2
+    x: .22265625
+    y: .413818359
+    width: .0986328125
+    height: .0246582031
+  - serializedVersion: 2
+    x: .38671875
+    y: .141601562
+    width: .200195312
+    height: .0473632812
+  - serializedVersion: 2
+    x: .679199219
+    y: .112792969
+    width: .160644531
+    height: .0217285156
+  - serializedVersion: 2
+    x: .545410156
+    y: .415771484
+    width: .101074219
+    height: .0205078125
+  - serializedVersion: 2
+    x: .22265625
+    y: .356689453
+    width: .116699219
+    height: .0568847656
+  - serializedVersion: 2
+    x: .412109375
+    y: .500488281
+    width: .118164062
+    height: .0246582031
+  - serializedVersion: 2
+    x: .942382812
+    y: .506347656
+    width: .0444335938
+    height: .0187988281
+  - serializedVersion: 2
+    x: .412109375
+    y: .439453125
+    width: .128417969
+    height: .0307617188
+  - serializedVersion: 2
+    x: .950683594
+    y: .398193359
+    width: .048828125
+    height: .0341796875
+  - serializedVersion: 2
+    x: .106933594
+    y: .356689453
+    width: .115234375
+    height: .0756835938
+  - serializedVersion: 2
+    x: .33984375
+    y: .420654297
+    width: .0571289062
+    height: .0180664062
+  - serializedVersion: 2
+    x: .649902344
+    y: .0600585938
+    width: .0258789062
+    height: .0349121094
+  - serializedVersion: 2
+    x: .679199219
+    y: 0
+    width: .250976562
+    height: .0493164062
+  - serializedVersion: 2
+    x: .545410156
+    y: .356689453
+    width: .111328125
+    height: .0588378906
+  - serializedVersion: 2
+    x: 0
+    y: .559570312
+    width: .0419921875
+    height: .0224609375
+  - serializedVersion: 2
+    x: .744628906
+    y: .281738281
+    width: .16796875
+    height: .0405273438
+  - serializedVersion: 2
+    x: .854980469
+    y: .506103516
+    width: .06640625
+    height: .0209960938
+  textureGUIDs:
+  - 57b6498e0ad20c4418e2ca8303715f37
+  - 30c8fe73d49187449a2ef6d765e821a5
+  - d0853a63bc1bc1647ab861a1afd94a89
+  - dc965d900f2a0cf418370fb39ef14de2
+  - a1af174fcaaf2d4448e9c1aaa48ca191
+  - fb811a1a6f044cc4bbda4fda2ac45ac9
+  - 5dfd0bb63df5cd244b9787b3b2c9c7d2
+  - feb2fb919fef5e24a9df45f28ad3813b
+  - 6be11b806b0bd664e871b3d240d42bb5
+  - 465fd150efeccae418cbace8c628db43
+  - 78bac413777ad6f499425b64828dfdd5
+  - 2226fafc2e038b04d955e25602c466ee
+  - 2ddbec6d472d88c42a5bf186cba5d908
+  - 2e97124687aef434684f94d673a9301a
+  - 6afb3016bf9d54643a252a97ed72f4e5
+  - 87ba4d004b6e311489cad99274ffa1ac
+  - cd6020e9213c4a54e906135ecbd35f84
+  - cdd11a3bc67c4714796fc3cba772095d
+  - d95ddf55c37a2b34ea6a164ca51dd05c
+  - 1a9afbb87e04dee44a153a7efc3497a9
+  - b61e679dcaf11f649893f6c1edf58aa2
+  - e6701069a99a56e47b5f9758c9f6009d
+  - 0184741db3e5a6f4aa86e53aa18f792a
+  - 025e7c49c377133479cb0ad54c4fd020
+  - 19923043571836d4b966036a09b1db9e
+  - 4b1aba2b66817b4429e14c3118b1340d
+  - 50796e48a992a9444ab8b345bad8cd9e
+  - 568f4bc79c4cb73489c73e6b54b01b53
+  - 5956bb2201a3198428aa8e09287a18a9
+  - 7f95c697241a4954d976b688510edf96
+  - 8ddb2620b6fa32442b6c3de10e52d07c
+  - 929f4cc79267bd243864a5874ce8d347
+  - b6e5ddc58969d024d9d1ec35395735ac
+  - bda90c11ac0b1224592b7fad865d176a
+  - bdb2e2632a2735e4796bf0dcf40b292d
+  - d36e1a2b50fe8244aaa8396584c1f223
+  - dce4c90d6481e2f4699c5c20f3b93197
+  - eca679b62fd0ca746b70baef3b7cf45e
+  - ee851bb26a323fb4e9a330517788cc9f
+  - f6e0fe39df1ea3e4888eca3f295f1266
+  - f9414f176d26ef646a5568d5b9cc94a6
+  - f97162768634e014e8b60a1190500628
+  - fa478dafc4944ba46a929753ab91f7f0
+  - 037a028b2c104184f9c73ed5af548314
+  - 10ee8f91491a5524da692ce1e0a01e8d
+  - 1c578cc2ee082924aad9924d41cc2145
+  - 2fa49ec71fa37c442ae47f1a250e5c02
+  - 36ac57636f72c1940aa6f6222ed1a6c9
+  - 452ef60f44deaf546b71117f4194decc
+  - 8f99f5304c128054c9660723c5137b5b
+  - 950d8222c0bdd5047a00f86594479d47
+  - 96cb4b5b83d4cc74e98d4137d64e17f0
+  - edf101d645dc1624e9c164cc5de81e48
+  - 0a9294dd7de562044bf7358988c2ffee
+  - 0e65e867c2296654e9f20734e281595b
+  - 20da00f0f32a84043b1bd331f8aaf654
+  - 2fea7867678cdc6479aa35cb9e2c199c
+  - 44d95a42c704fab449e77c20d0f7b282
+  - 5667d677eedd2fb43aed05203a8bb9e3
+  - 76d7d0e6c9dae9f40835a9a9ea78bfa2
+  - a4d0af43ec3d3624eabff7ae8e8a4c17
+  - bc0a07a09d5011e4b9a528d03bda9b6c
+  - 06f4ff591e44d594ab1f971ed1694b72
+  - 22807bcfa198c6f4eb4533ef998849dd
+  - 23cd3a57554ce5948b2070bd6b9ccace
+  - 4f9b3211dafeb4a4486365f7e92dd84f
+  - 7a89dae403dce43488375caef3b59be1
+  - a7e2aa6aee454d54abb97a43e2f3d89e
+  - c99b83c820e9cd745b46d8f8b449a729
+  - d120b9bb910be8e46b199b240492ff79
+  - d2274e30bc296ec42845228f145bdab1
+  - dc19e1da06e65b1469d3064cf4d14fa7
+  - e7af099bd689cd545a3b326362f87c8e
+  - f984888159005ff41a28924a499f3167
+  - 042fd82426e4bf84d8314037897d6445
+  - 144b2947f4b5b2746a250c4735df2c2a
+  - 2b0c3328eef39ea4189e632708526084
+  - 2c6a2a45f7d6c6f46b72ac506631ede3
+  - 3cd8c0fe9554c4447a6d210d2aee6d83
+  - 636149d19e324894c8a0504895b5a261
+  - 6e396b2f88cd9d84ca4a169f49bd965b
+  - 9e2b43956c47f4347aa8643276e86f72
+  - a50834043e42ccc469e362eab6e84f7f
+  - bb845d2bacd0f1945812f343d9caaf50
+  - c76f648f43cc2eb438c85bf611aa599a
+  textureSizes:
+  - {x: 217, y: 192}
+  - {x: 167, y: 171}
+  - {x: 146, y: 286}
+  - {x: 141, y: 70}
+  - {x: 60, y: 51}
+  - {x: 153, y: 121}
+  - {x: 157, y: 359}
+  - {x: 117, y: 103}
+  - {x: 270, y: 96}
+  - {x: 218, y: 338}
+  - {x: 206, y: 267}
+  - {x: 305, y: 123}
+  - {x: 214, y: 132}
+  - {x: 423, y: 232}
+  - {x: 344, y: 268}
+  - {x: 231, y: 251}
+  - {x: 150, y: 97}
+  - {x: 367, y: 232}
+  - {x: 116, y: 72}
+  - {x: 249, y: 122}
+  - {x: 300, y: 282}
+  - {x: 215, y: 140}
+  - {x: 239, y: 286}
+  - {x: 425, y: 245}
+  - {x: 273, y: 253}
+  - {x: 259, y: 112}
+  - {x: 398, y: 258}
+  - {x: 325, y: 546}
+  - {x: 272, y: 263}
+  - {x: 291, y: 94}
+  - {x: 134, y: 108}
+  - {x: 247, y: 347}
+  - {x: 321, y: 259}
+  - {x: 235, y: 194}
+  - {x: 256, y: 72}
+  - {x: 150, y: 77}
+  - {x: 638, y: 579}
+  - {x: 258, y: 133}
+  - {x: 217, y: 134}
+  - {x: 178, y: 102}
+  - {x: 125, y: 131}
+  - {x: 365, y: 285}
+  - {x: 320, y: 73}
+  - {x: 160, y: 294}
+  - {x: 145, y: 285}
+  - {x: 248, y: 306}
+  - {x: 325, y: 215}
+  - {x: 93, y: 169}
+  - {x: 136, y: 225}
+  - {x: 219, y: 169}
+  - {x: 127, y: 149}
+  - {x: 180, y: 206}
+  - {x: 213, y: 261}
+  - {x: 99, y: 80}
+  - {x: 309, y: 276}
+  - {x: 212, y: 131}
+  - {x: 141, y: 97}
+  - {x: 288, y: 340}
+  - {x: 236, y: 178}
+  - {x: 322, y: 241}
+  - {x: 143, y: 174}
+  - {x: 67, y: 138}
+  - {x: 245, y: 165}
+  - {x: 254, y: 227}
+  - {x: 148, y: 84}
+  - {x: 152, y: 188}
+  - {x: 256, y: 268}
+  - {x: 118, y: 151}
+  - {x: 202, y: 101}
+  - {x: 410, y: 194}
+  - {x: 329, y: 89}
+  - {x: 207, y: 84}
+  - {x: 239, y: 233}
+  - {x: 242, y: 101}
+  - {x: 91, y: 77}
+  - {x: 263, y: 126}
+  - {x: 100, y: 140}
+  - {x: 236, y: 310}
+  - {x: 117, y: 74}
+  - {x: 53, y: 143}
+  - {x: 514, y: 202}
+  - {x: 228, y: 241}
+  - {x: 86, y: 92}
+  - {x: 344, y: 166}
+  - {x: 136, y: 86}
+  defaultPivotOffsets:
+  - {x: .123214282, y: -.381445318}
+  - {x: .14464286, y: -.340068907}
+  - {x: -.219007909, y: .475155264}
+  - {x: -.358928561, y: 0}
+  - {x: .0749999955, y: -.384453773}
+  - {x: -.241071448, y: .311599761}
+  - {x: .287603348, y: .461180121}
+  - {x: .433928549, y: .322520792}
+  - {x: .133928567, y: .10546875}
+  - {x: .0505584367, y: .437888205}
+  - {x: .0905671492, y: -.237577632}
+  - {x: -.375, y: .411803156}
+  - {x: -.466071427, y: .277922064}
+  - {x: .278571457, y: .449307293}
+  - {x: -.401785702, y: .433208942}
+  - {x: -.0910714343, y: -.433864564}
+  - {x: .117857143, y: .298232704}
+  - {x: -.599999964, y: .491517842}
+  - {x: .41785717, y: .0172619056}
+  - {x: -.466071427, y: .317081392}
+  - {x: -.262499988, y: -.17097263}
+  - {x: .133928567, y: -.213903069}
+  - {x: -.367914945, y: .447204947}
+  - {x: .375, y: .436771154}
+  - {x: -.16607143, y: -.404644251}
+  - {x: .257142872, y: -.123883933}
+  - {x: .423214287, y: .413205981}
+  - {x: 0, y: 0}
+  - {x: -.0642857105, y: -.398913622}
+  - {x: .278571427, y: 0}
+  - {x: .375, y: .232638896}
+  - {x: .327218533, y: .479813665}
+  - {x: -.0857142881, y: -.252302796}
+  - {x: .0803571418, y: -.447763264}
+  - {x: -.423214287, y: 0}
+  - {x: -.385714263, y: .0417439677}
+  - {x: 0, y: 0}
+  - {x: -.41785717, y: -.228625149}
+  - {x: .439285696, y: .338339537}
+  - {x: -.219642848, y: .439390749}
+  - {x: .353571415, y: .362936199}
+  - {x: -.0237749312, y: .471953243}
+  - {x: -.466071457, y: .0234833658}
+  - {x: -.333831519, y: .437888175}
+  - {x: .238059536, y: .461180121}
+  - {x: -.160939693, y: .465838522}
+  - {x: .20892857, y: .032392025}
+  - {x: -.431727141, y: .377329201}
+  - {x: .369930595, y: .433229804}
+  - {x: -.428571403, y: .374873191}
+  - {x: .398970515, y: .20962733}
+  - {x: -.182142869, y: -.435332894}
+  - {x: -.131287724, y: -.214285731}
+  - {x: -.460714281, y: -.0662946403}
+  - {x: .0374999978, y: -.239906818}
+  - {x: -.117857151, y: -.173391491}
+  - {x: .198214278, y: .24140279}
+  - {x: -.395962715, y: .447204947}
+  - {x: .107142866, y: -.411958277}
+  - {x: -.369642884, y: .400829881}
+  - {x: -.402445376, y: .400621116}
+  - {x: .201492533, y: .279503107}
+  - {x: -.182142854, y: .3659091}
+  - {x: -.160714284, y: -.31769979}
+  - {x: -.364285737, y: -.235969394}
+  - {x: .380271345, y: .395962745}
+  - {x: -.401785702, y: .40426439}
+  - {x: -.0774950013, y: .139751554}
+  - {x: -.139285713, y: .192857131}
+  - {x: -.375, y: .407584697}
+  - {x: -.337499976, y: -.198033705}
+  - {x: -.364285737, y: .0660076588}
+  - {x: -.310714275, y: -.445102721}
+  - {x: -.391071439, y: -.205374822}
+  - {x: .139285713, y: .246915564}
+  - {x: .160714298, y: .100637756}
+  - {x: .267391324, y: .260869592}
+  - {x: .0489525199, y: -.218944088}
+  - {x: -.0160714276, y: .237162173}
+  - {x: -.100550801, y: .321428567}
+  - {x: -.251785696, y: .354420066}
+  - {x: -.0642857179, y: -.440930665}
+  - {x: -.160714284, y: .150232911}
+  - {x: -.0696428567, y: -.377452642}
+  - {x: -.283928573, y: .279568106}
+  textureNames:
+  - LindaIdle_Head
+  - LindaIdle_LeftForearm
+  - LindaIdle_LeftLeg
+  - LindaIdle_LeftUpperArm
+  - LindaIdle_Neck
+  - LindaIdle_RightForearm
+  - LindaIdle_RightLeg
+  - LindaIdle_RightUpperArm
+  - LindaIdle_Scarf
+  - LindaIdle_Skirt
+  - LindaIdle_Torso
+  - LindaAttack_Keyboard
+  - LindaAttack_LeftUpperArm
+  - LindaAttack_RightLeg
+  - LindaAttack_LeftLeg
+  - LindaAttack_Head
+  - LindaAttack_RightForearm
+  - LindaAttack_Skirt
+  - LindaAttack_RightUpperArm
+  - LindaAttack_LeftForearm
+  - LindaAttack_Torso
+  - LindaAttack_Scarf
+  - LindaBlock_LeftLeg
+  - LindaDash_Skirt
+  - LindaDash_Torso
+  - LindaBlock_Scarf
+  - LindaDash_LeftLeg
+  - LindaBlock_Shield
+  - LindaDash_Head
+  - LindaDash_Scarf
+  - LindaBlock_RightUpperArm
+  - LindaBlock_RightLeg
+  - LindaBlock_Torso
+  - LindaBlock_Head
+  - LindaDash_LeftUpperArm
+  - LindaBlock_LeftUpperArm
+  - LindaDash_Chair
+  - LindaBlock_LeftForearm
+  - LindaDash_RightForearm
+  - LindaBlock_RightForearm
+  - LindaDash_RightUpperArm
+  - LindaBlock_Skirt
+  - LindaDash_Forearm
+  - LindaCountered_LeftLeg
+  - LindaCountered_RightLeg
+  - LindaCountered_Skirt
+  - LindaCountered_Scarf
+  - LindaCountered_LeftUpperArm
+  - LindaCountered_RightForearm
+  - LindaCountered_LeftForearm
+  - LindaCountered_RightUpperArm
+  - LindaCountered_Head
+  - LindaCountered_Torso
+  - LindaHurt1_LeftUpperArm
+  - LindaHurt1_Torso
+  - LindaHurt1_Scarf
+  - LindaHurt1_LeftForearm
+  - LindaHurt1_LeftLeg
+  - LindaHurt1_Head
+  - LindaHurt1_Skirt
+  - LindaHurt1_RightForearm
+  - LindaHurt1_RightUpperArm
+  - LindaHurt2_LeftThigh
+  - LindaHurt2_Torso
+  - LindaHurt2_RightUpperArm
+  - LindaHurt2_LeftCalf
+  - LindaHurt2_RightLeg
+  - LindaHurt2_LeftFoot
+  - LindaHurt2_Scarf
+  - LindaHurt2_Skirt
+  - LindaHurt2_LeftForearm
+  - LindaHurt2_LeftUpperArm
+  - LindaHurt2_Head
+  - LindaHurt2_RightForearm
+  - LindaSpecial_LeftHand
+  - LindaSpecial_Scarf
+  - LindaSpecial_RightUpperArm
+  - LindaSpecial_Torso
+  - LindaSpecial_RightForearm
+  - LindaSpecial_LeftUpperArm
+  - LindaSpecial_Skirt
+  - LindaSpecial_Head
+  - LindaSpecial_LeftForearm
+  - LindaSpecial_Laptop
+  - LindaSpecial_RightHand
+  texturePaths:
+  - Assets/Linda Parts/LindaIdle_Head.png
+  - Assets/Linda Parts/LindaIdle_LeftForearm.png
+  - Assets/Linda Parts/LindaIdle_LeftLeg.png
+  - Assets/Linda Parts/LindaIdle_LeftUpperArm.png
+  - Assets/Linda Parts/LindaIdle_Neck.png
+  - Assets/Linda Parts/LindaIdle_RightForearm.png
+  - Assets/Linda Parts/LindaIdle_RightLeg.png
+  - Assets/Linda Parts/LindaIdle_RightUpperArm.png
+  - Assets/Linda Parts/LindaIdle_Scarf.png
+  - Assets/Linda Parts/LindaIdle_Skirt.png
+  - Assets/Linda Parts/LindaIdle_Torso.png
+  - Assets/Linda Parts/LindaAttack_Keyboard.png
+  - Assets/Linda Parts/LindaAttack_LeftUpperArm.png
+  - Assets/Linda Parts/LindaAttack_RightLeg.png
+  - Assets/Linda Parts/LindaAttack_LeftLeg.png
+  - Assets/Linda Parts/LindaAttack_Head.png
+  - Assets/Linda Parts/LindaAttack_RightForearm.png
+  - Assets/Linda Parts/LindaAttack_Skirt.png
+  - Assets/Linda Parts/LindaAttack_RightUpperArm.png
+  - Assets/Linda Parts/LindaAttack_LeftForearm.png
+  - Assets/Linda Parts/LindaAttack_Torso.png
+  - Assets/Linda Parts/LindaAttack_Scarf.png
+  - Assets/Linda Parts/LindaBlock_LeftLeg.png
+  - Assets/Linda Parts/LindaDash_Skirt.png
+  - Assets/Linda Parts/LindaDash_Torso.png
+  - Assets/Linda Parts/LindaBlock_Scarf.png
+  - Assets/Linda Parts/LindaDash_LeftLeg.png
+  - Assets/Linda Parts/LindaBlock_Shield.png
+  - Assets/Linda Parts/LindaDash_Head.png
+  - Assets/Linda Parts/LindaDash_Scarf.png
+  - Assets/Linda Parts/LindaBlock_RightUpperArm.png
+  - Assets/Linda Parts/LindaBlock_RightLeg.png
+  - Assets/Linda Parts/LindaBlock_Torso.png
+  - Assets/Linda Parts/LindaBlock_Head.png
+  - Assets/Linda Parts/LindaDash_LeftUpperArm.png
+  - Assets/Linda Parts/LindaBlock_LeftUpperArm.png
+  - Assets/Linda Parts/LindaDash_Chair.png
+  - Assets/Linda Parts/LindaBlock_LeftForearm.png
+  - Assets/Linda Parts/LindaDash_RightForearm.png
+  - Assets/Linda Parts/LindaBlock_RightForearm.png
+  - Assets/Linda Parts/LindaDash_RightUpperArm.png
+  - Assets/Linda Parts/LindaBlock_Skirt.png
+  - Assets/Linda Parts/LindaDash_Forearm.png
+  - Assets/Linda Parts/LindaCountered_LeftLeg.png
+  - Assets/Linda Parts/LindaCountered_RightLeg.png
+  - Assets/Linda Parts/LindaCountered_Skirt.png
+  - Assets/Linda Parts/LindaCountered_Scarf.png
+  - Assets/Linda Parts/LindaCountered_LeftUpperArm.png
+  - Assets/Linda Parts/LindaCountered_RightForearm.png
+  - Assets/Linda Parts/LindaCountered_LeftForearm.png
+  - Assets/Linda Parts/LindaCountered_RightUpperArm.png
+  - Assets/Linda Parts/LindaCountered_Head.png
+  - Assets/Linda Parts/LindaCountered_Torso.png
+  - Assets/Linda Parts/LindaHurt1_LeftUpperArm.png
+  - Assets/Linda Parts/LindaHurt1_Torso.png
+  - Assets/Linda Parts/LindaHurt1_Scarf.png
+  - Assets/Linda Parts/LindaHurt1_LeftForearm.png
+  - Assets/Linda Parts/LindaHurt1_LeftLeg.png
+  - Assets/Linda Parts/LindaHurt1_Head.png
+  - Assets/Linda Parts/LindaHurt1_Skirt.png
+  - Assets/Linda Parts/LindaHurt1_RightForearm.png
+  - Assets/Linda Parts/LindaHurt1_RightUpperArm.png
+  - Assets/Linda Parts/LindaHurt2_LeftThigh.png
+  - Assets/Linda Parts/LindaHurt2_Torso.png
+  - Assets/Linda Parts/LindaHurt2_RightUpperArm.png
+  - Assets/Linda Parts/LindaHurt2_LeftCalf.png
+  - Assets/Linda Parts/LindaHurt2_RightLeg.png
+  - Assets/Linda Parts/LindaHurt2_LeftFoot.png
+  - Assets/Linda Parts/LindaHurt2_Scarf.png
+  - Assets/Linda Parts/LindaHurt2_Skirt.png
+  - Assets/Linda Parts/LindaHurt2_LeftForearm.png
+  - Assets/Linda Parts/LindaHurt2_LeftUpperArm.png
+  - Assets/Linda Parts/LindaHurt2_Head.png
+  - Assets/Linda Parts/LindaHurt2_RightForearm.png
+  - Assets/Linda Parts/LindaSpecial_LeftHand.png
+  - Assets/Linda Parts/LindaSpecial_Scarf.png
+  - Assets/Linda Parts/LindaSpecial_RightUpperArm.png
+  - Assets/Linda Parts/LindaSpecial_Torso.png
+  - Assets/Linda Parts/LindaSpecial_RightForearm.png
+  - Assets/Linda Parts/LindaSpecial_LeftUpperArm.png
+  - Assets/Linda Parts/LindaSpecial_Skirt.png
+  - Assets/Linda Parts/LindaSpecial_Head.png
+  - Assets/Linda Parts/LindaSpecial_LeftForearm.png
+  - Assets/Linda Parts/LindaSpecial_Laptop.png
+  - Assets/Linda Parts/LindaSpecial_RightHand.png
+  lastBuildID: 2014042718301955
+  needsRebuilt: 0
+  dataVersion: 4
+  maxAtlasSize: 2048
+  padding: 1
+  forceSquare: 0

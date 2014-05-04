@@ -1,9 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\reverb\Assets\Scripts\UI\Pause.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CombatScript.cs">
     <Files>
       <File FileName="..\reverb\Assets\Scripts\Networking\NetworkManager.cs" Line="31" Column="24" />
       <File FileName="..\reverb\Assets\Scripts\UI\Pause.cs" Line="28" Column="31" />
+      <File FileName="Assets\Scripts\CollisionCatcherScript.cs" Line="17" Column="105" />
+      <File FileName="Assets\Scripts\CombatScript.cs" Line="42" Column="2" />
+      <File FileName="Assets\Scripts\MovementAnimationScript.cs" Line="196" Column="1" />
+      <File FileName="Assets\Scripts\HealthScript.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

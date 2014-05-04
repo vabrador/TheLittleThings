@@ -1,0 +1,156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 529336600, guid: 289bab7cc27a12745b5df9b71d7b06c4, type: 3}
+  m_Name: George Atlas
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: c111b930a9ff8bc48afc0623c28a28e9, type: 2}
+  uvs:
+  - serializedVersion: 2
+    x: .340820312
+    y: 0
+    width: .115234375
+    height: .392578125
+  - serializedVersion: 2
+    x: .727539062
+    y: .243164062
+    width: .116210938
+    height: .140625
+  - serializedVersion: 2
+    x: 0
+    y: .904296875
+    width: .178710938
+    height: .0791015625
+  - serializedVersion: 2
+    x: .846679688
+    y: 0
+    width: .104492188
+    height: .264648438
+  - serializedVersion: 2
+    x: 0
+    y: .649414062
+    width: .196289062
+    height: .25390625
+  - serializedVersion: 2
+    x: .727539062
+    y: 0
+    width: .118164062
+    height: .2421875
+  - serializedVersion: 2
+    x: 0
+    y: 0
+    width: .33984375
+    height: .412109375
+  - serializedVersion: 2
+    x: .576171875
+    y: 0
+    width: .150390625
+    height: .197265625
+  - serializedVersion: 2
+    x: 0
+    y: .413085938
+    width: .239257812
+    height: .235351562
+  - serializedVersion: 2
+    x: .197265625
+    y: .649414062
+    width: .0986328125
+    height: .310546875
+  - serializedVersion: 2
+    x: .340820312
+    y: .393554688
+    width: .16015625
+    height: .15234375
+  - serializedVersion: 2
+    x: .576171875
+    y: .198242188
+    width: .149414062
+    height: .192382812
+  - serializedVersion: 2
+    x: .45703125
+    y: 0
+    width: .118164062
+    height: .354492188
+  textureGUIDs:
+  - 0443e73f67dbbec438c0ff8234a2b132
+  - 3ce34b80a73af024aac6f628a39a26cb
+  - 40e1b0e76cf10374093e85ea9c410aef
+  - 455b76e8f96119a4bbe5d3406ca69f83
+  - 4decded9d9d57974bb6eb1299c0ae0d6
+  - 5f20d4be6b909bf4c8023bbddadef5ff
+  - 72b53cc78beeb1943924032f43eb1fe4
+  - 77768cb0f1305594b83ac37a93e31b83
+  - 77cac66629cd74344a5d9415040b259f
+  - 81bac3dc19f7f6c4bb2e8378f0106055
+  - a42fdfcb9e4ad584ab89350c959f45ff
+  - d84cc27c984b6a34098aa5750262536d
+  - fa74b7c67ae0e024599fea6cc58345d1
+  textureSizes:
+  - {x: 118, y: 402}
+  - {x: 119, y: 144}
+  - {x: 183, y: 81}
+  - {x: 107, y: 271}
+  - {x: 201, y: 260}
+  - {x: 121, y: 248}
+  - {x: 348, y: 422}
+  - {x: 154, y: 202}
+  - {x: 245, y: 241}
+  - {x: 101, y: 318}
+  - {x: 164, y: 156}
+  - {x: 153, y: 197}
+  - {x: 121, y: 363}
+  defaultPivotOffsets:
+  - {x: .12223012, y: .406622916}
+  - {x: -.039459262, y: -.107142858}
+  - {x: -.321428567, y: .338888884}
+  - {x: .271361828, y: .41925469}
+  - {x: -.235005111, y: .381987572}
+  - {x: .124120943, y: .279503107}
+  - {x: .180766746, y: -.372670799}
+  - {x: -.327109873, y: .315543056}
+  - {x: .348214269, y: -.294087142}
+  - {x: .176003948, y: .395962715}
+  - {x: -.262499988, y: .281593412}
+  - {x: -.071976617, y: -.335403711}
+  - {x: .111801252, y: .405279517}
+  textureNames:
+  - GeorgeIdle_RightThigh
+  - GeorgeIdle_Neck
+  - GeorgeIdle_LeftFoot
+  - GeorgeIdle_LeftCalf
+  - GeorgeIdle_RightForearm
+  - GeorgeIdle_RightUpperArm
+  - GeorgeIdle_Torso
+  - GeorgeIdle_LeftUpperArm
+  - GeorgeIdle_LeftForearm
+  - GeorgeIdle_RightCalf
+  - GeorgeIdle_RightFoot
+  - GeorgeIdle_Head
+  - GeorgeIdle_LeftThigh
+  texturePaths:
+  - Assets/George Parts/GeorgeIdle_RightThigh.png
+  - Assets/George Parts/GeorgeIdle_Neck.png
+  - Assets/George Parts/GeorgeIdle_LeftFoot.png
+  - Assets/George Parts/GeorgeIdle_LeftCalf.png
+  - Assets/George Parts/GeorgeIdle_RightForearm.png
+  - Assets/George Parts/GeorgeIdle_RightUpperArm.png
+  - Assets/George Parts/GeorgeIdle_Torso.png
+  - Assets/George Parts/GeorgeIdle_LeftUpperArm.png
+  - Assets/George Parts/GeorgeIdle_LeftForearm.png
+  - Assets/George Parts/GeorgeIdle_RightCalf.png
+  - Assets/George Parts/GeorgeIdle_RightFoot.png
+  - Assets/George Parts/GeorgeIdle_Head.png
+  - Assets/George Parts/GeorgeIdle_LeftThigh.png
+  lastBuildID: 20140430200438125
+  needsRebuilt: 0
+  dataVersion: 4
+  maxAtlasSize: 1024
+  padding: 1
+  forceSquare: 0

@@ -47,10 +47,15 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\BackgroundParallax.cs" />
-     <Compile Include="Assets\Scripts\CounterTriggerScript.cs" />
+     <Compile Include="Assets\Scripts\CharacterAudio.cs" />
+     <Compile Include="Assets\Scripts\CollisionCatcherScript.cs" />
+     <Compile Include="Assets\Scripts\CombatScript.cs" />
      <Compile Include="Assets\Scripts\ExpositionGUI.cs" />
-     <Compile Include="Assets\Scripts\FighterControllerScript.cs" />
-     <Compile Include="Assets\Scripts\FighterScript.cs" />
+     <Compile Include="Assets\Scripts\HealthBars.cs" />
+     <Compile Include="Assets\Scripts\HealthScript.cs" />
+     <Compile Include="Assets\Scripts\MovementAnimationScript.cs" />
+     <Compile Include="Assets\Scripts\P1_controls.cs" />
+     <Compile Include="Assets\Scripts\P2_controls.cs" />
      <Compile Include="Assets\Scripts\PlayerControl.cs" />
      <Compile Include="Assets\Scripts\Pre-Built Scripts\BackgroundPropSpawner.cs" />
      <Compile Include="Assets\Scripts\Pre-Built Scripts\Bomb.cs" />
@@ -87,8 +92,6 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{37E332B1-5D66-B5EE-48B8-244BF4D367A6}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
       <Project>{E58D8DCB-704B-0312-2479-CE7BFA9B9680}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>

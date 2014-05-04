@@ -1,2 +1,17 @@
 SmoothMovesTest/
 Assets/SmoothMoves
+.DS_Store
+Library
+Library/metadata
+Library/ScriptAssemblies
+Library/guidmapper
+Library/assetDatabase3
+Library/CurrentLayout.dwlt
+Library/expandedItems
+Temp/*
+*.sln
+*.csproj
+*.pidb
+*.unityproj
+*.sln
+*.userprefs?

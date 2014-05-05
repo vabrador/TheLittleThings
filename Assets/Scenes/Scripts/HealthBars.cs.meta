@@ -2,7 +2,11 @@ fileFormatVersion: 2
 guid: 5c8981f8d6828a04e875dadb71b02411
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - combatScript: {instanceID: 0}
+  - barFrame: {instanceID: 0}
+  - healthBar: {instanceID: 0}
+  - specialBar: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -67,6 +67,14 @@ public class CombatScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		AutoDamageChar ();
+		//currentHealth--;
+	}
+	
+	void OnCollisionEnter2D(Collision2D collision) {
+		//Debug.Log ("There was just a collision between " + gameObject + " and " + collision.collider);
+		if (collision.gameObject.tag == "fighter") {
+			
+		}
 	}
 	
 	// Handles the logic of what should happen based on the respective state and start times.  Specifically deals with

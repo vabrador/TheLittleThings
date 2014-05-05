@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class HealthBars : MonoBehaviour {
-	
+
 	public GameObject character;
 	public int startHealth;
 	public int currentHealth;
@@ -14,7 +14,14 @@ public class HealthBars : MonoBehaviour {
 	public Texture2D barFrame; 
 	public Texture2D healthBar; 
 	public Texture2D specialBar;
-	
+
+	public float healthBarPositionX;
+	public float healthBarPositionY;
+
+	public Texture2D barFrame; 
+	public Texture2D healthBar; 
+	public Texture2D specialBar;
+
 	public GUIStyle barStyle;
 	
 	public float healthBarLength;

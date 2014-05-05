@@ -2711,7 +2711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8981f8d6828a04e875dadb71b02411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  combatScript: {fileID: 0}
+  character: {fileID: 1482902034}
   startHealth: 0
   currentHealth: 0
   healthBarPositionX: 0
@@ -29958,7 +29958,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8981f8d6828a04e875dadb71b02411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  combatScript: {fileID: 1482902036}
+  character: {fileID: 0}
   startHealth: 0
   currentHealth: 0
   healthBarPositionX: 0

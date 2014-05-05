@@ -46,7 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Blank.cs" />
      <Compile Include="Assets\Scripts\BackgroundParallax.cs" />
      <Compile Include="Assets\Scripts\CollisionCatcherScript.cs" />
      <Compile Include="Assets\Scripts\CombatScript.cs" />

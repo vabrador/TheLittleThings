@@ -57,7 +57,7 @@ public class CombatScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		//currentHealth--;
 	}
 	
 	void OnCollisionEnter2D(Collision2D collision) {

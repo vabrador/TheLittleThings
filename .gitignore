@@ -6,7 +6,7 @@ Library/metadata
 Library/ScriptAssemblies
 Library/guidmapper
 Library/assetDatabase3
-Library/CurrentLayout.dwlt
+Library/*.dwlt
 Library/expandedItems
 Temp/*
 *.sln
@@ -14,4 +14,4 @@ Temp/*
 *.pidb
 *.unityproj
 *.sln
-*.userprefs?
+*.userprefs

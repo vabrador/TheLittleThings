@@ -53525,7 +53525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fighterAnimation: {fileID: 1024004833}
-  maxSpeed: 35
+  maxSpeed: 50
   characterSide: left
   stateList: []
   attackLength: 1
@@ -55713,7 +55713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fighterAnimation: {fileID: 1269161589}
-  maxSpeed: 35
+  maxSpeed: 50
   characterSide: right
   stateList: []
   attackLength: 1

@@ -14,70 +14,530 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: c111b930a9ff8bc48afc0623c28a28e9, type: 2}
   uvs:
   - serializedVersion: 2
-    x: .340820312
+    x: .618652344
+    y: .756835938
+    width: .0288085938
+    height: .196289062
+  - serializedVersion: 2
+    x: .875732422
+    y: .767089844
+    width: .0290527344
+    height: .0703125
+  - serializedVersion: 2
+    x: .618652344
+    y: .953613281
+    width: .0446777344
+    height: .0395507812
+  - serializedVersion: 2
+    x: .849365234
+    y: .767089844
+    width: .0261230469
+    height: .132324219
+  - serializedVersion: 2
+    x: .569335938
+    y: .754394531
+    width: .0490722656
+    height: .126953125
+  - serializedVersion: 2
+    x: .771240234
+    y: .784667969
+    width: .0295410156
+    height: .12109375
+  - serializedVersion: 2
+    x: .292480469
+    y: .4609375
+    width: .0849609375
+    height: .206054688
+  - serializedVersion: 2
+    x: .958984375
+    y: .405273438
+    width: .0375976562
+    height: .0986328125
+  - serializedVersion: 2
+    x: .668701172
+    y: .166503906
+    width: .0598144531
+    height: .117675781
+  - serializedVersion: 2
+    x: .739257812
+    y: .691894531
+    width: .0246582031
+    height: .155273438
+  - serializedVersion: 2
+    x: .903076172
+    y: .511230469
+    width: .0400390625
+    height: .076171875
+  - serializedVersion: 2
+    x: .8046875
+    y: .852539062
+    width: .0373535156
+    height: .0961914062
+  - serializedVersion: 2
+    x: .668701172
+    y: .575195312
+    width: .0295410156
+    height: .177246094
+  - serializedVersion: 2
+    x: .849365234
+    y: .672851562
+    width: .0378417969
+    height: .09375
+  - serializedVersion: 2
+    x: .771240234
+    y: .405273438
+    width: .0405273438
+    height: .10546875
+  - serializedVersion: 2
+    x: .849365234
+    y: .899902344
+    width: .0249023438
+    height: .0634765625
+  - serializedVersion: 2
+    x: .292480469
+    y: .227050781
+    width: .0810546875
+    height: .233398438
+  - serializedVersion: 2
+    x: .945800781
     y: 0
-    width: .115234375
-    height: .392578125
+    width: .0476074219
+    height: .134765625
   - serializedVersion: 2
-    x: .727539062
-    y: .243164062
-    width: .116210938
-    height: .140625
+    x: .893066406
+    y: .588378906
+    width: .0439453125
+    height: .0776367188
   - serializedVersion: 2
-    x: 0
-    y: .904296875
-    width: .178710938
-    height: .0791015625
-  - serializedVersion: 2
-    x: .846679688
+    x: .779785156
     y: 0
-    width: .104492188
-    height: .264648438
-  - serializedVersion: 2
-    x: 0
-    y: .649414062
-    width: .196289062
-    height: .25390625
-  - serializedVersion: 2
-    x: .727539062
-    y: 0
-    width: .118164062
-    height: .2421875
-  - serializedVersion: 2
-    x: 0
-    y: 0
-    width: .33984375
-    height: .412109375
-  - serializedVersion: 2
-    x: .576171875
-    y: 0
-    width: .150390625
-    height: .197265625
-  - serializedVersion: 2
-    x: 0
-    y: .413085938
-    width: .239257812
-    height: .235351562
-  - serializedVersion: 2
-    x: .197265625
-    y: .649414062
-    width: .0986328125
-    height: .310546875
-  - serializedVersion: 2
-    x: .340820312
-    y: .393554688
-    width: .16015625
+    width: .0493164062
     height: .15234375
   - serializedVersion: 2
-    x: .576171875
-    y: .198242188
-    width: .149414062
-    height: .192382812
+    x: .771240234
+    y: .633789062
+    width: .0241699219
+    height: .150390625
   - serializedVersion: 2
-    x: .45703125
+    x: .8046875
+    y: .758300781
+    width: .0395507812
+    height: .09375
+  - serializedVersion: 2
+    x: .829345703
     y: 0
-    width: .118164062
-    height: .354492188
+    width: .0515136719
+    height: .142089844
+  - serializedVersion: 2
+    x: .425537109
+    y: .834960938
+    width: .0715332031
+    height: .158691406
+  - serializedVersion: 2
+    x: .739257812
+    y: .84765625
+    width: .0300292969
+    height: .126953125
+  - serializedVersion: 2
+    x: .935302734
+    y: .284667969
+    width: .0407714844
+    height: .106445312
+  - serializedVersion: 2
+    x: .150146484
+    y: .917480469
+    width: .0361328125
+    height: .078125
+  - serializedVersion: 2
+    x: .0803222656
+    y: .917480469
+    width: .0695800781
+    height: .0717773438
+  - serializedVersion: 2
+    x: .760986328
+    y: .363769531
+    width: .0346679688
+    height: .0361328125
+  - serializedVersion: 2
+    x: 0
+    y: .494140625
+    width: .188476562
+    height: .422851562
+  - serializedVersion: 2
+    x: .364257812
+    y: .863769531
+    width: .0595703125
+    height: .135253906
+  - serializedVersion: 2
+    x: .958251953
+    y: .672851562
+    width: .0339355469
+    height: .0810546875
+  - serializedVersion: 2
+    x: .373779297
+    y: .227050781
+    width: .0500488281
+    height: .204101562
+  - serializedVersion: 2
+    x: .701416016
+    y: .405273438
+    width: .0375976562
+    height: .133300781
+  - serializedVersion: 2
+    x: .668701172
+    y: .405273438
+    width: .0324707031
+    height: .169433594
+  - serializedVersion: 2
+    x: .822265625
+    y: .353515625
+    width: .0483398438
+    height: .046875
+  - serializedVersion: 2
+    x: .701416016
+    y: .673828125
+    width: .0375976562
+    height: .128417969
+  - serializedVersion: 2
+    x: .8046875
+    y: .94921875
+    width: .0383300781
+    height: .044921875
+  - serializedVersion: 2
+    x: .711181641
+    y: 0
+    width: .068359375
+    height: .147460938
+  - serializedVersion: 2
+    x: .875732422
+    y: .904785156
+    width: .0280761719
+    height: .0454101562
+  - serializedVersion: 2
+    x: .771240234
+    y: .511230469
+    width: .033203125
+    height: .122070312
+  - serializedVersion: 2
+    x: .569335938
+    y: .881835938
+    width: .0480957031
+    height: .115234375
+  - serializedVersion: 2
+    x: .425537109
+    y: 0
+    width: .0812988281
+    height: .201660156
+  - serializedVersion: 2
+    x: .188720703
+    y: .742675781
+    width: .0874023438
+    height: .244628906
+  - serializedVersion: 2
+    x: .881103516
+    y: 0
+    width: .064453125
+    height: .109375
+  - serializedVersion: 2
+    x: .783935547
+    y: .166503906
+    width: .0610351562
+    height: .0903320312
+  - serializedVersion: 2
+    x: .845214844
+    y: .166503906
+    width: .0483398438
+    height: .104980469
+  - serializedVersion: 2
+    x: .425537109
+    y: .610839844
+    width: .0615234375
+    height: .223632812
+  - serializedVersion: 2
+    x: .373779297
+    y: .431640625
+    width: .0239257812
+    height: .0151367188
+  - serializedVersion: 2
+    x: .569335938
+    y: .352539062
+    width: .037109375
+    height: .224121094
+  - serializedVersion: 2
+    x: .569335938
+    y: .577148438
+    width: .0363769531
+    height: .176757812
+  - serializedVersion: 2
+    x: .379150391
+    y: .667480469
+    width: .0375976562
+    height: .189453125
+  - serializedVersion: 2
+    x: .850097656
+    y: .588378906
+    width: .0427246094
+    height: .080078125
+  - serializedVersion: 2
+    x: .71484375
+    y: .284667969
+    width: .0458984375
+    height: .107421875
+  - serializedVersion: 2
+    x: .507080078
+    y: .197753906
+    width: .0603027344
+    height: .185058594
+  - serializedVersion: 2
+    x: .618652344
+    y: .166503906
+    width: .0498046875
+    height: .174316406
+  - serializedVersion: 2
+    x: .618652344
+    y: .466796875
+    width: .03515625
+    height: .166992188
+  - serializedVersion: 2
+    x: .425537109
+    y: .202148438
+    width: .0751953125
+    height: .202148438
+  - serializedVersion: 2
+    x: .635986328
+    y: 0
+    width: .0749511719
+    height: .138671875
+  - serializedVersion: 2
+    x: 0
+    y: 0
+    width: .292236328
+    height: .493652344
+  - serializedVersion: 2
+    x: .507080078
+    y: .383300781
+    width: .060546875
+    height: .175292969
+  - serializedVersion: 2
+    x: .760986328
+    y: .284667969
+    width: .0610351562
+    height: .0786132812
+  - serializedVersion: 2
+    x: .881103516
+    y: .109863281
+    width: .0537109375
+    height: .05078125
+  - serializedVersion: 2
+    x: .891113281
+    y: .284667969
+    width: .0439453125
+    height: .102050781
+  - serializedVersion: 2
+    x: .875732422
+    y: .837890625
+    width: .0285644531
+    height: .06640625
+  - serializedVersion: 2
+    x: .893798828
+    y: .166503906
+    width: .05078125
+    height: .0986328125
+  - serializedVersion: 2
+    x: .569335938
+    y: 0
+    width: .06640625
+    height: .166015625
+  - serializedVersion: 2
+    x: 0
+    y: .917480469
+    width: .080078125
+    height: .0771484375
+  - serializedVersion: 2
+    x: .507080078
+    y: .559082031
+    width: .0454101562
+    height: .207519531
+  - serializedVersion: 2
+    x: .822265625
+    y: .284667969
+    width: .0686035156
+    height: .068359375
+  - serializedVersion: 2
+    x: .812011719
+    y: .405273438
+    width: .056640625
+    height: .0751953125
+  - serializedVersion: 2
+    x: .668701172
+    y: .284667969
+    width: .0458984375
+    height: .120117188
+  - serializedVersion: 2
+    x: .8046875
+    y: .511230469
+    width: .0495605469
+    height: .0766601562
+  - serializedVersion: 2
+    x: .507080078
+    y: 0
+    width: .0620117188
+    height: .197265625
+  - serializedVersion: 2
+    x: .292480469
+    y: .667480469
+    width: .0864257812
+    height: .195800781
+  - serializedVersion: 2
+    x: .292480469
+    y: 0
+    width: .1328125
+    height: .2265625
+  - serializedVersion: 2
+    x: .188720703
+    y: .494140625
+    width: .0900878906
+    height: .248046875
+  - serializedVersion: 2
+    x: .739257812
+    y: .405273438
+    width: .0317382812
+    height: .149902344
+  - serializedVersion: 2
+    x: .868896484
+    y: .405273438
+    width: .0432128906
+    height: .0947265625
+  - serializedVersion: 2
+    x: .668701172
+    y: .752929688
+    width: .0322265625
+    height: .1484375
+  - serializedVersion: 2
+    x: .937255859
+    y: .588378906
+    width: .0354003906
+    height: .0825195312
+  - serializedVersion: 2
+    x: .668701172
+    y: .901855469
+    width: .029296875
+    height: .0942382812
+  - serializedVersion: 2
+    x: .507080078
+    y: .767089844
+    width: .0546875
+    height: .170898438
+  - serializedVersion: 2
+    x: .922607422
+    y: .672851562
+    width: .0354003906
+    height: .0825195312
+  - serializedVersion: 2
+    x: .618652344
+    y: .341308594
+    width: .0498046875
+    height: .125
+  - serializedVersion: 2
+    x: .701416016
+    y: .802734375
+    width: .0339355469
+    height: .141601562
+  - serializedVersion: 2
+    x: .771240234
+    y: .90625
+    width: .0275878906
+    height: .0791015625
+  - serializedVersion: 2
+    x: .569335938
+    y: .166503906
+    width: .0490722656
+    height: .185546875
+  - serializedVersion: 2
+    x: .618652344
+    y: .634277344
+    width: .0466308594
+    height: .122070312
+  - serializedVersion: 2
+    x: .887451172
+    y: .672851562
+    width: .0349121094
+    height: .0869140625
+  - serializedVersion: 2
+    x: .8046875
+    y: .588378906
+    width: .0451660156
+    height: .083984375
+  - serializedVersion: 2
+    x: .292480469
+    y: .863769531
+    width: .0715332031
+    height: .135253906
+  - serializedVersion: 2
+    x: .728759766
+    y: .166503906
+    width: .0549316406
+    height: .101074219
+  - serializedVersion: 2
+    x: .739257812
+    y: .555664062
+    width: .0300292969
+    height: .135742188
+  - serializedVersion: 2
+    x: .377685547
+    y: .4609375
+    width: .0439453125
+    height: .202636719
+  - serializedVersion: 2
+    x: .507080078
+    y: .938476562
+    width: .0556640625
+    height: .0581054688
+  - serializedVersion: 2
+    x: .701416016
+    y: .944824219
+    width: .0375976562
+    height: .052734375
+  - serializedVersion: 2
+    x: .943359375
+    y: .511230469
+    width: .0437011719
+    height: .05859375
+  - serializedVersion: 2
+    x: .944824219
+    y: .166503906
+    width: .044921875
+    height: .109863281
+  - serializedVersion: 2
+    x: .701416016
+    y: .5390625
+    width: .037109375
+    height: .134277344
+  - serializedVersion: 2
+    x: .972900391
+    y: .588378906
+    width: .025390625
+    height: .0625
+  - serializedVersion: 2
+    x: .425537109
+    y: .404785156
+    width: .0720214844
+    height: .205566406
+  - serializedVersion: 2
+    x: .8046875
+    y: .672851562
+    width: .0444335938
+    height: .0849609375
+  - serializedVersion: 2
+    x: .854492188
+    y: .511230469
+    width: .0483398438
+    height: .0708007812
+  - serializedVersion: 2
+    x: .912353516
+    y: .405273438
+    width: .0463867188
+    height: .0874023438
   textureGUIDs:
   - 0443e73f67dbbec438c0ff8234a2b132
   - 3ce34b80a73af024aac6f628a39a26cb
@@ -92,6 +552,98 @@ MonoBehaviour:
   - a42fdfcb9e4ad584ab89350c959f45ff
   - d84cc27c984b6a34098aa5750262536d
   - fa74b7c67ae0e024599fea6cc58345d1
+  - 0bba2a207800adf4ab7ebfe8077b3595
+  - 1612419f8a8520e43a94ecd6284a649a
+  - 1e5f0ace472f5e84baf8dfc907b3d79f
+  - 25c6a9352bb422342878081da87ec742
+  - 26bb7299eb3d89e448a464eacde7ec2b
+  - 34c021393f90e464c97a615947c7d2b9
+  - 34fe57eb4d7ae5b41851226cb6eb3a5a
+  - 36fb7a14729261e489d2a6f1a59401b9
+  - 3cf4aa0562d7af246bdd57953169eb8d
+  - 48b9af7ac5b65a546b636203cd1065cf
+  - a86357f75e087b64c9627e341c6992c7
+  - cf4a40d8cd39dea49837dd5f74225d94
+  - ddf805b7e13571d499cd121541b90851
+  - de008d67d355c7049b1e99c4e90cb6e5
+  - e8bb2d6c67812c2498bac7cd85a74a16
+  - 12eda7f214002ea42857bcf6272e592e
+  - 4704eb71cda9b2741b0b588c25156b84
+  - 4dc7c3191cbc29942b862b95d6427660
+  - 6779b7c467db7734c9a56649faa46dfb
+  - 778494d5b8bd27b498cb4bd93fca265a
+  - 830100f54a5327b47938c9a32912bcfc
+  - 852b7657b06538140b0f29033fa1edf7
+  - 8949f7d87342d59448e07b3d5857acd4
+  - a011ae143bc744b4a88c62400d60e8ae
+  - a2870151d8488704eb02d30dceef66ec
+  - bf0b21b431f923449ad6e4a21e43c960
+  - bfc9468bca885eb4f85d0fca6033b042
+  - e564762aa12242c4285573d5c12b4abe
+  - e7616f542edbdf64d856c20057a7c514
+  - f18a738c5def8a149891317f9f8165dc
+  - 2c654d8842da1ff4d94433fc786bc80c
+  - 3bef21d353010bf4b95395b2be1fcc81
+  - 51a6c3ae6047bef49835c16373c6198a
+  - a8bd38a1ded995b44b1329031f21fa3b
+  - acd9e47d10621e347a02dde012fd271f
+  - b7c5846b2bb32cd4083fa92d276dea81
+  - ba09cfeb93b6c0b4aadaa8bb58d9fe88
+  - f1039c1defce4f542b44649cf6371218
+  - f151b413c52d274428ee94355492597b
+  - f2675c7e5877d5a4985bd0f2d69ffba3
+  - 030638884398545459dffefadec08ff7
+  - 8afca1e0e6538fe40a802e28a5e574e1
+  - f590bbb3d7b085b478ced04e61268edf
+  - 34d46904660f74040a1b6b17948e5c7f
+  - 67f270b53ab50fd4ea9ebf4ea95c9439
+  - aceda9361d898374eada2428288e1976
+  - ff5b2bb6660a8944480a665e6042dacf
+  - a898388a915b9494f924300c277166c5
+  - af1038dbd30af424f9c56a909a507d38
+  - 075c011cf63666648b26dad40d09486e
+  - 92f12a2ce5b86b842b5b1358ef0b7fbf
+  - 200f8acc8d9617944a5a6f37d59b658f
+  - 6a56252e6fc7f3f438398fe8fcbbcc76
+  - 07057439f6f9cfb479a5ef23e76eb101
+  - 2372347089b41c747891a61e6c74e626
+  - 29df3b6a77b8e294f8ebd8e19852d718
+  - 3b6dac4b8e45c8a408924a06d9aac7d1
+  - 84cfd441a822f5e4ea8f99ecd372decc
+  - bb5999c22e41fe042a0e8eda0458a05c
+  - e50fb2a5bd0ceeb4985dc12e80f9b1fe
+  - f56373c23f8451740b6de566476643a7
+  - f642e0ff59d2aa742ba1a85e2df3f3fb
+  - f64c175fa7421244098522b9717a1f07
+  - 93448522305e8064d90f661f81fba8c5
+  - 5cb52a32550467b4c817f62033c0d44e
+  - 8fc7f5e28a94d7b43a9a62ce24e2e0ef
+  - 5ffa0403c1183f54e8cc651e52343e4d
+  - 38e360135a90e414fbf3b3754c0cd638
+  - 6aae6c43eaf3acf4cbd9d46eb821c74a
+  - d3861c04263daa04fa138d36b77bc004
+  - 6c8ccd660fd599347a5b1c41bd54f330
+  - fd1e65c628f55ee46a0eb5f6a2442d9a
+  - 743533da617788b46ab902952dec9331
+  - 646fb4abfad29a94da02999a68ef084b
+  - 62d237dcfb48bc94a8d70ac6262e3243
+  - c9c8ff7d5243e3a408b5e4ab4d750a68
+  - 663b5a0e718f85d42ad1dc509834f4c4
+  - ed2bef1e288ffaa418bc673d4a97cf1b
+  - 0616c22d9ac772e439f815c26d355f2e
+  - 1b66b5b2a7d2d81458a02471fb7fb945
+  - 2670c6801e9b50b4390ebe153ce0b92c
+  - 35c852974c23a3c408553f0f74b87915
+  - 4f4f2ba7951d6e74a91ae5dc6824884d
+  - 5af85e5a6140a8c43bc9967b09178eed
+  - 6adaf4e6cd739354897afac21a6cb559
+  - 7a3f59d785fce5d45b3266446c7964a8
+  - 8abc873af8068f34893764dc2c52c1d5
+  - 9bd380cb39d902d4dbad63551f215310
+  - a7716d2c937dfdc43bf775213e61ede2
+  - d98ffb6b81af16845914a0790e0cb6b8
+  - f082d5e4cda5388408ba6179dca2ec95
+  - f3e59c1be9c338f4d80498379d987cf7
   textureSizes:
   - {x: 118, y: 402}
   - {x: 119, y: 144}
@@ -106,11 +658,103 @@ MonoBehaviour:
   - {x: 164, y: 156}
   - {x: 153, y: 197}
   - {x: 121, y: 363}
+  - {x: 155, y: 192}
+  - {x: 166, y: 216}
+  - {x: 102, y: 130}
+  - {x: 332, y: 478}
+  - {x: 195, y: 276}
+  - {x: 180, y: 159}
+  - {x: 202, y: 312}
+  - {x: 99, y: 308}
+  - {x: 162, y: 192}
+  - {x: 211, y: 291}
+  - {x: 293, y: 325}
+  - {x: 123, y: 260}
+  - {x: 167, y: 218}
+  - {x: 148, y: 160}
+  - {x: 285, y: 147}
+  - {x: 142, y: 74}
+  - {x: 772, y: 866}
+  - {x: 244, y: 277}
+  - {x: 139, y: 166}
+  - {x: 205, y: 418}
+  - {x: 154, y: 273}
+  - {x: 133, y: 347}
+  - {x: 198, y: 96}
+  - {x: 154, y: 263}
+  - {x: 157, y: 92}
+  - {x: 280, y: 302}
+  - {x: 115, y: 93}
+  - {x: 136, y: 250}
+  - {x: 197, y: 236}
+  - {x: 333, y: 413}
+  - {x: 358, y: 501}
+  - {x: 264, y: 224}
+  - {x: 250, y: 185}
+  - {x: 198, y: 215}
+  - {x: 252, y: 458}
+  - {x: 98, y: 31}
+  - {x: 152, y: 459}
+  - {x: 149, y: 362}
+  - {x: 154, y: 388}
+  - {x: 175, y: 164}
+  - {x: 188, y: 220}
+  - {x: 247, y: 379}
+  - {x: 204, y: 357}
+  - {x: 144, y: 342}
+  - {x: 308, y: 414}
+  - {x: 307, y: 284}
+  - {x: 1197, y: 1011}
+  - {x: 248, y: 359}
+  - {x: 250, y: 161}
+  - {x: 220, y: 104}
+  - {x: 180, y: 209}
+  - {x: 117, y: 136}
+  - {x: 208, y: 202}
+  - {x: 272, y: 340}
+  - {x: 328, y: 158}
+  - {x: 186, y: 425}
+  - {x: 281, y: 140}
+  - {x: 232, y: 154}
+  - {x: 188, y: 246}
+  - {x: 203, y: 157}
+  - {x: 254, y: 404}
+  - {x: 354, y: 401}
+  - {x: 544, y: 464}
+  - {x: 369, y: 508}
+  - {x: 130, y: 307}
+  - {x: 177, y: 194}
+  - {x: 132, y: 304}
+  - {x: 145, y: 169}
+  - {x: 120, y: 193}
+  - {x: 224, y: 350}
+  - {x: 145, y: 169}
+  - {x: 204, y: 256}
+  - {x: 139, y: 290}
+  - {x: 113, y: 162}
+  - {x: 201, y: 380}
+  - {x: 191, y: 250}
+  - {x: 143, y: 178}
+  - {x: 185, y: 172}
+  - {x: 293, y: 277}
+  - {x: 225, y: 207}
+  - {x: 123, y: 278}
+  - {x: 180, y: 415}
+  - {x: 228, y: 119}
+  - {x: 154, y: 108}
+  - {x: 179, y: 120}
+  - {x: 184, y: 225}
+  - {x: 152, y: 275}
+  - {x: 104, y: 128}
+  - {x: 295, y: 421}
+  - {x: 182, y: 174}
+  - {x: 198, y: 145}
+  - {x: 190, y: 179}
   defaultPivotOffsets:
   - {x: .12223012, y: .406622916}
   - {x: -.039459262, y: -.107142858}
   - {x: -.321428567, y: .338888884}
-  - {x: .271361828, y: .41925469}
+  - {x: .271361828, y: .405279517}
   - {x: -.235005111, y: .381987572}
   - {x: .124120943, y: .279503107}
   - {x: .180766746, y: -.372670799}
@@ -120,6 +764,98 @@ MonoBehaviour:
   - {x: -.262499988, y: .281593412}
   - {x: -.071976617, y: -.335403711}
   - {x: .111801252, y: .405279517}
+  - {x: -.0692446381, y: -.321428567}
+  - {x: -.363690794, y: .354037255}
+  - {x: -.0059371572, y: -.232919246}
+  - {x: -.00670695258, y: -.363354057}
+  - {x: .316483498, y: .409937888}
+  - {x: -.348214298, y: .382075489}
+  - {x: .309390545, y: .377329201}
+  - {x: -.246376812, y: -.451863378}
+  - {x: -.18219462, y: -.177018628}
+  - {x: -.346928269, y: .409937888}
+  - {x: 0, y: 0}
+  - {x: -.226480827, y: .405279487}
+  - {x: .291888267, y: .288819879}
+  - {x: .401785731, y: .386517882}
+  - {x: -.267857134, y: .0103862975}
+  - {x: -.444642842, y: -.102799229}
+  - {x: -.133928582, y: -.4059304}
+  - {x: .0535714254, y: -.0188757088}
+  - {x: -.394990832, y: -.0791925415}
+  - {x: -.0949856117, y: .321428597}
+  - {x: -.173418969, y: .335403711}
+  - {x: -.133692145, y: .386645943}
+  - {x: -.353571415, y: .364620537}
+  - {x: .318222135, y: .419254661}
+  - {x: -.310714275, y: .393109471}
+  - {x: .0535714254, y: 0}
+  - {x: -.332142889, y: -.331221223}
+  - {x: .205516994, y: .368012428}
+  - {x: -.212062925, y: -.354037255}
+  - {x: -.288875818, y: -.293478251}
+  - {x: -.104306184, y: -.335403711}
+  - {x: -.0964285657, y: -.246237248}
+  - {x: .305357128, y: .282335907}
+  - {x: -.16607143, y: .192408636}
+  - {x: -.20319432, y: .405279487}
+  - {x: 0, y: 0}
+  - {x: -.0984696746, y: .400621116}
+  - {x: -.12449456, y: .386645943}
+  - {x: .152577236, y: .400621116}
+  - {x: .353571415, y: .114329256}
+  - {x: -.261662483, y: -.293478251}
+  - {x: .343098551, y: .41925469}
+  - {x: .236413032, y: .409937888}
+  - {x: -.232336953, y: .377329201}
+  - {x: .0876623392, y: -.33540374}
+  - {x: -.396428585, y: .0752829462}
+  - {x: .00535714254, y: -.241269842}
+  - {x: -.364142954, y: .419254661}
+  - {x: -.198214278, y: .224600717}
+  - {x: -.433928549, y: .0113324178}
+  - {x: -.0324534178, y: -.312111825}
+  - {x: .0162446257, y: -.135093167}
+  - {x: .358928561, y: .248231962}
+  - {x: -.343555897, y: .41459626}
+  - {x: -.369642854, y: .0222423133}
+  - {x: .0957974344, y: .405279487}
+  - {x: .375, y: -.139783174}
+  - {x: -.358928591, y: -.209833026}
+  - {x: -.0670510083, y: -.284161478}
+  - {x: .396428555, y: -.193949044}
+  - {x: .274147809, y: .400621146}
+  - {x: -.380357146, y: .439820081}
+  - {x: .0267857127, y: -.175862059}
+  - {x: .0384790227, y: -.11645963}
+  - {x: .0770066828, y: .377329171}
+  - {x: .33214286, y: .347026885}
+  - {x: -.0858272165, y: .391304374}
+  - {x: -.0542942807, y: -.349378884}
+  - {x: -.0599378906, y: -.298136652}
+  - {x: -.262034148, y: .344720483}
+  - {x: .0705825686, y: -.33540374}
+  - {x: -.321519911, y: .344720483}
+  - {x: -.17494078, y: -.288819879}
+  - {x: .0400703549, y: -.167701855}
+  - {x: .255400032, y: .326086968}
+  - {x: .0609736294, y: -.293478251}
+  - {x: .162359387, y: -.158385098}
+  - {x: -.316071421, y: .403343022}
+  - {x: -.348214298, y: .339994848}
+  - {x: .342857152, y: -.122282617}
+  - {x: -.0421148315, y: .409937918}
+  - {x: .182582811, y: .349378884}
+  - {x: -.246428579, y: -.0307923183}
+  - {x: -.358928561, y: -.213888898}
+  - {x: .267857134, y: .0719196424}
+  - {x: .0455711558, y: -.321428567}
+  - {x: .185415998, y: .265527964}
+  - {x: .269469649, y: -.22826086}
+  - {x: .0997210294, y: -.265527964}
+  - {x: -.214285702, y: .341810316}
+  - {x: .262499988, y: -.197512314}
+  - {x: .305357128, y: .346867532}
   textureNames:
   - GeorgeIdle_RightThigh
   - GeorgeIdle_Neck
@@ -134,6 +870,98 @@ MonoBehaviour:
   - GeorgeIdle_RightFoot
   - GeorgeIdle_Head
   - GeorgeIdle_LeftThigh
+  - GeorgeAttack_Head
+  - GeorgeAttack_LeftUpperArm
+  - GeorgeAttack_Neck
+  - GeorgeAttack_Torso
+  - GeorgeAttack_RightCalf
+  - GeorgeAttack_LeftFoot
+  - GeorgeAttack_RightThigh
+  - GeorgeAttack_LeftHand
+  - GeorgeAttack_LeftForearm
+  - GeorgeAttack_LeftThigh
+  - GeorgeAttack_Swipe
+  - GeorgeAttack_LeftCalf
+  - GeorgeAttack_RightUpperArm
+  - GeorgeAttack_RightFoot
+  - GeorgeAttack_RightForearm
+  - GeorgeDash_RightHand
+  - GeorgeDash_Segway
+  - GeorgeDash_SegwayLeftWheel
+  - GeorgeDash_RightForearm
+  - GeorgeDash_RightThigh
+  - GeorgeDash_RightUpperArm
+  - GeorgeDash_LeftThigh
+  - GeorgeDash_RightFoot
+  - GeorgeDash_RightCalf
+  - GeorgeDash_LeftFoot
+  - GeorgeDash_SegwayRightWheel
+  - GeorgeDash_LeftHand
+  - GeorgeDash_LeftCalf
+  - GeorgeDash_Head
+  - GeorgeDash_Torso
+  - GeorgeBlock_Torso
+  - GeorgeBlock_RightForearm
+  - GeorgeBlock_LeftForearm
+  - GeorgeBlock_LeftUpperArm
+  - GeorgeBlock_LeftCalf
+  - GeorgeBlock_RightFinger
+  - GeorgeBlock_RightCalf
+  - GeorgeBlock_LeftThigh
+  - GeorgeBlock_RightThigh
+  - GeorgeBlock_RightUpperArm
+  - GeorgeBlock_Head
+  - GeorgeSpecial_RightCalf
+  - GeorgeSpecial_RightThigh
+  - GeorgeSpecial_LeftThigh
+  - GeorgeSpecial_Torso
+  - GeorgeSpecial_LeftForearm
+  - GeorgeSpecial_PaperPile
+  - GeorgeSpecial_LeftCalf
+  - GeorgeSpecial_RightForearm
+  - GeorgeSpecial_LeftUpperArm
+  - GeorgeSpecial_Head
+  - GeorgeSpecial_Neck
+  - GeorgeSpecial_RightUpperArm
+  - GeorgeHurt2_LeftThigh
+  - GeorgeHurt2_RightForearm
+  - GeorgeHurt2_RightThigh
+  - GeorgeHurt2_LeftForearm
+  - GeorgeHurt2_LeftUpperArm
+  - GeorgeHurt2_Head
+  - GeorgeHurt2_RightUpperArm
+  - GeorgeHurt2_RightCalf
+  - GeorgeHurt2_LeftCalf
+  - GeorgeHurt2_Torso
+  - GeorgeCountered_Torso
+  - GeorgeCountered_RightCalf
+  - GeorgeCountered_RightFoot
+  - GeorgeCountered_LeftCalf
+  - GeorgeCountered_LeftHand
+  - GeorgeCountered_LeftForearm
+  - GeorgeCountered_LeftThigh
+  - GeorgeCountered_RightHand
+  - GeorgeCountered_LeftUpperArm
+  - GeorgeCountered_RightUpperArm
+  - GeorgeCountered_Neck
+  - GeorgeCountered_RightThigh
+  - GeorgeCountered_Head
+  - GeorgeCountered_RightForearm
+  - GeorgeCountered_LeftFoot
+  - GeorgeHurt1_LeftThigh
+  - GeorgeHurt1_RightUpperArm
+  - GeorgeHurt1_RightCalf
+  - GeorgeHurt1_RightThigh
+  - GeorgeHurt1_RightForearm
+  - GeorgeHurt1_RightHand
+  - GeorgeHurt1_LeftForearm
+  - GeorgeHurt1_Head
+  - GeorgeHurt1_LeftCalf
+  - GeorgeHurt1_LeftHand
+  - GeorgeHurt1_Torso
+  - GeorgeHurt1_LeftFoot
+  - GeorgeHurt1_LeftUpperArm
+  - GeorgeHurt1_RightFoot
   texturePaths:
   - Assets/George Parts/GeorgeIdle_RightThigh.png
   - Assets/George Parts/GeorgeIdle_Neck.png
@@ -148,9 +976,101 @@ MonoBehaviour:
   - Assets/George Parts/GeorgeIdle_RightFoot.png
   - Assets/George Parts/GeorgeIdle_Head.png
   - Assets/George Parts/GeorgeIdle_LeftThigh.png
-  lastBuildID: 20140430200438125
+  - Assets/George Parts/GeorgeAttack_Head.png
+  - Assets/George Parts/GeorgeAttack_LeftUpperArm.png
+  - Assets/George Parts/GeorgeAttack_Neck.png
+  - Assets/George Parts/GeorgeAttack_Torso.png
+  - Assets/George Parts/GeorgeAttack_RightCalf.png
+  - Assets/George Parts/GeorgeAttack_LeftFoot.png
+  - Assets/George Parts/GeorgeAttack_RightThigh.png
+  - Assets/George Parts/GeorgeAttack_LeftHand.png
+  - Assets/George Parts/GeorgeAttack_LeftForearm.png
+  - Assets/George Parts/GeorgeAttack_LeftThigh.png
+  - Assets/George Parts/GeorgeAttack_Swipe.png
+  - Assets/George Parts/GeorgeAttack_LeftCalf.png
+  - Assets/George Parts/GeorgeAttack_RightUpperArm.png
+  - Assets/George Parts/GeorgeAttack_RightFoot.png
+  - Assets/George Parts/GeorgeAttack_RightForearm.png
+  - Assets/George Parts/GeorgeDash_RightHand.png
+  - Assets/George Parts/GeorgeDash_Segway.png
+  - Assets/George Parts/GeorgeDash_SegwayLeftWheel.png
+  - Assets/George Parts/GeorgeDash_RightForearm.png
+  - Assets/George Parts/GeorgeDash_RightThigh.png
+  - Assets/George Parts/GeorgeDash_RightUpperArm.png
+  - Assets/George Parts/GeorgeDash_LeftThigh.png
+  - Assets/George Parts/GeorgeDash_RightFoot.png
+  - Assets/George Parts/GeorgeDash_RightCalf.png
+  - Assets/George Parts/GeorgeDash_LeftFoot.png
+  - Assets/George Parts/GeorgeDash_SegwayRightWheel.png
+  - Assets/George Parts/GeorgeDash_LeftHand.png
+  - Assets/George Parts/GeorgeDash_LeftCalf.png
+  - Assets/George Parts/GeorgeDash_Head.png
+  - Assets/George Parts/GeorgeDash_Torso.png
+  - Assets/George Parts/GeorgeBlock_Torso.png
+  - Assets/George Parts/GeorgeBlock_RightForearm.png
+  - Assets/George Parts/GeorgeBlock_LeftForearm.png
+  - Assets/George Parts/GeorgeBlock_LeftUpperArm.png
+  - Assets/George Parts/GeorgeBlock_LeftCalf.png
+  - Assets/George Parts/GeorgeBlock_RightFinger.png
+  - Assets/George Parts/GeorgeBlock_RightCalf.png
+  - Assets/George Parts/GeorgeBlock_LeftThigh.png
+  - Assets/George Parts/GeorgeBlock_RightThigh.png
+  - Assets/George Parts/GeorgeBlock_RightUpperArm.png
+  - Assets/George Parts/GeorgeBlock_Head.png
+  - Assets/George Parts/GeorgeSpecial_RightCalf.png
+  - Assets/George Parts/GeorgeSpecial_RightThigh.png
+  - Assets/George Parts/GeorgeSpecial_LeftThigh.png
+  - Assets/George Parts/GeorgeSpecial_Torso.png
+  - Assets/George Parts/GeorgeSpecial_LeftForearm.png
+  - Assets/George Parts/GeorgeSpecial_PaperPile.png
+  - Assets/George Parts/GeorgeSpecial_LeftCalf.png
+  - Assets/George Parts/GeorgeSpecial_RightForearm.png
+  - Assets/George Parts/GeorgeSpecial_LeftUpperArm.png
+  - Assets/George Parts/GeorgeSpecial_Head.png
+  - Assets/George Parts/GeorgeSpecial_Neck.png
+  - Assets/George Parts/GeorgeSpecial_RightUpperArm.png
+  - Assets/George Parts/GeorgeHurt2_LeftThigh.png
+  - Assets/George Parts/GeorgeHurt2_RightForearm.png
+  - Assets/George Parts/GeorgeHurt2_RightThigh.png
+  - Assets/George Parts/GeorgeHurt2_LeftForearm.png
+  - Assets/George Parts/GeorgeHurt2_LeftUpperArm.png
+  - Assets/George Parts/GeorgeHurt2_Head.png
+  - Assets/George Parts/GeorgeHurt2_RightUpperArm.png
+  - Assets/George Parts/GeorgeHurt2_RightCalf.png
+  - Assets/George Parts/GeorgeHurt2_LeftCalf.png
+  - Assets/George Parts/GeorgeHurt2_Torso.png
+  - Assets/George Parts/GeorgeCountered_Torso.png
+  - Assets/George Parts/GeorgeCountered_RightCalf.png
+  - Assets/George Parts/GeorgeCountered_RightFoot.png
+  - Assets/George Parts/GeorgeCountered_LeftCalf.png
+  - Assets/George Parts/GeorgeCountered_LeftHand.png
+  - Assets/George Parts/GeorgeCountered_LeftForearm.png
+  - Assets/George Parts/GeorgeCountered_LeftThigh.png
+  - Assets/George Parts/GeorgeCountered_RightHand.png
+  - Assets/George Parts/GeorgeCountered_LeftUpperArm.png
+  - Assets/George Parts/GeorgeCountered_RightUpperArm.png
+  - Assets/George Parts/GeorgeCountered_Neck.png
+  - Assets/George Parts/GeorgeCountered_RightThigh.png
+  - Assets/George Parts/GeorgeCountered_Head.png
+  - Assets/George Parts/GeorgeCountered_RightForearm.png
+  - Assets/George Parts/GeorgeCountered_LeftFoot.png
+  - Assets/George Parts/GeorgeHurt1_LeftThigh.png
+  - Assets/George Parts/GeorgeHurt1_RightUpperArm.png
+  - Assets/George Parts/GeorgeHurt1_RightCalf.png
+  - Assets/George Parts/GeorgeHurt1_RightThigh.png
+  - Assets/George Parts/GeorgeHurt1_RightForearm.png
+  - Assets/George Parts/GeorgeHurt1_RightHand.png
+  - Assets/George Parts/GeorgeHurt1_LeftForearm.png
+  - Assets/George Parts/GeorgeHurt1_Head.png
+  - Assets/George Parts/GeorgeHurt1_LeftCalf.png
+  - Assets/George Parts/GeorgeHurt1_LeftHand.png
+  - Assets/George Parts/GeorgeHurt1_Torso.png
+  - Assets/George Parts/GeorgeHurt1_LeftFoot.png
+  - Assets/George Parts/GeorgeHurt1_LeftUpperArm.png
+  - Assets/George Parts/GeorgeHurt1_RightFoot.png
+  lastBuildID: 20140505194858582
   needsRebuilt: 0
   dataVersion: 4
-  maxAtlasSize: 1024
+  maxAtlasSize: 4096
   padding: 1
   forceSquare: 0

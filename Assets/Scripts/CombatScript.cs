@@ -65,7 +65,7 @@ public class CombatScript : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		AutoDamageChar ();
 	}
 	
@@ -134,12 +134,14 @@ public class CombatScript : MonoBehaviour {
 	// Function which CollisionCatcherScript passes colliderTriggerEvents to.  
 	public void receiveColliderTriggerEvent(ColliderTriggerEvent colliderTriggerEvent) {
 		GameObject otherChar = colliderTriggerEvent.otherCollider.gameObject.transform.root.gameObject;
+		Debug.Log (gameObject + " just received a ColliderTriggerEvent from " + otherChar);
 		performCollisionResponse (otherChar);
 	}
 
 	// Function which CollisionCatcherScript passes collisions to.  
 	public void receiveCollision(Collision2D collision) {
 		GameObject otherChar = collision.gameObject.transform.root.gameObject;
+		Debug.Log (gameObject + " just received a collision from " + otherChar);
 		performCollisionResponse (otherChar);
 	}
 

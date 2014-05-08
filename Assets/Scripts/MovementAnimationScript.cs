@@ -102,9 +102,9 @@ public class MovementAnimationScript : MonoBehaviour {
 		// animation should be true, the rest should all be false.
 		if (fighterAnimation.IsPlaying("Dash")) {
 			makeOtherAnimsFalse("dashing");
-			float currentSpeed = Mathf.Abs((1 - ((Time.time - dashStart) / dashLength))) * fighterMaxSpeed;
+			float currentSpeed = Mathf.Abs((1 - (Time.time - dashStart)/dashLength)) * fighterMaxSpeed;
 			rigidbody2D.velocity = new Vector2(currentSpeed, 0);
-			Debug.Log(fighterAnimation + " moving with a speed of " + currentSpeed);
+//			Debug.Log(fighterAnimation + " moving with a speed of " + currentSpeed);
 		} else if (fighterAnimation.IsPlaying ("Countered")) {
 			makeOtherAnimsFalse("reeling");
 		} else if (fighterAnimation.IsPlaying("Hurt1") || fighterAnimation.IsPlaying("Hurt2")) {

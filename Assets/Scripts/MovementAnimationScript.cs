@@ -8,6 +8,8 @@ public class MovementAnimationScript : MonoBehaviour {
 	public BoneAnimation fighterAnimation;
 	public float maxSpeed = 10f;
 	
+    // Sound
+    public VocalFighter vocalSource;
 	
 	// characterSide & facingLeft help determine fighter orientation in code.
 	public string characterSide = "left";
@@ -139,36 +141,57 @@ public class MovementAnimationScript : MonoBehaviour {
 		fighterAnimation.Play("Dash");
 //		rigidbody2D.velocity = new Vector2(fighterMaxSpeed, 0);
 		dashStart = Time.time;
+
+        // SOUND //
+        vocalSource.OnDashAttempt();
 	}
 	
 	public void Block() {
 		fighterAnimation.Play("Block");
 		blockStart = Time.time;
+
+        // SOUND //
+        vocalSource.OnBlockAttempt();
 	}
 	
 	public void Punch() {
 		fighterAnimation.Play("Attack");
-		attackStart = Time.time;
+        attackStart = Time.time;
+
+        // SOUND //
+        vocalSource.OnAttackAttempt();
 	}
 	
 	public void Special() {
 		fighterAnimation.Play("Special");
 		specialStart = Time.time;
+
+        // SOUND //
+        vocalSource.OnSpecial();
 	}
 	
 	public void Reel() {
 		fighterAnimation.Play ("Countered");
 		rigidbody2D.velocity = new Vector2 ((float) (-0.25 * fighterMaxSpeed), 0);
 		reelStart = Time.time;
+
+        // SOUND //
+        vocalSource.OnCountered();
 	}
 	
 	public void Hurt() {
 		if (Random.value > 0.5) { fighterAnimation.Play("Hurt1"); }
 		else { fighterAnimation.Play("Hurt2"); }
-		hurtStart = Time.time;
+        hurtStart = Time.time;
+
+        // SOUND //
+        vocalSource.OnHitByAttack();
 	}
 	
 	public void Die() {
+        // Note from Nick: There is no "Death" animation! Recommend deleting this.
+        // A Win() function would be nice, though, so we could have things the
+        // characters can say when they win a match!
 		fighterAnimation.CrossFade ("Death");
 	}
 	

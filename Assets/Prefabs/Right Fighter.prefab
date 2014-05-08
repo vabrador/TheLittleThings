@@ -1174,6 +1174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fighterAnimation: {fileID: 11400012}
   maxSpeed: 200
+  vocalSource: {fileID: 0}
   characterSide: right
   stateList: []
   attackLength: 1

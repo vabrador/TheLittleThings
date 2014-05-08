@@ -5,7 +5,6 @@ public class P1_controls : MonoBehaviour {
 	MovementAnimationScript mover;
 	// Use this for initialization
 	void Start () {
-		GameObject thisGuy = gameObject;
 		mover = gameObject.GetComponent<MovementAnimationScript>();
 	}
 	

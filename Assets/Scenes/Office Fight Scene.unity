@@ -678,7 +678,7 @@ GameObject:
   - 61: {fileID: 657265031}
   - 61: {fileID: 657265030}
   - 61: {fileID: 657265029}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2788,7 +2788,7 @@ MonoBehaviour:
   - {r: 1, g: 1, b: 1, a: 1}
   - {r: 1, g: 1, b: 1, a: 1}
   - {r: 1, g: 1, b: 1, a: 1}
-  animationData: {fileID: 0}
+  animationData: {fileID: 11400000, guid: 842ad1de8eb9c8c49a776ef4aae59de7, type: 2}
   animationDataGUID: 842ad1de8eb9c8c49a776ef4aae59de7
   mMaterialSource:
   - {fileID: 2100000, guid: 22d8f5263c39471468883fed76b0eeb1, type: 2}
@@ -55407,71 +55407,15 @@ MonoBehaviour:
   character: {fileID: 1482902034}
   startHealth: 0
   currentHealth: 0
-  healthBarPositionX: 0
-  healthBarPositionY: 0
-  barFrame: {fileID: 2800000, guid: c97e79f4253a935419e7b02523b93949, type: 3}
+  displacementFromCenter: 0
+  healthBarPositionX: .25
+  healthBarPositionY: .00999999978
+  barFrame: {fileID: 2800000, guid: f7679b7f9bc0dfd4e9b04b00d5311ff2, type: 3}
   healthBar: {fileID: 2800000, guid: eeb16a910c7760e4885e9632d8eb0727, type: 3}
   specialBar: {fileID: 2800000, guid: 59028084e09bf0b498db9b9d5b6a6823, type: 3}
-  barStyle:
-    m_Name: 
-    m_Normal:
-      m_Background: {fileID: 0}
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
-    m_Hover:
-      m_Background: {fileID: 0}
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
-    m_Active:
-      m_Background: {fileID: 0}
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
-    m_Focused:
-      m_Background: {fileID: 0}
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
-    m_OnNormal:
-      m_Background: {fileID: 0}
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
-    m_OnHover:
-      m_Background: {fileID: 0}
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
-    m_OnActive:
-      m_Background: {fileID: 0}
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
-    m_OnFocused:
-      m_Background: {fileID: 0}
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
-    m_Border:
-      m_Left: 0
-      m_Right: 0
-      m_Top: 0
-      m_Bottom: 0
-    m_Margin:
-      m_Left: 0
-      m_Right: 0
-      m_Top: 0
-      m_Bottom: 0
-    m_Padding:
-      m_Left: 0
-      m_Right: 0
-      m_Top: 0
-      m_Bottom: 0
-    m_Overflow:
-      m_Left: 0
-      m_Right: 0
-      m_Top: 0
-      m_Bottom: 0
-    m_Font: {fileID: 0}
-    m_FontSize: 0
-    m_FontStyle: 0
-    m_Alignment: 0
-    m_WordWrap: 0
-    m_RichText: 1
-    m_TextClipping: 0
-    m_ImagePosition: 0
-    m_ContentOffset: {x: 0, y: 0}
-    m_FixedWidth: 0
-    m_FixedHeight: 0
-    m_StretchWidth: 1
-    m_StretchHeight: 0
   healthBarLength: 0
+  healthBarHeight: 0
+  scaleFactor: .400000006
 --- !u!4 &1887012381
 Transform:
   m_ObjectHideFlags: 0

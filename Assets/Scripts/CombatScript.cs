@@ -118,7 +118,9 @@ public class CombatScript : MonoBehaviour {
 			// Otherwise, no enemy state will changes yours mid-dash
 			if ((otherMover.stateBools["attacking"]) && (dashCounterable)) { GetsCountered(otherCounter); }
 			else if (otherMover.stateBools["specialing"]){ GetsHurt(otherCombat.specialStrength); }
-			else{}
+			else{
+				mover.Bounce ();
+			}
 		}
 		else {
 			// Do nothing, because our character is either hurt or reeling, and in both

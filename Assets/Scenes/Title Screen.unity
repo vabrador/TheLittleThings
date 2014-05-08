@@ -102,8 +102,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skin: {fileID: 0}
-  halfScreenWidth: 0
-  halfScreenHeight: 0
+  screenTexture: {fileID: 0}
+  startTexture: {fileID: 0}
 --- !u!4 &1679499375
 Transform:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ public class P1_controls : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if ((Input.GetAxis("P1 - Dash") > 0) && (!mover.stateBools["animating"])) {
+			Debug.Log ("Linda should dash now.");
 			mover.Dash ();
 		}
 		else if ((Input.GetAxis("P1 - Block") > 0)  && (!mover.stateBools["animating"])) {

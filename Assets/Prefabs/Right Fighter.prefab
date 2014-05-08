@@ -1176,13 +1176,13 @@ MonoBehaviour:
   maxSpeed: 200
   characterSide: right
   stateList: []
-  punchLength: .200000003
+  attackLength: 1
   dashLength: .25
   blockLength: .5
   hurtLength: .5
   reelLength: 2
   specialLength: 3
-  punchStart: 0
+  attackStart: 0
   blockStart: 0
   dashStart: 0
   hurtStart: 0
@@ -1213,13 +1213,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   centerPoint: {fileID: 0}
   edgePoint: {fileID: 0}
-  punchStrength: 10
+  autodamage: 0
+  startTime: 0
+  attackStrength: 10
   counterStrength: 5
   maxSpecialStrength: 30
-  punchThresh: .5
+  attackThresh: .5
   blockThresh: .5
   dashThresh: 1
   startHealth: 100
+  currentHealth: 0
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1

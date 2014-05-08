@@ -374,7 +374,7 @@ public class VocalFighter : MonoBehaviour {
             if (specialSounds.Count > 0) {
 
                 // Specials ALWAYS have an associated sound (ignore speech probability)
-                fighterAudioSource.clip = (AudioClip)attackSuccessSounds[Random.Range(0, attackSuccessSounds.Count)];
+                fighterAudioSource.clip = (AudioClip)specialSounds[Random.Range(0, specialSounds.Count)];
                 fighterAudioSource.Play();
 
             }

@@ -83,8 +83,8 @@ public class CombatScript : MonoBehaviour {
 		int otherCounter = otherCombat.counterStrength;
 //		Debug.Log ("Collision happened: " + gameObject + "'s attackState: " + mover.stateBools["attacking"]);
 //		Debug.Log (otherChar + "'s attackState: " + otherMover.stateBools["attacking"]);
-			
-		if (!mover.stateBools["animating"]){
+		Debug.Log ("Collision being handled by: ", gameObject);
+		if (mover.stateBools["idling"]){
 			// If you're idle and you get punched, you're hurt.  If you're idle and dashed
 			// into, you get knocked back.  Otherwise, nothing changes.
 			if (otherMover.stateBools["attacking"]){ GetsHurt(otherCombat.attackStrength); }
@@ -155,7 +155,7 @@ public class CombatScript : MonoBehaviour {
 		Debug.Log (gameObject + " just lost " + damageAmount + " health!");
 		currentHealth -= damageAmount;
 		if (currentHealth <= 0) {
-			mover.Die();
+			mover.EndGame();
 		}
 	}
 	

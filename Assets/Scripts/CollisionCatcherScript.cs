@@ -23,7 +23,6 @@ public class CollisionCatcherScript : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D collision) {
-		Debug.Log ("We got a collision at " + gameObject);
 		CombatScript combat;
 		GameObject thisChar = gameObject.transform.root.gameObject;
 		combat = thisChar.GetComponent<CombatScript> ();

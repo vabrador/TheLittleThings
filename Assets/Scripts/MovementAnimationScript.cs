@@ -7,6 +7,10 @@ public class MovementAnimationScript : MonoBehaviour {
 	// fighterAnimation is our animator
 	public BoneAnimation fighterAnimation;
 	public float maxSpeed = 10f;
+	public bool enemy;
+	public float dashForceConstant = 1000;
+	public float bounceForceConstant = 250;
+
 	
     // Sound
     public VocalFighter vocalSource;
@@ -20,9 +24,9 @@ public class MovementAnimationScript : MonoBehaviour {
 	// Corrects the direction of max velocity for what side a fighter is on
 	float fighterMaxSpeed {
 		get { 
-			float currentSpeed = ( 1 - (Time.time - attackStart)/(attackLength) ) * maxSpeed;
+			float currentSpeed = ( 1 - (Time.time - dashStart)/dashLength) * maxSpeed;
 //			Debug.Log ("currentSpeed with no transform = " + currentSpeed);
-			if (!facingLeft){ 
+			if (facingLeft){ 
 				currentSpeed *= -1;
 //				Debug.Log ("Saying " + fighterAnimation + " speed should be " + currentSpeed);
 			}
@@ -41,7 +45,8 @@ public class MovementAnimationScript : MonoBehaviour {
 		{"dashing" , false},
 		{"specialing", false},
 		{"hurting", false},
-		{"reeling", false}
+		{"reeling", false},
+		{"idling", false}
 	};
 	// A list of the state keys so we can iterate through the entries in the
 	// dictionary without iterating through the dictionary itself.
@@ -55,6 +60,7 @@ public class MovementAnimationScript : MonoBehaviour {
 	public float hurtLength = 0.5f;
 	public float reelLength = 2f;
 	public float specialLength = 3f;
+	public float bounceLength = 0.25f;
 	
 	// Variables to keep track of when the most recent move
 	// of each type started.
@@ -94,17 +100,21 @@ public class MovementAnimationScript : MonoBehaviour {
 //		if (facingLeft)
 //			Flip ();
 	}
-	
+
+	public float yPosition;
+
 	// Update is called once per frame
 	void FixedUpdate() {
 		// Set all of the animation booleans in the dictionary based
 		// on current animation.  Specifically, animating and the current
 		// animation should be true, the rest should all be false.
+		if (!stateBools["animating"]) yPosition = gameObject.transform.position.y;
 		if (fighterAnimation.IsPlaying("Dash")) {
 			makeOtherAnimsFalse("dashing");
-			float currentSpeed = Mathf.Abs((1 - (Time.time - dashStart)/dashLength)) * fighterMaxSpeed;
-			rigidbody2D.velocity = new Vector2(currentSpeed, 0);
+//			float currentSpeed = Mathf.Abs((1 - (Time.time - dashStart)/dashLength)) * fighterMaxSpeed * 100;
+//			rigidbody2D.velocity = new Vector2(currentSpeed, 0);
 //			Debug.Log(fighterAnimation + " moving with a speed of " + currentSpeed);
+			rigidbody2D.AddForce (new Vector2 (Mathf.Abs((1 - (Time.time - dashStart)/dashLength)) * fighterMaxSpeed * dashForceConstant, 0));
 		} else if (fighterAnimation.IsPlaying ("Countered")) {
 			makeOtherAnimsFalse("reeling");
 		} else if (fighterAnimation.IsPlaying("Hurt1") || fighterAnimation.IsPlaying("Hurt2")) {
@@ -116,9 +126,7 @@ public class MovementAnimationScript : MonoBehaviour {
 		} else if (fighterAnimation.IsPlaying("Special")) {
 			makeOtherAnimsFalse("specialing");
 		} else {
-			foreach (var state in stateList) {
-				stateBools[state] = false;
-			}
+			makeOtherAnimsFalse("idling");
 		}
 		
 		// When any animation has gone long enough, smoothly crossfade to idle
@@ -126,13 +134,19 @@ public class MovementAnimationScript : MonoBehaviour {
 		      (stateBools["reeling"] && reelDone) || (stateBools["attacking"] && attackDone) ||
 		      (stateBools["hurting"] && hurtDone) || (stateBools["specialing"] && specialDone)))
 		{
-			fighterAnimation.Play("Idle"); 
+			Idle ();
+
 		}
 	}
 	
 	// Update is called whenever an Input is grabbed
 	void Update () {
 		
+	}
+
+	public void Idle() {
+		fighterAnimation.Play ("Idle");
+//		transform.position = new Vector3(transform.position.x, yPosition, transform.position.z);
 	}
 	
 	// Separate functions to trigger each conceptual move or state in the game,
@@ -142,7 +156,9 @@ public class MovementAnimationScript : MonoBehaviour {
 //		rigidbody2D.velocity = new Vector2(fighterMaxSpeed, 0);
 		dashStart = Time.time;
 
+
         // SOUND //
+		// Awwwwww, yeeeeeahh - John
         vocalSource.OnDashAttempt();
 	}
 	
@@ -172,7 +188,7 @@ public class MovementAnimationScript : MonoBehaviour {
 	
 	public void Reel() {
 		fighterAnimation.Play ("Countered");
-		rigidbody2D.velocity = new Vector2 ((float) (-0.25 * fighterMaxSpeed), 0);
+		rigidbody2D.AddForce(new Vector3 ((float) (-0.25 * fighterMaxSpeed), 0, 0));
 		reelStart = Time.time;
 
         // SOUND //
@@ -187,8 +203,19 @@ public class MovementAnimationScript : MonoBehaviour {
         // SOUND //
         vocalSource.OnHitByAttack();
 	}
+
+	// Meant to make characters stop moving after they collide with each other,
+	// because right now they keep going like hockey pucks and it looks ridiculous.
+	public void Bounce() {
+//		rigidbody2D.velocity = new Vector2 (0, 0);
+		rigidbody2D.AddForce(new Vector2 (-100000000 * bounceForceConstant, 0));
+		float startTime = Time.time;
+//		while (Time.time - startTime < bounceLength) {
+//			rigidbody2D.AddForce(new Vector2 (-1 * bounceForceConstant, 0));
+//		}
+	}
 	
-	public void Die() {
+	public void EndGame() {
         // Note from Nick: There is no "Death" animation! Recommend deleting this.
         // A Win() function would be nice, though, so we could have things the
         // characters can say when they win a match!

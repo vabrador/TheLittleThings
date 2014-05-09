@@ -39,7 +39,6 @@ public class MovementAnimationScript : MonoBehaviour {
 	// all animations are states we keep track of.
 	public Dictionary<string, bool> stateBools = new Dictionary<string, bool>()
 	{
-		{"animating", false},
 		{"attacking", false},
 		{"blocking", false},
 		{"dashing" , false},
@@ -96,7 +95,6 @@ public class MovementAnimationScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		stateList = new List<string>(stateBools.Keys);
-		stateBools["animating"] = false;
 //		if (facingLeft)
 //			Flip ();
 	}
@@ -106,9 +104,8 @@ public class MovementAnimationScript : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate() {
 		// Set all of the animation booleans in the dictionary based
-		// on current animation.  Specifically, animating and the current
-		// animation should be true, the rest should all be false.
-		if (!stateBools["animating"]) yPosition = gameObject.transform.position.y;
+		// on current animation.  The current animation should be true,
+		// the rest should be false.
 		if (fighterAnimation.IsPlaying("Dash")) {
 			makeOtherAnimsFalse("dashing");
 //			float currentSpeed = Mathf.Abs((1 - (Time.time - dashStart)/dashLength)) * fighterMaxSpeed * 100;
@@ -208,8 +205,10 @@ public class MovementAnimationScript : MonoBehaviour {
 	// because right now they keep going like hockey pucks and it looks ridiculous.
 	public void Bounce() {
 //		rigidbody2D.velocity = new Vector2 (0, 0);
-		rigidbody2D.AddForce(new Vector2 (-100000000 * bounceForceConstant, 0));
-		float startTime = Time.time;
+		fighterAnimation.Play ("Idle");
+		rigidbody2D.AddForce(new Vector2 (-1000000 * bounceForceConstant, 0));
+//		float startTime = Time.time;
+		Debug.Log (gameObject + " should Bounce now!");
 //		while (Time.time - startTime < bounceLength) {
 //			rigidbody2D.AddForce(new Vector2 (-1 * bounceForceConstant, 0));
 //		}
@@ -228,7 +227,7 @@ public class MovementAnimationScript : MonoBehaviour {
 	void makeOtherAnimsFalse(string move){
 		if (stateBools.ContainsKey(move)) {
 			foreach(string state in stateList) {
-				if ((state == move) || (state == "animating")) {stateBools[state] = true; }
+				if (state == move) {stateBools[state] = true; }
 				else {stateBools[state] = false; }
 			}
 		} else {

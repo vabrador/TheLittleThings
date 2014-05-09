@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: -1545704558, guid: 289bab7cc27a12745b5df9b71d7b06c4, type: 3}
   m_Name: George
   m_EditorClassIdentifier: 
-  buildID: 201405080437390813
+  buildID: 201405082103578174
   needsRebuilt: 0
   boneDataList:
   - active: 1
@@ -604,8 +604,8 @@ MonoBehaviour:
         useCollider: 1
         collider:
           type: 2
-          center: {x: 0, y: 0, z: 0}
-          boxSize: {x: 300, y: 1000, z: 0}
+          center: {x: -50, y: 50, z: 0}
+          boxSize: {x: 350, y: 800, z: 0}
           sphereRadius: 0
           useAnimationLayer: 1
           layer: 0
@@ -702,9 +702,9 @@ MonoBehaviour:
         depth: 0
         useCollider: 1
         collider:
-          type: 2
+          type: 0
           center: {x: 0, y: 0, z: 0}
-          boxSize: {x: 300, y: 1000, z: 0}
+          boxSize: {x: 0, y: 0, z: 0}
           sphereRadius: 0
           useAnimationLayer: 1
           layer: 0
@@ -8137,10 +8137,10 @@ MonoBehaviour:
           type: 1
           center: {x: 0, y: 0, z: 0}
           boxSize: {x: 0, y: 0, z: 0}
-          sphereRadius: 300
+          sphereRadius: 350
           useAnimationLayer: 1
           layer: 0
-          isTrigger: 0
+          isTrigger: 1
           tag: 
         textureIndex: 20
       - boneDataIndex: 7
@@ -19262,7 +19262,7 @@ MonoBehaviour:
         useCollider: 1
         collider:
           type: 2
-          center: {x: -50, y: -150, z: 0}
+          center: {x: 25, y: -200, z: 0}
           boxSize: {x: 200, y: 1000, z: 0}
           sphereRadius: 0
           useAnimationLayer: 1
@@ -20053,13 +20053,13 @@ MonoBehaviour:
         depth: 8
         useCollider: 1
         collider:
-          type: 2
-          center: {x: 0, y: -150, z: 0}
-          boxSize: {x: 200, y: 1000, z: 0}
+          type: 0
+          center: {x: 0, y: 0, z: 0}
+          boxSize: {x: 0, y: 0, z: 0}
           sphereRadius: 0
           useAnimationLayer: 1
           layer: 0
-          isTrigger: 0
+          isTrigger: 1
           tag: 
         textureIndex: 28
       mixTransform: 0
@@ -29133,7 +29133,7 @@ MonoBehaviour:
           outTangent: 0
     fps: 15
     maxFrame: 8
-    wrapMode: 1
+    wrapMode: 2
     mix: 0
     blendMode: 0
     layer: 0
@@ -30824,7 +30824,7 @@ MonoBehaviour:
         useCollider: 1
         collider:
           type: 2
-          center: {x: -50, y: -150, z: 0}
+          center: {x: -50, y: -200, z: 0}
           boxSize: {x: 200, y: 1000, z: 0}
           sphereRadius: 0
           useAnimationLayer: 1
@@ -35561,7 +35561,7 @@ MonoBehaviour:
         keyframes: []
     fps: 5
     maxFrame: 10
-    wrapMode: 1
+    wrapMode: 2
     mix: 0
     blendMode: 0
     layer: 0
@@ -40092,13 +40092,13 @@ MonoBehaviour:
         depth: 0
         useCollider: 1
         collider:
-          type: 2
+          type: 0
           center: {x: 0, y: 0, z: 0}
           boxSize: {x: 1000, y: 500, z: 0}
-          sphereRadius: 500
+          sphereRadius: 0
           useAnimationLayer: 1
           layer: 0
-          isTrigger: 0
+          isTrigger: 1
           tag: 
         textureIndex: -1
       - boneDataIndex: 15
@@ -40189,15 +40189,15 @@ MonoBehaviour:
         useDefaultPivot: 1
         useDepth: 0
         depth: 0
-        useCollider: 0
+        useCollider: 1
         collider:
-          type: 0
+          type: 2
           center: {x: 0, y: 0, z: 0}
-          boxSize: {x: 0, y: 0, z: 0}
+          boxSize: {x: 1000, y: 500, z: 0}
           sphereRadius: 0
           useAnimationLayer: 1
           layer: 0
-          isTrigger: 1
+          isTrigger: 0
           tag: 
         textureIndex: 59
       - boneDataIndex: 15
@@ -56706,7 +56706,7 @@ MonoBehaviour:
         keyframes: []
     fps: 10
     maxFrame: 10
-    wrapMode: 1
+    wrapMode: 2
     mix: 0
     blendMode: 0
     layer: 0
@@ -63292,8 +63292,8 @@ MonoBehaviour:
         depth: 0
         collider:
           type: 2
-          center: {x: 0, y: 0, z: 0}
-          boxSize: {x: 300, y: 1000, z: 0}
+          center: {x: -50, y: 50, z: 0}
+          boxSize: {x: 350, y: 800, z: 0}
           sphereRadius: 0
           useAnimationLayer: 1
           layer: 0
@@ -64107,9 +64107,9 @@ MonoBehaviour:
         materialIndex: 0
         depth: 0
         collider:
-          type: 2
+          type: 0
           center: {x: 0, y: 0, z: 0}
-          boxSize: {x: 300, y: 1000, z: 0}
+          boxSize: {x: 0, y: 0, z: 0}
           sphereRadius: 0
           useAnimationLayer: 1
           layer: 0
@@ -66648,10 +66648,10 @@ MonoBehaviour:
           type: 1
           center: {x: 0, y: 0, z: 0}
           boxSize: {x: 0, y: 0, z: 0}
-          sphereRadius: 300
+          sphereRadius: 350
           useAnimationLayer: 1
           layer: 0
-          isTrigger: 0
+          isTrigger: 1
           tag: 
         originalAtlas: {fileID: 11400000, guid: 4e7716998e2dba34c93e6206d41d8221,
           type: 2}
@@ -68243,7 +68243,7 @@ MonoBehaviour:
         depth: 8
         collider:
           type: 2
-          center: {x: -50, y: -150, z: 0}
+          center: {x: 25, y: -200, z: 0}
           boxSize: {x: 200, y: 1000, z: 0}
           sphereRadius: 0
           useAnimationLayer: 1
@@ -69696,13 +69696,13 @@ MonoBehaviour:
         materialIndex: 0
         depth: 8
         collider:
-          type: 2
-          center: {x: 0, y: -150, z: 0}
-          boxSize: {x: 200, y: 1000, z: 0}
+          type: 0
+          center: {x: 0, y: 0, z: 0}
+          boxSize: {x: 0, y: 0, z: 0}
           sphereRadius: 0
           useAnimationLayer: 1
           layer: 0
-          isTrigger: 0
+          isTrigger: 1
           tag: 
         originalAtlas: {fileID: 11400000, guid: 4e7716998e2dba34c93e6206d41d8221,
           type: 2}
@@ -70395,7 +70395,7 @@ MonoBehaviour:
         depth: 0
         collider:
           type: 2
-          center: {x: -50, y: -150, z: 0}
+          center: {x: -50, y: -200, z: 0}
           boxSize: {x: 200, y: 1000, z: 0}
           sphereRadius: 0
           useAnimationLayer: 1
@@ -72774,13 +72774,13 @@ MonoBehaviour:
         materialIndex: 0
         depth: 0
         collider:
-          type: 2
+          type: 0
           center: {x: 0, y: 0, z: 0}
           boxSize: {x: 1000, y: 500, z: 0}
-          sphereRadius: 500
+          sphereRadius: 0
           useAnimationLayer: 1
           layer: 0
-          isTrigger: 0
+          isTrigger: 1
           tag: 
         originalAtlas: {fileID: 0}
         originalTextureGUID: 
@@ -72877,7 +72877,7 @@ MonoBehaviour:
       triggerFrameBones:
       - userTriggerTag: 
         boneNodeIndex: 18
-        triggerEventTypes: 020000000400000003000000
+        triggerEventTypes: 02000000040000000300000006000000
         pivotOffset: {x: .00535714254, y: -.241269842}
         upperLeft: {x: -604.912476, y: 749.423828, z: 0}
         bottomLeft: {x: -604.912476, y: -261.576202, z: 0}
@@ -72897,13 +72897,13 @@ MonoBehaviour:
         materialIndex: 0
         depth: 0
         collider:
-          type: 0
+          type: 2
           center: {x: 0, y: 0, z: 0}
-          boxSize: {x: 0, y: 0, z: 0}
+          boxSize: {x: 1000, y: 500, z: 0}
           sphereRadius: 0
           useAnimationLayer: 1
           layer: 0
-          isTrigger: 1
+          isTrigger: 0
           tag: 
         originalAtlas: {fileID: 11400000, guid: 4e7716998e2dba34c93e6206d41d8221,
           type: 2}
@@ -79697,8 +79697,8 @@ MonoBehaviour:
       depth: 0
       collider:
         type: 2
-        center: {x: 0, y: 0, z: 0}
-        boxSize: {x: 300, y: 1000, z: 0}
+        center: {x: -50, y: 50, z: 0}
+        boxSize: {x: 350, y: 800, z: 0}
         sphereRadius: 0
         useAnimationLayer: 1
         layer: 0
@@ -80499,9 +80499,9 @@ MonoBehaviour:
       materialIndex: 0
       depth: 0
       collider:
-        type: 2
+        type: 0
         center: {x: 0, y: 0, z: 0}
-        boxSize: {x: 300, y: 1000, z: 0}
+        boxSize: {x: 0, y: 0, z: 0}
         sphereRadius: 0
         useAnimationLayer: 1
         layer: 0
@@ -82991,10 +82991,10 @@ MonoBehaviour:
         type: 1
         center: {x: 0, y: 0, z: 0}
         boxSize: {x: 0, y: 0, z: 0}
-        sphereRadius: 300
+        sphereRadius: 350
         useAnimationLayer: 1
         layer: 0
-        isTrigger: 0
+        isTrigger: 1
         tag: 
       originalAtlas: {fileID: 11400000, guid: 4e7716998e2dba34c93e6206d41d8221, type: 2}
       originalTextureGUID: 36fb7a14729261e489d2a6f1a59401b9
@@ -84555,7 +84555,7 @@ MonoBehaviour:
       depth: 8
       collider:
         type: 2
-        center: {x: -50, y: -150, z: 0}
+        center: {x: 25, y: -200, z: 0}
         boxSize: {x: 200, y: 1000, z: 0}
         sphereRadius: 0
         useAnimationLayer: 1
@@ -85978,13 +85978,13 @@ MonoBehaviour:
       materialIndex: 0
       depth: 8
       collider:
-        type: 2
-        center: {x: 0, y: -150, z: 0}
-        boxSize: {x: 200, y: 1000, z: 0}
+        type: 0
+        center: {x: 0, y: 0, z: 0}
+        boxSize: {x: 0, y: 0, z: 0}
         sphereRadius: 0
         useAnimationLayer: 1
         layer: 0
-        isTrigger: 0
+        isTrigger: 1
         tag: 
       originalAtlas: {fileID: 11400000, guid: 4e7716998e2dba34c93e6206d41d8221, type: 2}
       originalTextureGUID: 12eda7f214002ea42857bcf6272e592e
@@ -86662,7 +86662,7 @@ MonoBehaviour:
       depth: 0
       collider:
         type: 2
-        center: {x: -50, y: -150, z: 0}
+        center: {x: -50, y: -200, z: 0}
         boxSize: {x: 200, y: 1000, z: 0}
         sphereRadius: 0
         useAnimationLayer: 1
@@ -89002,13 +89002,13 @@ MonoBehaviour:
       materialIndex: 0
       depth: 0
       collider:
-        type: 2
+        type: 0
         center: {x: 0, y: 0, z: 0}
         boxSize: {x: 1000, y: 500, z: 0}
-        sphereRadius: 500
+        sphereRadius: 0
         useAnimationLayer: 1
         layer: 0
-        isTrigger: 0
+        isTrigger: 1
         tag: 
       originalAtlas: {fileID: 0}
       originalTextureGUID: 
@@ -89105,7 +89105,7 @@ MonoBehaviour:
     triggerFrameBones:
     - userTriggerTag: 
       boneNodeIndex: 18
-      triggerEventTypes: 020000000400000003000000
+      triggerEventTypes: 02000000040000000300000006000000
       pivotOffset: {x: .00535714254, y: -.241269842}
       upperLeft: {x: -604.912476, y: 749.423828, z: 0}
       bottomLeft: {x: -604.912476, y: -261.576202, z: 0}
@@ -89125,13 +89125,13 @@ MonoBehaviour:
       materialIndex: 0
       depth: 0
       collider:
-        type: 0
+        type: 2
         center: {x: 0, y: 0, z: 0}
-        boxSize: {x: 0, y: 0, z: 0}
+        boxSize: {x: 1000, y: 500, z: 0}
         sphereRadius: 0
         useAnimationLayer: 1
         layer: 0
-        isTrigger: 1
+        isTrigger: 0
         tag: 
       originalAtlas: {fileID: 11400000, guid: 4e7716998e2dba34c93e6206d41d8221, type: 2}
       originalTextureGUID: ff5b2bb6660a8944480a665e6042dacf

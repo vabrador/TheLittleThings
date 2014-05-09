@@ -88,7 +88,10 @@ public class CombatScript : MonoBehaviour {
 			// If you're idle and you get punched, you're hurt.  If you're idle and dashed
 			// into, you get knocked back.  Otherwise, nothing changes.
 			if (otherMover.stateBools["attacking"]){ GetsHurt(otherCombat.attackStrength); }
-			else if (otherMover.stateBools["dashing"]){ GetsKnocked(); }
+			else if (otherMover.stateBools["dashing"]){ 
+//				otherMover.Bounce();
+				GetsKnocked(); 
+			}
 			else if (otherMover.stateBools["specialing"]){ GetsHurt(otherCombat.specialStrength); }
 			else {}
 		} 
@@ -101,7 +104,10 @@ public class CombatScript : MonoBehaviour {
 			// throw a punch into a dash and it *isn'* counterable, you get knocked back.  If
 			// somebody blocks while your punch is counterable, you get countered.
 			if ((otherMover.stateBools["attacking"]) && (mover.attackStart >= otherMover.attackStart)) { GetsHurt(otherCombat.attackStrength); }
-			else if ((otherMover.stateBools["dashing"]) && (!otherCombat.dashCounterable)) { GetsKnocked(); }
+			else if ((otherMover.stateBools["dashing"]) && (!otherCombat.dashCounterable)) {
+//				otherMover.Bounce();
+				GetsKnocked(); 
+			}
 			else if ((otherMover.stateBools["blocking"]) && (punchCounterable)) { GetsCountered(otherCounter); }
 			else if (otherMover.stateBools["specialing"]){ GetsHurt(otherCombat.specialStrength); }
 			else {}
@@ -109,16 +115,20 @@ public class CombatScript : MonoBehaviour {
 		else if (mover.stateBools["blocking"]) {
 			// If you're blocking and get dashed into while you're counterable, you get countered.
 			// Otherwise, not much happens.
-			if ((otherMover.stateBools["dashing"]) && (blockCounterable)) { GetsCountered(otherCounter); }
+			if ((otherMover.stateBools["dashing"]) && (blockCounterable)) { 
+//				otherMover.Bounce();
+				GetsCountered(otherCounter); 
+			}
 			else if (otherMover.stateBools["specialing"]){ GetsHurt(otherCombat.specialStrength); }
 			else {}
 		}
 		else if (mover.stateBools["dashing"]) {
 			// If you're dashing into their punch and your dash is counterable, get countered.
 			// Otherwise, no enemy state will changes yours mid-dash
+//			otherMover.Bounce ();
 			if ((otherMover.stateBools["attacking"]) && (dashCounterable)) { GetsCountered(otherCounter); }
 			else if (otherMover.stateBools["specialing"]){ GetsHurt(otherCombat.specialStrength); }
-			else{}
+			else{ otherMover.Idle(); }
 		}
 		else {
 			// Do nothing, because our character is either hurt or reeling, and in both

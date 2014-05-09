@@ -42,13 +42,13 @@ public class HealthBars : MonoBehaviour {
 
 		// Initialize special attack strength.
 		maxSpecialStrength = character.GetComponent<CombatScript>().maxSpecialStrength;
-		Debug.Log (currentSpecialStrength);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		currentHealth = character.GetComponent<CombatScript>().currentHealth;
 		currentSpecialStrength = character.GetComponent<CombatScript>().specialStrength;
+		Debug.Log (currentSpecialStrength);
 	}
 	
 	void OnGUI () {
@@ -59,7 +59,12 @@ public class HealthBars : MonoBehaviour {
 		
 		// Create one Group to contain all three images, the frame, the health bar, and the special bar.
 		//GUI.BeginGroup (new Rect (healthBarPosition.x, healthBarPosition.y, healthBarLength, healthBarHeight));
-		
+
+		// Royal's computer needs xOffset = 105, yOffsetHealth = 44, yOffsetSpecial = 60
+		int xOffset = 105;
+		int yOffsetHealth = 44;
+		int yOffsetSpecial = 60;
+
 		// The health bar will be flipped if the character's position is on the right.
 		if (charOnLeft) {
 			// Adjust the current health so that the bar isn't longer than 100% or less than 0%.
@@ -69,16 +74,17 @@ public class HealthBars : MonoBehaviour {
 			// NOTE: The numbers here are only meant for the demo. They are hard coded numbers
 			//       chosen so that the bars appear in the right spot on the screen. I can make
 			//       work for a general case later.
-			GUI.Box (new Rect (healthBarPosition.x + 113, 
-			                   healthBarPosition.y + 45, 
+
+			GUI.Box (new Rect (healthBarPosition.x + xOffset, 
+			                   healthBarPosition.y + yOffsetHealth, 
 			                   (currentHealth * healthBarLength / startHealth) * 0.70f, 
 			                   healthBarHeight * 0.15f), 
 			         healthBar, 
 			         healthBarStyle);
 
 			// Draw the yellow special bar.
-			GUI.Box (new Rect (healthBarPosition.x + 113, 
-			                   healthBarPosition.y + 65, 
+			GUI.Box (new Rect (healthBarPosition.x + xOffset, 
+			                   healthBarPosition.y + yOffsetSpecial, 
 			                   (currentSpecialStrength * healthBarLength / maxSpecialStrength) * 0.54f, 
 			                   healthBarHeight * 0.15f), 
 			         specialBar, 
@@ -101,16 +107,16 @@ public class HealthBars : MonoBehaviour {
 			// NOTE: The numbers here are only meant for the demo. They are hard coded numbers
 			//       chosen so that the bars appear in the right spot on the screen. I can make
 			//       work for a general case later.
-			GUI.Box (new Rect (healthBarPosition.x - 111, 
-			                   healthBarPosition.y + 45, 
+			GUI.Box (new Rect (healthBarPosition.x - xOffset, 
+			                   healthBarPosition.y + yOffsetHealth, 
 			                   -(currentHealth * healthBarLength / startHealth) * 0.70f, 
 			                   healthBarHeight * 0.15f), 
 			         healthBar, 
 			         healthBarStyle);
 			
 			// Draw the yellow special bar.
-			GUI.Box (new Rect (healthBarPosition.x - 111, 
-			                   healthBarPosition.y + 65, 
+			GUI.Box (new Rect (healthBarPosition.x - xOffset, 
+			                   healthBarPosition.y + yOffsetSpecial, 
 			                   -(currentSpecialStrength * healthBarLength / maxSpecialStrength) * 0.54f, 
 			                   healthBarHeight * 0.15f), 
 			         specialBar, 

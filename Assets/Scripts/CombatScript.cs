@@ -33,7 +33,7 @@ public class CombatScript : MonoBehaviour {
 			float playerPos = gameObject.transform.position.x;
 			int absDamage = (int) Mathf.Abs(centerDistance / (centerPos - edgePos) * maxSpecialStrength);
 //			if (Time.time % 3 < 0.01) Debug.Log ("Damage should be scaled as: "+ (centerDistance / (centerPos - edgePos)) * maxSpecialStrength);
-			if (Time.time % 5 < 0.01) Debug.Log ("absDamage is: " + absDamage);
+//			if (Time.time % 5 < 0.01) Debug.Log ("absDamage is: " + absDamage);
 			if (((playerPos < centerPos) && mover.facingLeft) || ((playerPos > centerPos) && !mover.facingLeft)) { return absDamage; }
 			else { return 0; }
 		}

@@ -83,6 +83,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1583141}
   - 212: {fileID: 1583140}
+  - 114: {fileID: 1583142}
   m_Layer: 0
   m_Name: centerPoint
   m_TagString: Untagged
@@ -124,6 +125,19 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1583142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1583139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e20295858ae6e114180613f02911b418, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftChar: {fileID: 1482902034}
+  rightChar: {fileID: 2009908449}
 --- !u!1 &8180429
 GameObject:
   m_ObjectHideFlags: 0
@@ -53930,6 +53944,7 @@ MonoBehaviour:
   enemy: 0
   dashForceConstant: 3000
   bounceForceConstant: 250
+  centerPoint: {fileID: 1583139}
   vocalSource: {fileID: 1482902043}
   characterSide: left
   stateList: []
@@ -53955,12 +53970,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1482902034}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e919ee4aaa393744682e9ea043767bea, type: 3}
+  m_Script: {fileID: 11500000, guid: 5313d7897cdfd82428b56e74a7d1a03e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   friendly: 1
   friendlyAxes: []
   enemyAxes: []
+  gameRunning: 1
 --- !u!114 &1482902043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56192,9 +56208,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fighterAnimation: {fileID: 1025474882}
   maxSpeed: 35
-  enemy: 0
+  enemy: 1
   dashForceConstant: 3000
   bounceForceConstant: 250
+  centerPoint: {fileID: 1583139}
   vocalSource: {fileID: 2009908460}
   characterSide: right
   stateList: []
@@ -56220,12 +56237,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2009908449}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e919ee4aaa393744682e9ea043767bea, type: 3}
+  m_Script: {fileID: 11500000, guid: 5313d7897cdfd82428b56e74a7d1a03e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   friendly: 0
   friendlyAxes: []
   enemyAxes: []
+  gameRunning: 1
 --- !u!82 &2009908458
 AudioSource:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ public class MovementAnimationScript : MonoBehaviour {
 	public bool enemy;
 	public float dashForceConstant = 1000;
 	public float bounceForceConstant = 250;
+	public GameObject centerPoint;
 
 	
     // Sound
@@ -218,7 +219,12 @@ public class MovementAnimationScript : MonoBehaviour {
         // Note from Nick: There is no "Death" animation! Recommend deleting this.
         // A Win() function would be nice, though, so we could have things the
         // characters can say when they win a match!
-		fighterAnimation.CrossFade ("Death");
+		metaStateScript gameState = centerPoint.GetComponent<metaStateScript> ();
+		if (enemy) {
+			gameState.endGame (true);
+		} else {
+			gameState.endGame(false); 
+		}
 	}
 	
 	// Sets all values in stateBools to false, except for those of animating

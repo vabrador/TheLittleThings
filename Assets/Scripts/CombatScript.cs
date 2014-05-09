@@ -8,7 +8,8 @@ public class CombatScript : MonoBehaviour {
 	
 	// Points used to calculate Special damage
 	public Transform centerPoint;
-	public Transform edgePoint;
+	public Transform leftEdgePoint;
+	public Transform rightEdgePoint;
 
 	// Bool to turn on auto-damage function
 	public bool autodamage;
@@ -19,16 +20,21 @@ public class CombatScript : MonoBehaviour {
 	// Amount of damage done by punch, counter, special
 	public int attackStrength = 10;
 	public int counterStrength = 5;
-	public int maxSpecialStrength = 30;
+	public int maxSpecialStrength = 60;
 	
-	public int centerDistance {
-		get { return (int) (gameObject.transform.position.x - centerPoint.position.x); }
+	public float centerDistance {
+		get { return (gameObject.transform.position.x - centerPoint.position.x); }
 	}
 	
 	public int specialStrength {
 		get { 
-			int absDamage = (int) Mathf.Abs(((centerDistance)/(edgePoint.position.x - centerPoint.position.x))) * maxSpecialStrength;
-			if ((centerDistance > 0 && mover.facingLeft) || (centerDistance < 0 && !mover.facingLeft)) { return absDamage; }
+			float centerPos = centerPoint.position.x;
+			float edgePos = leftEdgePoint.position.x;
+			float playerPos = gameObject.transform.position.x;
+			int absDamage = (int) Mathf.Abs(centerDistance / (centerPos - edgePos) * maxSpecialStrength);
+//			if (Time.time % 3 < 0.01) Debug.Log ("Damage should be scaled as: "+ (centerDistance / (centerPos - edgePos)) * maxSpecialStrength);
+			if (Time.time % 5 < 0.01) Debug.Log ("absDamage is: " + absDamage);
+			if (((playerPos < centerPos) && mover.facingLeft) || ((playerPos > centerPos) && !mover.facingLeft)) { return absDamage; }
 			else { return 0; }
 		}
 	}
@@ -67,6 +73,7 @@ public class CombatScript : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		AutoDamageChar ();
+		if (Time.time %3 < 0.01) Debug.Log (gameObject + "'s special strength is: "+ specialStrength);
 	}
 	
 	// Handles the logic of what should happen based on the respective state and start times.  Specifically deals with

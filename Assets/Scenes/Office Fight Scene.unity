@@ -120,7 +120,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1583139}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.10029125, y: -32.1069679, z: 0}
+  m_LocalPosition: {x: 4.5, y: -32.1069679, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2089,6 +2089,8 @@ MonoBehaviour:
   character: {fileID: 1482902034}
   startHealth: 0
   currentHealth: 0
+  maxSpecialStrength: 0
+  currentSpecialStrength: 0
   displacementFromCenter: 0
   charOnLeft: 1
   healthBarPositionX: .200000003
@@ -2097,6 +2099,65 @@ MonoBehaviour:
   healthBar: {fileID: 2800000, guid: 9ef302136f1e56e45a5d77f887fe4925, type: 3}
   specialBar: {fileID: 2800000, guid: b013a2f517ce1294b9b364179929b516, type: 3}
   healthBarStyle:
+    m_Name: 
+    m_Normal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Hover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Active:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Focused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnNormal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnHover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnActive:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnFocused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Border:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Margin:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Padding:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Overflow:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Font: {fileID: 0}
+    m_FontSize: 0
+    m_FontStyle: 0
+    m_Alignment: 0
+    m_WordWrap: 0
+    m_RichText: 1
+    m_TextClipping: 0
+    m_ImagePosition: 0
+    m_ContentOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
+    m_StretchWidth: 1
+    m_StretchHeight: 0
+  specialBarStyle:
     m_Name: 
     m_Normal:
       m_Background: {fileID: 0}
@@ -2183,6 +2244,8 @@ MonoBehaviour:
   character: {fileID: 2009908449}
   startHealth: 0
   currentHealth: 0
+  maxSpecialStrength: 0
+  currentSpecialStrength: 0
   displacementFromCenter: 0
   charOnLeft: 0
   healthBarPositionX: .699999988
@@ -2249,6 +2312,65 @@ MonoBehaviour:
     m_FixedHeight: 0
     m_StretchWidth: 1
     m_StretchHeight: 1
+  specialBarStyle:
+    m_Name: 
+    m_Normal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Hover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Active:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Focused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnNormal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnHover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnActive:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnFocused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Border:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Margin:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Padding:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Overflow:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Font: {fileID: 0}
+    m_FontSize: 0
+    m_FontStyle: 0
+    m_Alignment: 0
+    m_WordWrap: 0
+    m_RichText: 1
+    m_TextClipping: 0
+    m_ImagePosition: 0
+    m_ContentOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
+    m_StretchWidth: 1
+    m_StretchHeight: 0
   healthBarLength: 0
   healthBarHeight: 0
   scaleFactor: .449999988
@@ -2644,9 +2766,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftCharacter: {fileID: 1482902034}
   rightCharacter: {fileID: 2009908449}
-  leftEdge: {fileID: 0}
-  rightEdge: {fileID: 0}
-  centerPoint: {fileID: 0}
+  leftEdge: {fileID: 1934390856}
+  rightEdge: {fileID: 694397916}
+  centerPoint: {fileID: 1583141}
 --- !u!1 &694397915
 GameObject:
   m_ObjectHideFlags: 0
@@ -53710,7 +53832,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1482902034}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -43.0891037, y: 4.67996788, z: 0}
+  m_LocalPosition: {x: -43.0891037, y: -6.1587925, z: 0}
   m_LocalScale: {x: .0549999997, y: .0549999997, z: 1}
   m_Children:
   - {fileID: 1024004830}
@@ -53750,13 +53872,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97c1307e01bf9e74ea327bb19dd64c58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  centerPoint: {fileID: 1934390856}
-  edgePoint: {fileID: 1583141}
+  centerPoint: {fileID: 1583141}
+  leftEdgePoint: {fileID: 1934390856}
+  rightEdgePoint: {fileID: 694397916}
   autodamage: 0
   startTime: 0
   attackStrength: 10
   counterStrength: 5
-  maxSpecialStrength: 30
+  maxSpecialStrength: 70
   attackThresh: .5
   blockThresh: .5
   dashThresh: 1
@@ -55885,7 +56008,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1934390855}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -135.490021, y: -34.8217049, z: 0}
+  m_LocalPosition: {x: -132.928787, y: -34.8217049, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -55990,12 +56113,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerPoint: {fileID: 1583141}
-  edgePoint: {fileID: 1934390856}
+  leftEdgePoint: {fileID: 1934390856}
+  rightEdgePoint: {fileID: 694397916}
   autodamage: 0
   startTime: 0
   attackStrength: 10
   counterStrength: 5
-  maxSpecialStrength: 30
+  maxSpecialStrength: 50
   attackThresh: .5
   blockThresh: .5
   dashThresh: 1

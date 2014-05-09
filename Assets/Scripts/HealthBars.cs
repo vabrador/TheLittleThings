@@ -42,7 +42,6 @@ public class HealthBars : MonoBehaviour {
 
 		// Initialize special attack strength.
 		maxSpecialStrength = character.GetComponent<CombatScript>().maxSpecialStrength;
-		currentSpecialStrength = maxSpecialStrength;
 		Debug.Log (currentSpecialStrength);
 	}
 	

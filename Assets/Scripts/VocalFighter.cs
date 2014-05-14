@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class VocalFighter : MonoBehaviour {
 
@@ -116,205 +117,47 @@ public class VocalFighter : MonoBehaviour {
     //////////////////////////////
 
     // Called as soon as this script is loaded.
-    void Start() {
-
-        /* For each type of sound, we will check which ones are null,
-         * and initialize the associated ArrayList that will contain
-         * each of a particular kind of sound.
-         */
-
-        #region Sound Array Initialization
-
-        // attackAttempt sounds
-        if (attackAttemptSound1 != null) {
-            attackAttemptSounds.Add(attackAttemptSound1);
-        }
-        if (attackAttemptSound2 != null) {
-            attackAttemptSounds.Add(attackAttemptSound2);
-        }
-        if (attackAttemptSound3 != null) {
-            attackAttemptSounds.Add(attackAttemptSound3);
-        }
-        if (attackAttemptSound4 != null) {
-            attackAttemptSounds.Add(attackAttemptSound4);
-        }
-        if (attackAttemptSound5 != null) {
-            attackAttemptSounds.Add(attackAttemptSound5);
-        }
-
-        // dashAttempt sounds
-        if (dashAttemptSound1 != null) {
-            dashAttemptSounds.Add(dashAttemptSound1);
-        }
-        if (dashAttemptSound2 != null) {
-            dashAttemptSounds.Add(dashAttemptSound2);
-        }
-        if (dashAttemptSound3 != null) {
-            dashAttemptSounds.Add(dashAttemptSound3);
-        }
-        if (dashAttemptSound4 != null) {
-            dashAttemptSounds.Add(dashAttemptSound4);
-        }
-        if (dashAttemptSound5 != null) {
-            dashAttemptSounds.Add(dashAttemptSound5);
-        }
-
-        // blockAttempt sounds
-        if (blockAttemptSound1 != null) {
-            blockAttemptSounds.Add(blockAttemptSound1);
-        }
-        if (blockAttemptSound2 != null) {
-            blockAttemptSounds.Add(blockAttemptSound2);
-        }
-        if (blockAttemptSound3 != null) {
-            blockAttemptSounds.Add(blockAttemptSound3);
-        }
-        if (blockAttemptSound4 != null) {
-            blockAttemptSounds.Add(blockAttemptSound4);
-        }
-        if (blockAttemptSound5 != null) {
-            blockAttemptSounds.Add(blockAttemptSound5);
-        }
-
-        // Special move sounds
-        if (specialSound1 != null) {
-            specialSounds.Add(specialSound1);
-        }
-        if (specialSound2 != null) {
-            specialSounds.Add(specialSound2);
-        }
-        if (specialSound3 != null) {
-            specialSounds.Add(specialSound3);
-        }
-        if (specialSound4 != null) {
-            specialSounds.Add(specialSound4);
-        }
-        if (specialSound5 != null) {
-            specialSounds.Add(specialSound5);
-        }
-
-        // attackSuccess sounds
-        if (attackSuccessSound1 != null) {
-            attackSuccessSounds.Add(attackSuccessSound1);
-        }
-        if (attackSuccessSound2 != null) {
-            attackSuccessSounds.Add(attackSuccessSound2);
-        }
-        if (attackSuccessSound3 != null) {
-            attackSuccessSounds.Add(attackSuccessSound3);
-        }
-        if (attackSuccessSound4 != null) {
-            attackSuccessSounds.Add(attackSuccessSound4);
-        }
-        if (attackSuccessSound5 != null) {
-            attackSuccessSounds.Add(attackSuccessSound5);
-        }
-
-        // dashSuccess sounds
-        if (dashSuccessSound1 != null) {
-            dashSuccessSounds.Add(dashSuccessSound1);
-        }
-        if (dashSuccessSound2 != null) {
-            dashSuccessSounds.Add(dashSuccessSound2);
-        }
-        if (dashSuccessSound3 != null) {
-            dashSuccessSounds.Add(dashSuccessSound3);
-        }
-        if (dashSuccessSound4 != null) {
-            dashSuccessSounds.Add(dashSuccessSound4);
-        }
-        if (dashSuccessSound5 != null) {
-            dashSuccessSounds.Add(dashSuccessSound5);
-        }
-
-        // blockSuccess sounds
-        if (blockSuccessSound1 != null) {
-            blockSuccessSounds.Add(blockSuccessSound1);
-        }
-        if (blockSuccessSound2 != null) {
-            blockSuccessSounds.Add(blockSuccessSound2);
-        }
-        if (blockSuccessSound3 != null) {
-            blockSuccessSounds.Add(blockSuccessSound3);
-        }
-        if (blockSuccessSound4 != null) {
-            blockSuccessSounds.Add(blockSuccessSound4);
-        }
-        if (blockSuccessSound5 != null) {
-            blockSuccessSounds.Add(blockSuccessSound5);
-        }
-
-        // counterSuccess sounds
-        if (counterSuccessSound1 != null) {
-            counterSuccessSounds.Add(counterSuccessSound1);
-        }
-        if (counterSuccessSound2 != null) {
-            counterSuccessSounds.Add(counterSuccessSound2);
-        }
-        if (counterSuccessSound3 != null) {
-            counterSuccessSounds.Add(counterSuccessSound3);
-        }
-        if (counterSuccessSound4 != null) {
-            counterSuccessSounds.Add(counterSuccessSound4);
-        }
-        if (counterSuccessSound5 != null) {
-            counterSuccessSounds.Add(counterSuccessSound5);
-        }
-
-        // hitByAttack sounds
-        if (hitByAttackSound1 != null) {
-            hitByAttackSounds.Add(hitByAttackSound1);
-        }
-        if (hitByAttackSound2 != null) {
-            hitByAttackSounds.Add(hitByAttackSound2);
-        }
-        if (hitByAttackSound3 != null) {
-            hitByAttackSounds.Add(hitByAttackSound3);
-        }
-        if (hitByAttackSound4 != null) {
-            hitByAttackSounds.Add(hitByAttackSound4);
-        }
-        if (hitByAttackSound5 != null) {
-            hitByAttackSounds.Add(hitByAttackSound5);
-        }
-
-        // countered sounds
-        if (counteredSound1 != null) {
-            counteredSounds.Add(counteredSound1);
-        }
-        if (counteredSound2 != null) {
-            counteredSounds.Add(counteredSound2);
-        }
-        if (counteredSound3 != null) {
-            counteredSounds.Add(counteredSound3);
-        }
-        if (counteredSound4 != null) {
-            counteredSounds.Add(counteredSound4);
-        }
-        if (counteredSound5 != null) {
-            counteredSounds.Add(counteredSound5);
-        }
-
-        // blockBroken sounds
-        if (blockBrokenSound1 != null) {
-            blockBrokenSounds.Add(blockBrokenSound1);
-        }
-        if (blockBrokenSound2 != null) {
-            blockBrokenSounds.Add(blockBrokenSound2);
-        }
-        if (blockBrokenSound3 != null) {
-            blockBrokenSounds.Add(blockBrokenSound3);
-        }
-        if (blockBrokenSound4 != null) {
-            blockBrokenSounds.Add(blockBrokenSound4);
-        }
-        if (blockBrokenSound5 != null) {
-            blockBrokenSounds.Add(blockBrokenSound5);
-        }
-
-        #endregion
-
-    }
+	void Start() {
+		// Make a list of all the possible sounds for each sound type.
+		AudioClip[] attackAttemptSoundPool = new AudioClip[]{attackAttemptSound1, attackAttemptSound2, attackAttemptSound3,	attackAttemptSound4, attackAttemptSound5};
+		AudioClip[] dashAttemptSoundPool = new AudioClip[]{dashAttemptSound1, dashAttemptSound2, dashAttemptSound3,	dashAttemptSound4, dashAttemptSound5};
+		AudioClip[] blockAttemptSoundPool = new AudioClip[]{blockAttemptSound1, blockAttemptSound2, blockAttemptSound3,	blockAttemptSound4, blockAttemptSound5};
+		AudioClip[] specialSoundPool = new AudioClip[]{specialSound1, specialSound2, specialSound3, specialSound4, specialSound5};
+		AudioClip[] attackSuccessSoundPool = new AudioClip[]{attackSuccessSound1, attackSuccessSound2, attackSuccessSound3,	attackSuccessSound4, attackSuccessSound5};
+		AudioClip[] dashSuccessSoundPool = new AudioClip[]{dashSuccessSound1, dashSuccessSound2, dashSuccessSound3,	dashSuccessSound4, dashSuccessSound5};
+		AudioClip[] blockSuccessSoundPool = new AudioClip[]{blockSuccessSound1, blockSuccessSound2, blockSuccessSound3,	blockSuccessSound4, blockSuccessSound5};
+		AudioClip[] counterSuccessSoundPool = new AudioClip[]{counterSuccessSound1, counterSuccessSound2, counterSuccessSound3,	counterSuccessSound4, counterSuccessSound5};
+		AudioClip[] hitByAttackSoundPool = new AudioClip[]{hitByAttackSound1, hitByAttackSound2, hitByAttackSound3,	hitByAttackSound4, hitByAttackSound5};
+		AudioClip[] counteredSoundPool = new AudioClip[]{counteredSound1, counteredSound2, counteredSound3, counteredSound4, counteredSound5};
+		AudioClip[] blockBrokenSoundPool = new AudioClip[]{blockBrokenSound1, blockBrokenSound2, blockBrokenSound3,	blockBrokenSound4, blockBrokenSound5};
+		
+		// Form a dictionary that matches up the pool of possible sounds with the list they're supposed to be added to.
+		Dictionary<AudioClip[], ArrayList> poolToListMap = new Dictionary<AudioClip[], ArrayList>(){
+			{attackAttemptSoundPool, attackAttemptSounds},
+			{blockAttemptSoundPool, blockAttemptSounds},
+			{dashAttemptSoundPool, dashAttemptSounds},
+			{specialSoundPool, specialSounds},
+			{attackSuccessSoundPool, attackSuccessSounds},
+			{dashSuccessSoundPool, dashSuccessSounds},
+			{blockSuccessSoundPool, blockSuccessSounds},
+			{counterSuccessSoundPool, counterSuccessSounds},
+			{hitByAttackSoundPool, hitByAttackSounds},
+			{counteredSoundPool, counteredSounds},
+			{blockBrokenSoundPool, blockBrokenSounds}
+		};
+		
+		
+		// Check if each sound is null and add it to the appropriate sound list if it isn't.
+		ArrayList pools = new ArrayList(poolToListMap.Keys);
+		foreach (AudioClip[] pool in pools){
+			foreach(AudioClip clip in pool){
+				if (clip != null) {
+					poolToListMap[pool].Add (clip);
+				}
+			}
+		}
+		
+	}
 
     /////////////////////////////
     // Sound-playing Functions //

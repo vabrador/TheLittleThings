@@ -22,8 +22,10 @@ public class metaStateScript : MonoBehaviour {
 		rightControl.gameRunning = false;
 		if (win) {
 			GameObject winGraphic = (GameObject) Instantiate(Resources.Load ("lindaWinGraphic"));
+			winGraphic.transform.position = Camera.main.ViewportToScreenPoint(new Vector3(0.5f, 0.5f, 0f));
 		} else {
-			GameObject winGraphic = (GameObject) Instantiate(Resources.Load ("georgeWinGraphic"));
+			GameObject loseGraphic = (GameObject) Instantiate(Resources.Load ("georgeWinGraphic"));
+			loseGraphic.transform.position = Camera.main.ViewportToScreenPoint(new Vector3(0.5f, 0.5f, 0f));
 		}
 	}
 }

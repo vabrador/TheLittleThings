@@ -73,7 +73,7 @@ public class CombatScript : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		AutoDamageChar ();
-		if (Time.time %3 < 0.01) Debug.Log (gameObject + "'s special strength is: "+ specialStrength);
+//		if (Time.time %3 < 0.01) Debug.Log (gameObject + "'s special strength is: "+ specialStrength);
 	}
 	
 	// Handles the logic of what should happen based on the respective state and start times.  Specifically deals with
@@ -172,6 +172,7 @@ public class CombatScript : MonoBehaviour {
 		Debug.Log (gameObject + " just lost " + damageAmount + " health!");
 		currentHealth -= damageAmount;
 		if (currentHealth <= 0) {
+			currentHealth = 0;
 			mover.EndGame();
 		}
 	}

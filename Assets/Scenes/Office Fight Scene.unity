@@ -2104,10 +2104,10 @@ MonoBehaviour:
   healthBarXScale: .699999988
   healthBarYScale: .150000006
   specialBarXScale: .540000021
-  scaleFactor: .449999988
-  xOffset: 105
-  yOffsetHealth: 44
-  yOffsetSpecial: 60
+  scaleFactor: .349999994
+  xOffset: 80
+  yOffsetHealth: 32
+  yOffsetSpecial: 48
 --- !u!4 &478666134
 Transform:
   m_ObjectHideFlags: 0
@@ -2252,17 +2252,17 @@ MonoBehaviour:
     m_FixedHeight: 0
     m_StretchWidth: 1
     m_StretchHeight: 1
-  healthBarPositionX: .699999988
+  healthBarPositionX: .625
   healthBarPositionY: .00999999978
   healthBarTextureLength: 793
   healthBarTextureHeight: 289
   healthBarXScale: .699999988
   healthBarYScale: .150000006
   specialBarXScale: .540000021
-  scaleFactor: .449999988
-  xOffset: 105
-  yOffsetHealth: 44
-  yOffsetSpecial: 60
+  scaleFactor: .349999994
+  xOffset: 80
+  yOffsetHealth: 32
+  yOffsetSpecial: 48
 --- !u!1 &492368138
 GameObject:
   m_ObjectHideFlags: 0
@@ -4131,7 +4131,6 @@ GameObject:
   - 92: {fileID: 691252719}
   - 124: {fileID: 691252718}
   - 81: {fileID: 691252717}
-  - 114: {fileID: 691252722}
   - 114: {fileID: 691252723}
   m_Layer: 0
   m_Name: Main Camera
@@ -4201,17 +4200,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!114 &691252722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 691252716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a1ff7ff4ce484f1aad8887efed74b11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &691252723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56189,7 +56177,7 @@ MonoBehaviour:
   centerPoint: {fileID: 1583141}
   leftEdgePoint: {fileID: 1934390856}
   rightEdgePoint: {fileID: 694397916}
-  autodamage: 1
+  autodamage: 0
   startTime: 0
   attackStrength: 10
   counterStrength: 5
@@ -56269,8 +56257,8 @@ MonoBehaviour:
   enemy: 1
   dashForceConstant: 3000
   bounceForceConstant: 250
-  blockBackwardsSpeed: 5
-  blockForceConstant: 100
+  blockBackwardsSpeed: 10
+  blockForceConstant: 1000
   centerPoint: {fileID: 1583139}
   vocalSource: {fileID: 2009908460}
   characterSide: right

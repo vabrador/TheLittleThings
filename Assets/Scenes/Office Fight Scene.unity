@@ -55363,7 +55363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 561c7d4171a266f4a8f2c02e7b72aa08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collisionSource: Linda
+  characterName: Linda Left
 --- !u!114 &1482902038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55433,6 +55433,8 @@ MonoBehaviour:
   enemy: 0
   dashForceConstant: 3000
   bounceForceConstant: 250
+  blockBackwardsSpeed: 10
+  blockForceConstant: 1000
   centerPoint: {fileID: 1583139}
   vocalSource: {fileID: 1482902043}
   characterSide: left
@@ -55451,6 +55453,9 @@ MonoBehaviour:
   reelStart: 0
   specialStart: 0
   yPosition: 0
+  specialProjectileSpeed: 25
+  specialVertOffset: 50
+  specialDELdelay: .5
 --- !u!114 &1482902042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56184,7 +56189,7 @@ MonoBehaviour:
   centerPoint: {fileID: 1583141}
   leftEdgePoint: {fileID: 1934390856}
   rightEdgePoint: {fileID: 694397916}
-  autodamage: 0
+  autodamage: 1
   startTime: 0
   attackStrength: 10
   counterStrength: 5
@@ -56206,7 +56211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 561c7d4171a266f4a8f2c02e7b72aa08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collisionSource: George
+  characterName: George Right
 --- !u!61 &2009908453
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -56264,6 +56269,8 @@ MonoBehaviour:
   enemy: 1
   dashForceConstant: 3000
   bounceForceConstant: 250
+  blockBackwardsSpeed: 5
+  blockForceConstant: 100
   centerPoint: {fileID: 1583139}
   vocalSource: {fileID: 2009908460}
   characterSide: right
@@ -56282,6 +56289,9 @@ MonoBehaviour:
   reelStart: 0
   specialStart: 0
   yPosition: 0
+  specialProjectileSpeed: 15
+  specialVertOffset: 10
+  specialDELdelay: .5
 --- !u!114 &2009908457
 MonoBehaviour:
   m_ObjectHideFlags: 0

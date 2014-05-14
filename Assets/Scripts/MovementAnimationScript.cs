@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using SmoothMoves;
@@ -10,6 +10,8 @@ public class MovementAnimationScript : MonoBehaviour {
 	public bool enemy;
 	public float dashForceConstant = 1000;
 	public float bounceForceConstant = 250;
+	public float blockBackwardsSpeed = 10f;
+	public float blockForceConstant = 1000f;
 	public GameObject centerPoint;
 
 	
@@ -121,6 +123,7 @@ public class MovementAnimationScript : MonoBehaviour {
 			makeOtherAnimsFalse("attacking");
 		} else if (fighterAnimation.IsPlaying("Block")) {
 			makeOtherAnimsFalse("blocking");
+			rigidbody2D.AddForce( new Vector2 (-1 * blockBackwardsSpeed * blockForceConstant,0));
 		} else if (fighterAnimation.IsPlaying("Special")) {
 			makeOtherAnimsFalse("specialing");
 		} else {
@@ -179,7 +182,7 @@ public class MovementAnimationScript : MonoBehaviour {
 	public void Special() {
 		fighterAnimation.Play("Special");
 		specialStart = Time.time;
-
+		if (!enemy) StartCoroutine(LindaSpecial());  // This is the least nice piece of code, but screw it.
         // SOUND //
         vocalSource.OnSpecial();
 	}
@@ -248,6 +251,21 @@ public class MovementAnimationScript : MonoBehaviour {
 		Vector3 localScale = transform.localScale;
 		localScale.x *= -1;
 		transform.localScale = localScale;
+	}
+
+	public float specialProjectileSpeed = 15f;
+	public float specialVertOffset = 50f;
+	public float specialDELdelay = 0.5f;
+	IEnumerator LindaSpecial() {
+		Vector3 startPoint = transform.position;
+		startPoint.y += specialVertOffset;
+		GameObject prompt = (GameObject) Instantiate(Resources.Load ("Linda Special Prompt"), startPoint, Quaternion.identity);
+		yield return new WaitForSeconds(specialDELdelay);
+		GameObject.Destroy(prompt);
+		GameObject del = (GameObject) Instantiate(Resources.Load ("Linda Special Del"), startPoint, Quaternion.identity);
+		del.transform.parent = gameObject.transform.root;
+		Debug.Log (del + " is a child of " + del.transform.parent);
+		del.GetComponent<SolidProjectile> ().speed = specialProjectileSpeed;
 	}
 	
 	

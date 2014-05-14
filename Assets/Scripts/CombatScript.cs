@@ -90,7 +90,7 @@ public class CombatScript : MonoBehaviour {
 		int otherCounter = otherCombat.counterStrength;
 //		Debug.Log ("Collision happened: " + gameObject + "'s attackState: " + mover.stateBools["attacking"]);
 //		Debug.Log (otherChar + "'s attackState: " + otherMover.stateBools["attacking"]);
-		Debug.Log ("Collision being handled by: ", gameObject);
+		Debug.Log ("Collision from " + otherChar + "being handled by: " + gameObject);
 		if (mover.stateBools["idling"]){
 			// If you're idle and you get punched, you're hurt.  If you're idle and dashed
 			// into, you get knocked back.  Otherwise, nothing changes.
@@ -164,7 +164,7 @@ public class CombatScript : MonoBehaviour {
 
 
 	//////////////////////////////////////////////////
-	// FUNCTIONS TO CHANGE HEALTH & VARY ANIMATIONS //
+	// FUNCTIONS TO CHANGE HEALTH & ANIMATIONS ///////
 	//////////////////////////////////////////////////
 
 	// Subtracts from the health and triggers whatever happens upon Death
@@ -198,7 +198,7 @@ public class CombatScript : MonoBehaviour {
 	}
 
 	void AutoDamageChar(){
-		if ((autodamage) && ((Time.time - startTime) % 3 < 1)) TakeDamage(5);
+		if ((autodamage) && ((Time.time - startTime) % 3 < 0.01)) TakeDamage(5);
 	}
 	
 }

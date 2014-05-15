@@ -30265,7 +30265,7 @@ MonoBehaviour:
   - {r: 1, g: 1, b: 1, a: 1}
   - {r: 1, g: 1, b: 1, a: 1}
   - {r: 1, g: 1, b: 1, a: 1}
-  animationData: {fileID: 11400000, guid: 56f45c8166fe4a14fb309a1ad25360b3, type: 2}
+  animationData: {fileID: 0}
   animationDataGUID: 56f45c8166fe4a14fb309a1ad25360b3
   mMaterialSource:
   - {fileID: 2100000, guid: c111b930a9ff8bc48afc0623c28a28e9, type: 2}
@@ -55363,6 +55363,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97c1307e01bf9e74ea327bb19dd64c58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  otherVocalFighter: {fileID: 2009908460}
+  thisVocalFighter: {fileID: 1482902043}
   centerPoint: {fileID: 1583141}
   leftEdgePoint: {fileID: 1934390856}
   rightEdgePoint: {fileID: 694397916}
@@ -55472,9 +55474,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fighterAudioSource: {fileID: 1482902044}
   speechProbability: .5
-  attackAttemptSound1: {fileID: 8300000, guid: 30d2130a5843ba04db934ae6d6e738dc, type: 3}
+  attackAttemptSound1: {fileID: 0}
   attackAttemptSound2: {fileID: 8300000, guid: 4477db95c8cc40e4d81310c6512d9cc4, type: 3}
-  attackAttemptSound3: {fileID: 8300000, guid: 6ffe356d1b5598a4694e597822324da2, type: 3}
+  attackAttemptSound3: {fileID: 0}
   attackAttemptSound4: {fileID: 8300000, guid: 3d621f034785b204ab10e8a64e0097be, type: 3}
   attackAttemptSound5: {fileID: 8300000, guid: 77156321ae95e164d895b714dd3dbcda, type: 3}
   dashAttemptSound1: {fileID: 8300000, guid: 2096bdf2310af254da89fa2ffb2bac02, type: 3}
@@ -55492,25 +55494,27 @@ MonoBehaviour:
   specialSound3: {fileID: 8300000, guid: e4ab8708946099c4aaca64ea2b2ccfe8, type: 3}
   specialSound4: {fileID: 0}
   specialSound5: {fileID: 0}
-  attackSuccessSound1: {fileID: 0}
-  attackSuccessSound2: {fileID: 0}
+  attackSuccessSound1: {fileID: 8300000, guid: 30d2130a5843ba04db934ae6d6e738dc, type: 3}
+  attackSuccessSound2: {fileID: 8300000, guid: f858daa812372444b90d68ac90cd1196, type: 3}
   attackSuccessSound3: {fileID: 0}
   attackSuccessSound4: {fileID: 0}
   attackSuccessSound5: {fileID: 0}
-  dashSuccessSound1: {fileID: 0}
-  dashSuccessSound2: {fileID: 0}
+  dashSuccessSound1: {fileID: 8300000, guid: d31967d996053ff40ae00d0a97ab799a, type: 3}
+  dashSuccessSound2: {fileID: 8300000, guid: 6ffe356d1b5598a4694e597822324da2, type: 3}
   dashSuccessSound3: {fileID: 0}
   dashSuccessSound4: {fileID: 0}
   dashSuccessSound5: {fileID: 0}
-  blockSuccessSound1: {fileID: 0}
+  blockSuccessSound1: {fileID: 8300000, guid: 5761907f92fb46c4593062ff66bbf9ae, type: 3}
   blockSuccessSound2: {fileID: 0}
   blockSuccessSound3: {fileID: 0}
   blockSuccessSound4: {fileID: 0}
   blockSuccessSound5: {fileID: 0}
-  counterSuccessSound1: {fileID: 8300000, guid: d5aa4625109a1294f9cac41526211cd3,
+  counterSuccessSound1: {fileID: 8300000, guid: 5393fb01c127cf34391e0be1bf13a337,
     type: 3}
-  counterSuccessSound2: {fileID: 0}
-  counterSuccessSound3: {fileID: 0}
+  counterSuccessSound2: {fileID: 8300000, guid: a520ac36bcb3b724e9837fcbf143b223,
+    type: 3}
+  counterSuccessSound3: {fileID: 8300000, guid: 6ffe356d1b5598a4694e597822324da2,
+    type: 3}
   counterSuccessSound4: {fileID: 0}
   counterSuccessSound5: {fileID: 0}
   hitByAttackSound1: {fileID: 8300000, guid: 1a677db5f95019541be0be1dfa0af176, type: 3}
@@ -55518,13 +55522,13 @@ MonoBehaviour:
   hitByAttackSound3: {fileID: 8300000, guid: 0f08daf3570ed26478578e6a134efb10, type: 3}
   hitByAttackSound4: {fileID: 8300000, guid: ef2ed2fbb401479408c6d098cd1da4fe, type: 3}
   hitByAttackSound5: {fileID: 0}
-  counteredSound1: {fileID: 0}
-  counteredSound2: {fileID: 0}
-  counteredSound3: {fileID: 0}
+  counteredSound1: {fileID: 8300000, guid: d5aa4625109a1294f9cac41526211cd3, type: 3}
+  counteredSound2: {fileID: 8300000, guid: ca99d1dcf3573f4458127223a2d67c3f, type: 3}
+  counteredSound3: {fileID: 8300000, guid: 4ba840f477c44fb479b2fc4d59c449f2, type: 3}
   counteredSound4: {fileID: 0}
   counteredSound5: {fileID: 0}
-  blockBrokenSound1: {fileID: 0}
-  blockBrokenSound2: {fileID: 0}
+  blockBrokenSound1: {fileID: 8300000, guid: ef2ed2fbb401479408c6d098cd1da4fe, type: 3}
+  blockBrokenSound2: {fileID: 8300000, guid: 847daf15f92d1eb47a5885a8cee4b46f, type: 3}
   blockBrokenSound3: {fileID: 0}
   blockBrokenSound4: {fileID: 0}
   blockBrokenSound5: {fileID: 0}
@@ -56174,6 +56178,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97c1307e01bf9e74ea327bb19dd64c58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  otherVocalFighter: {fileID: 1482902043}
+  thisVocalFighter: {fileID: 2009908460}
   centerPoint: {fileID: 1583141}
   leftEdgePoint: {fileID: 1934390856}
   rightEdgePoint: {fileID: 694397916}
@@ -56444,8 +56450,8 @@ MonoBehaviour:
   specialSound3: {fileID: 8300000, guid: 90e5d4a218440174da411bbf4e9e69ee, type: 3}
   specialSound4: {fileID: 0}
   specialSound5: {fileID: 0}
-  attackSuccessSound1: {fileID: 0}
-  attackSuccessSound2: {fileID: 0}
+  attackSuccessSound1: {fileID: 8300000, guid: 15998bcbe676b364bad286708c3761ae, type: 3}
+  attackSuccessSound2: {fileID: 8300000, guid: 446ddc34e3cc7f649b224e109ab197c2, type: 3}
   attackSuccessSound3: {fileID: 0}
   attackSuccessSound4: {fileID: 0}
   attackSuccessSound5: {fileID: 0}
@@ -56454,12 +56460,13 @@ MonoBehaviour:
   dashSuccessSound3: {fileID: 0}
   dashSuccessSound4: {fileID: 0}
   dashSuccessSound5: {fileID: 0}
-  blockSuccessSound1: {fileID: 0}
-  blockSuccessSound2: {fileID: 0}
+  blockSuccessSound1: {fileID: 8300000, guid: 86fef298fd284c141a8f2bc895330a21, type: 3}
+  blockSuccessSound2: {fileID: 8300000, guid: 0a9eed00329497b4f9b7d8bfac139d35, type: 3}
   blockSuccessSound3: {fileID: 0}
   blockSuccessSound4: {fileID: 0}
   blockSuccessSound5: {fileID: 0}
-  counterSuccessSound1: {fileID: 0}
+  counterSuccessSound1: {fileID: 8300000, guid: 1f660f25e07915847b6228e55d654ad6,
+    type: 3}
   counterSuccessSound2: {fileID: 0}
   counterSuccessSound3: {fileID: 0}
   counterSuccessSound4: {fileID: 0}
@@ -56474,7 +56481,7 @@ MonoBehaviour:
   counteredSound3: {fileID: 8300000, guid: d7be2afbe63e5e047aa1c71f79799de0, type: 3}
   counteredSound4: {fileID: 0}
   counteredSound5: {fileID: 0}
-  blockBrokenSound1: {fileID: 0}
+  blockBrokenSound1: {fileID: 8300000, guid: b48d0a24dbeaaa341b208fc082645e46, type: 3}
   blockBrokenSound2: {fileID: 0}
   blockBrokenSound3: {fileID: 0}
   blockBrokenSound4: {fileID: 0}

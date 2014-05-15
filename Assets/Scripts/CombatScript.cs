@@ -5,6 +5,11 @@ using SmoothMoves;
 public class CombatScript : MonoBehaviour {
 	// Reference to the MovementAnimationScript on this GameObject.
 	MovementAnimationScript mover;
+
+    // Reference to the OTHER VocalFighter for success sounds
+    public VocalFighter otherVocalFighter;
+    // Reference to THIS VocalFighter for success sounds
+    public VocalFighter thisVocalFighter;
 	
 	// Points used to calculate Special damage
 	public Transform centerPoint;
@@ -124,10 +129,15 @@ public class CombatScript : MonoBehaviour {
 			// Otherwise, not much happens.
 			if ((otherMover.stateBools["dashing"]) && (blockCounterable)) { 
 //				otherMover.Bounce();
-				GetsCountered(otherCounter); 
+				GetsCountered(otherCounter);
+                otherVocalFighter.OnDashSuccess();
+                thisVocalFighter.OnBlockBroken();
 			}
-			else if (otherMover.stateBools["specialing"]){ GetsHurt(otherCombat.specialStrength); }
-			else {}
+            else if (otherMover.stateBools["blocking"]) {
+                thisVocalFighter.OnBlockSuccess();
+            }
+            else if (otherMover.stateBools["specialing"]) { GetsHurt(otherCombat.specialStrength); }
+            else { }
 		}
 		else if (mover.stateBools["dashing"]) {
 			// If you're dashing into their punch and your dash is counterable, get countered.
@@ -181,6 +191,7 @@ public class CombatScript : MonoBehaviour {
 	void GetsKnocked() {
 		Debug.Log (gameObject + " just got knocked back!");
 		mover.Reel ();
+        otherVocalFighter.OnCounterSuccess();
 	}
 	
 	// Used when a character is countered -- calls Reel & Damage
@@ -188,6 +199,7 @@ public class CombatScript : MonoBehaviour {
 		Debug.Log (gameObject + " just got countered!");
 		TakeDamage (counterStrength);
 		mover.Reel ();
+        otherVocalFighter.OnCounterSuccess();
 	}
 	
 	// Used when damage is taken -- calls TakeDamage and the actual Hurt animation
@@ -195,6 +207,7 @@ public class CombatScript : MonoBehaviour {
 		Debug.Log (gameObject + " triggered the GetsHurt function!");
 		TakeDamage (damageAmount);
 		mover.Hurt ();
+        otherVocalFighter.OnAttackSuccess();
 	}
 
 	void AutoDamageChar(){

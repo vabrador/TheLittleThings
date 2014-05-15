@@ -2097,17 +2097,8 @@ MonoBehaviour:
     m_FixedHeight: 0
     m_StretchWidth: 1
     m_StretchHeight: 1
-  healthBarPositionX: 0
-  healthBarPositionY: .00999999978
-  defaultBarTextureLength: 793
-  defaultBarTextureHeight: 289
-  barScaleFactor: 0
-  healthFillXScale: .699999988
-  healthFillYScale: .150000006
-  specialFillXScale: .540000021
-  xOffset: 80
-  yOffsetHealth: 32
-  yOffsetSpecial: 48
+  barTextureLength: 793
+  barTextureHeight: 289
 --- !u!4 &478666134
 Transform:
   m_ObjectHideFlags: 0
@@ -2252,17 +2243,8 @@ MonoBehaviour:
     m_FixedHeight: 0
     m_StretchWidth: 1
     m_StretchHeight: 1
-  healthBarPositionX: .625
-  healthBarPositionY: .00999999978
-  defaultBarTextureLength: 793
-  defaultBarTextureHeight: 289
-  barScaleFactor: 0
-  healthFillXScale: .699999988
-  healthFillYScale: .150000006
-  specialFillXScale: .540000021
-  xOffset: 80
-  yOffsetHealth: 32
-  yOffsetSpecial: 48
+  barTextureLength: 793
+  barTextureHeight: 289
 --- !u!1 &492368138
 GameObject:
   m_ObjectHideFlags: 0

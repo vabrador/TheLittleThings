@@ -36,6 +36,15 @@ public class MovementAnimationScript : MonoBehaviour {
 			return currentSpeed;
 		}
 	}
+
+	// Corrects the direction of block backwards push for what side a fighter is on
+	float blockForce {
+		get {
+			float baseForce = blockBackwardsSpeed * blockForceConstant;
+			if (!facingLeft) { baseForce *= -1; }
+			return baseForce;
+		}
+	}
 	
 	// Booleans to track animation state -- punchling, blocking,
 	// dashing, hurting (just got hit), or reeling.  In general,
@@ -123,7 +132,7 @@ public class MovementAnimationScript : MonoBehaviour {
 			makeOtherAnimsFalse("attacking");
 		} else if (fighterAnimation.IsPlaying("Block")) {
 			makeOtherAnimsFalse("blocking");
-			rigidbody2D.AddForce( new Vector2 (-1 * blockBackwardsSpeed * blockForceConstant,0));
+			rigidbody2D.AddForce( new Vector2 (blockForce,0));
 		} else if (fighterAnimation.IsPlaying("Special")) {
 			makeOtherAnimsFalse("specialing");
 		} else {

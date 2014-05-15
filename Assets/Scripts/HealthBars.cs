@@ -28,25 +28,31 @@ public class HealthBars : MonoBehaviour {
 	public GUIStyle specialBarStyle;
 
 	// Constants for Health Bar position, size, scale
-	public float healthBarPositionX;
-	public float healthBarPositionY;
-	public float defaultBarTextureLength = 793;
-	public float defaultBarTextureHeight = 289;
-	public float barScaleFactor;
+	Vector3 barPosition;
+	public float barTextureLength = 793;
+	public float barTextureHeight = 289;
+	float barScaleFactor;
 
-	public float healthFillXScale = 0.7f;
-	public float healthFillYScale = 0.15f;
-	public float specialFillXScale = 0.54f;
+	float healthFillXScale = 0.7f;
+	float healthFillYScale = 0.125f;
+	float specialFillXScale = 0.54f;
 
-	public int xOffset = 105;
-	public int yOffsetHealth = 44;
-	public int yOffsetSpecial = 60;
-	
+	int xOffset;
+	int yOffsetHealth;
+	int yOffsetSpecial;
+
 	// Use this for initialization
 	void Awake () {   
+		// First, set barScaleFactor such that the height of the health bars is the upper 20% of the screen.
+		barScaleFactor = (0.2f * Screen.height) / barTextureHeight;
+
 		// 793 x 289 is the scale for the health bar png.
-		defaultBarTextureLength *= barScaleFactor; 
-		defaultBarTextureHeight *= barScaleFactor;
+		barTextureLength *= barScaleFactor; 
+		barTextureHeight *= barScaleFactor;
+
+		xOffset = (int) (0.3f * barTextureLength);
+		yOffsetHealth = (int) (0.35f * barTextureHeight);
+		yOffsetSpecial = (int) (0.5f * barTextureHeight);
 
 		// Initialize character attributes
 		charCombat = character.GetComponent<CombatScript> ();
@@ -56,6 +62,18 @@ public class HealthBars : MonoBehaviour {
 
 		// Initialize special attack strength.
 		maxSpecialStrength = charCombat.maxSpecialStrength;
+		
+		// The health bar will be flipped and shifted from the left side of the screen
+		// if the character's position is on the right.
+		if (!charOnLeft){
+			float spaceFromLeft = (float) (1f - (1.02 * (barTextureLength/Screen.width)));
+			barPosition = Camera.main.ViewportToScreenPoint( new Vector3( spaceFromLeft, 0.01f, 0f) );
+
+		} else { 
+			barPosition = Camera.main.ViewportToScreenPoint( new Vector3(0f, 0.01f, 0f) ); 
+		}
+//		Debug.Log (gameObject + "'s barPosition is: " + barPosition);
+//		Debug.Log ("The bar length and height for " + gameObject + " are: " + barTextureLength + " and " + barTextureHeight);
 	}
 	
 	// Update is called once per frame
@@ -64,38 +82,23 @@ public class HealthBars : MonoBehaviour {
 	}
 	
 	void OnGUI () {
-		
-		// This vector object will fix the GUI's position relative to the camera.
-		Vector3 healthBarPosition = Camera.main.ViewportToScreenPoint(new Vector3(healthBarPositionX, 
-		                                                                          healthBarPositionY, 0));
-
-		// The health bar will be flipped if the character's position is on the right.
-		if (!charOnLeft){
-			xOffset *= -1;
-			defaultBarTextureLength *= -1;
-		}
-
 		// Draw the red health bar.
-		// NOTE: The numbers here are only meant for the demo. They are hard coded numbers
-		//       chosen so that the bars appear in the right spot on the screen. I can make
-		//       work for a general case later.
-
-		GUI.Box (new Rect (healthBarPosition.x + xOffset, 
-		                   healthBarPosition.y + yOffsetHealth, 
-		                   (currentHealth * defaultBarTextureLength / startHealth) * healthFillXScale, 
-		                   defaultBarTextureHeight * healthFillYScale), 
+		GUI.Box (new Rect (barPosition.x + xOffset, 
+		                   barPosition.y + yOffsetHealth, 
+		                   ((float) currentHealth / startHealth) * barTextureLength * healthFillXScale, 
+		                   barTextureHeight * healthFillYScale), 
 		         healthBar, 
 		         healthBarStyle);
 
 		// Draw the yellow special bar.
-		GUI.Box (new Rect (healthBarPosition.x + xOffset, 
-		                   healthBarPosition.y + yOffsetSpecial, 
-		                   (currentSpecialStrength * defaultBarTextureLength / maxSpecialStrength) * specialFillXScale, 
-		                   defaultBarTextureHeight * healthFillYScale), 
+		GUI.Box (new Rect (barPosition.x + xOffset, 
+		                   barPosition.y + yOffsetSpecial, 
+		                   ((float) currentSpecialStrength / maxSpecialStrength) * barTextureLength * specialFillXScale, 
+		                   barTextureHeight * healthFillYScale), 
 		         specialBar, 
 		         specialBarStyle);
 		// Draw the bar frame. 
-		GUI.DrawTexture (new Rect (healthBarPosition.x, healthBarPosition.y, defaultBarTextureLength, defaultBarTextureHeight),
+		GUI.DrawTexture (new Rect (barPosition.x, barPosition.y, barTextureLength, barTextureHeight),
 		                 barFrame);
 
 	}

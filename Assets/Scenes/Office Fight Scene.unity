@@ -2099,12 +2099,12 @@ MonoBehaviour:
     m_StretchHeight: 1
   healthBarPositionX: 0
   healthBarPositionY: .00999999978
-  healthBarTextureLength: 793
-  healthBarTextureHeight: 289
-  healthBarXScale: .699999988
-  healthBarYScale: .150000006
-  specialBarXScale: .540000021
-  scaleFactor: .349999994
+  defaultBarTextureLength: 793
+  defaultBarTextureHeight: 289
+  barScaleFactor: 0
+  healthFillXScale: .699999988
+  healthFillYScale: .150000006
+  specialFillXScale: .540000021
   xOffset: 80
   yOffsetHealth: 32
   yOffsetSpecial: 48
@@ -2254,12 +2254,12 @@ MonoBehaviour:
     m_StretchHeight: 1
   healthBarPositionX: .625
   healthBarPositionY: .00999999978
-  healthBarTextureLength: 793
-  healthBarTextureHeight: 289
-  healthBarXScale: .699999988
-  healthBarYScale: .150000006
-  specialBarXScale: .540000021
-  scaleFactor: .349999994
+  defaultBarTextureLength: 793
+  defaultBarTextureHeight: 289
+  barScaleFactor: 0
+  healthFillXScale: .699999988
+  healthFillYScale: .150000006
+  specialFillXScale: .540000021
   xOffset: 80
   yOffsetHealth: 32
   yOffsetSpecial: 48

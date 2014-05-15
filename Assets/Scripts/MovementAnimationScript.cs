@@ -154,7 +154,6 @@ public class MovementAnimationScript : MonoBehaviour {
 	// separating functionality & allowing them to be called from other scripts.
 	public void Dash() {
 		fighterAnimation.Play("Dash");
-//		rigidbody2D.velocity = new Vector2(fighterMaxSpeed, 0);
 		dashStart = Time.time;
 
 

@@ -230,7 +230,7 @@ public class MovementAnimationScript : MonoBehaviour {
         // Note from Nick: There is no "Death" animation! Recommend deleting this.
         // A Win() function would be nice, though, so we could have things the
         // characters can say when they win a match!
-		metaStateScript gameState = centerPoint.GetComponent<metaStateScript> ();
+		metaStateScript gameState = GameObject.Find ("God").GetComponent<metaStateScript> ();
 		if (enemy) {
 			gameState.endGame (true);
 		} else {

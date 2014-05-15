@@ -35,7 +35,7 @@ public class HealthBars : MonoBehaviour {
 
 	float healthFillXScale = 0.7f;
 	float healthFillYScale = 0.125f;
-	float specialFillXScale = 0.54f;
+	float specialFillXScale = 0.6f;
 
 	int xOffset;
 	int yOffsetHealth;

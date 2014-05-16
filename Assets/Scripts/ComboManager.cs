@@ -21,8 +21,7 @@ public class ComboManager : MonoBehaviour {
 			float xPos;
 			if (charMover.facingLeft) {xPos = 0.7f; }
 			else {xPos = 0.2f; }
-			Vector3 spritePoint = Camera.main.ViewportToScreenPoint(new Vector3(xPos, 0.25f, 0));
-
+			Vector3 spritePoint = Camera.main.ViewportToScreenPoint(new Vector3(xPos, 0.225f, 0));
 			return spritePoint;
 		}
 	}
@@ -43,26 +42,26 @@ public class ComboManager : MonoBehaviour {
 		comboTimeout ();
 	}
 
-	public float spriteWidth = 0.5f;
+	public float spriteWidth = 0.15f;
 	void OnGUI() {
 		if (spriteRendering) {
 			Texture2D comboTexture = resourceMap[currentComboCount];
 			float scaleFactor = (Screen.width * spriteWidth) / (float) comboTexture.width;
-			Debug.Log (scaleFactor);
-
+			Debug.Log (playerChar + " 's current scaleFactor is " + scaleFactor);
+			Debug.Log ("Based on: " + Screen.width + "*" + spriteWidth + "/" + comboTexture.width);
 			GUI.DrawTexture(new Rect(spritePos.x, spritePos.y, (comboTexture.width * scaleFactor), (comboTexture.height * scaleFactor)) , comboTexture);
 		}
 	}
 
 	public void hitLanded() {
-		Debug.Log (gameObject + " just landed a hit!");
+		Debug.Log (playerChar + " just landed a hit!");
 		mostRecentHitTime = Time.time;
 		if (currentComboCount < 4) currentComboCount += 1;
 		if (currentComboCount > 1) spriteRendering = true;
 	}
 
 	public void hitTaken() {
-		Debug.Log (gameObject + " just took a hit!");
+		Debug.Log (playerChar + " just took a hit!");
 		currentComboCount = 0;
 		spriteRendering = false;
 	}

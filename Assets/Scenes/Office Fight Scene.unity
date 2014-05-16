@@ -121,10 +121,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1583139}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.5, y: -32.1069679, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: .0332628042, y: -4.32968092, z: 0}
+  m_LocalScale: {x: .102244839, y: .102244683, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 657265034}
 --- !u!114 &1583142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4075,9 +4075,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 657265028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.17467499, y: 10.2393036, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 9.7804451, y: 9.7804594, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1583141}
+  - {fileID: 1934390856}
+  - {fileID: 694397916}
   m_Father: {fileID: 0}
 --- !u!1 &680453385
 GameObject:
@@ -4183,7 +4186,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 691252716}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 10, z: -410.408936}
+  m_LocalPosition: {x: 0, y: 0, z: -410.408936}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4225,10 +4228,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 694397915}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 143.537064, y: -29.6632652, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 14.2490854, y: -4.0798254, z: 0}
+  m_LocalScale: {x: .102244839, y: .102244683, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 657265034}
 --- !u!1 &708907516
 GameObject:
   m_ObjectHideFlags: 0
@@ -4321,6 +4324,8 @@ GameObject:
   - 114: {fileID: 834318962}
   - 82: {fileID: 834318961}
   - 82: {fileID: 834318960}
+  - 114: {fileID: 834318964}
+  - 114: {fileID: 834318963}
   m_Layer: 0
   m_Name: God
   m_TagString: Untagged
@@ -4488,6 +4493,34 @@ MonoBehaviour:
   musicPlayerAudioSource: {fileID: 834318961}
   mainTheme: {fileID: 8300000, guid: 317552566dd1ff9488d5d34e0c3ba4f4, type: 3}
   musicVolume: .200000003
+--- !u!114 &834318963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 834318957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36d911c394d97904faf104090c37fcd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerChar: {fileID: 1482902034}
+  combatWindowDuration: 2.5
+  spriteWidth: .25
+--- !u!114 &834318964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 834318957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36d911c394d97904faf104090c37fcd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerChar: {fileID: 2009908449}
+  combatWindowDuration: 2.5
+  spriteWidth: .25
 --- !u!1 &836272136
 GameObject:
   m_ObjectHideFlags: 0
@@ -55489,7 +55522,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1482902034}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -43.0891037, y: -6.1587925, z: 0}
+  m_LocalPosition: {x: -40, y: -30, z: 0}
   m_LocalScale: {x: .0549999997, y: .0549999997, z: 1}
   m_Children:
   - {fileID: 1024004830}
@@ -55623,10 +55656,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5313d7897cdfd82428b56e74a7d1a03e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  friendly: 1
   friendlyAxes: []
   enemyAxes: []
   gameRunning: 1
+  buttonQuarantineLength: .25
 --- !u!114 &1482902043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55639,6 +55672,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fighterAudioSource: {fileID: 1482902044}
+  fighterSFXSource: {fileID: 0}
   speechProbability: .5
   attackAttemptSound1: {fileID: 0}
   attackAttemptSound2: {fileID: 8300000, guid: 4477db95c8cc40e4d81310c6512d9cc4, type: 3}
@@ -55650,21 +55684,25 @@ MonoBehaviour:
   dashAttemptSound3: {fileID: 0}
   dashAttemptSound4: {fileID: 8300000, guid: 812893973bc330447abae535d7af1506, type: 3}
   dashAttemptSound5: {fileID: 0}
+  dashAttemptFX: {fileID: 0}
   blockAttemptSound1: {fileID: 8300000, guid: 197bc9f9a73d5ff4399650da05367d25, type: 3}
   blockAttemptSound2: {fileID: 8300000, guid: 690282daa63920a48b37d244c5b23938, type: 3}
   blockAttemptSound3: {fileID: 8300000, guid: 77156321ae95e164d895b714dd3dbcda, type: 3}
   blockAttemptSound4: {fileID: 8300000, guid: 2e16406a964f0ca49a9362a2284a8dad, type: 3}
   blockAttemptSound5: {fileID: 0}
+  blockAttemptFX: {fileID: 0}
   specialSound1: {fileID: 8300000, guid: 1c9d8c8d7fe3ff14793dc1346f09219d, type: 3}
   specialSound2: {fileID: 8300000, guid: 5b7255a93bec9d84ba150b0a4e948889, type: 3}
   specialSound3: {fileID: 8300000, guid: e4ab8708946099c4aaca64ea2b2ccfe8, type: 3}
   specialSound4: {fileID: 0}
   specialSound5: {fileID: 0}
+  specialFX: {fileID: 0}
   attackSuccessSound1: {fileID: 8300000, guid: 30d2130a5843ba04db934ae6d6e738dc, type: 3}
   attackSuccessSound2: {fileID: 8300000, guid: f858daa812372444b90d68ac90cd1196, type: 3}
   attackSuccessSound3: {fileID: 0}
   attackSuccessSound4: {fileID: 0}
   attackSuccessSound5: {fileID: 0}
+  attackSuccessFX: {fileID: 0}
   dashSuccessSound1: {fileID: 8300000, guid: d31967d996053ff40ae00d0a97ab799a, type: 3}
   dashSuccessSound2: {fileID: 8300000, guid: 6ffe356d1b5598a4694e597822324da2, type: 3}
   dashSuccessSound3: {fileID: 0}
@@ -55698,6 +55736,7 @@ MonoBehaviour:
   blockBrokenSound3: {fileID: 0}
   blockBrokenSound4: {fileID: 0}
   blockBrokenSound5: {fileID: 0}
+  blockBrokenFX: {fileID: 0}
 --- !u!82 &1482902044
 AudioSource:
   m_ObjectHideFlags: 0
@@ -56185,10 +56224,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1934390855}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -132.928787, y: -34.8217049, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -14.0181208, y: -4.60724831, z: 0}
+  m_LocalScale: {x: .102244839, y: .102244683, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 657265034}
 --- !u!212 &1934390857
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -56327,7 +56366,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2009908449}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 56.9506454, y: 4.67996788, z: 0}
+  m_LocalPosition: {x: 40, y: -20, z: 0}
   m_LocalScale: {x: .0500000007, y: .0500000007, z: 1}
   m_Children:
   - {fileID: 1025474879}
@@ -56463,10 +56502,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5313d7897cdfd82428b56e74a7d1a03e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  friendly: 0
   friendlyAxes: []
   enemyAxes: []
   gameRunning: 1
+  buttonQuarantineLength: .25
 --- !u!82 &2009908458
 AudioSource:
   m_ObjectHideFlags: 0
@@ -56595,6 +56634,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fighterAudioSource: {fileID: 2009908458}
+  fighterSFXSource: {fileID: 0}
   speechProbability: .5
   attackAttemptSound1: {fileID: 8300000, guid: ecf87da28a9720740b1ad4006b88a682, type: 3}
   attackAttemptSound2: {fileID: 8300000, guid: 66440f733f4932a4b9f592573fd493f3, type: 3}
@@ -56606,21 +56646,25 @@ MonoBehaviour:
   dashAttemptSound3: {fileID: 8300000, guid: 27aa1c3e09cebb84f9e82344834890e3, type: 3}
   dashAttemptSound4: {fileID: 8300000, guid: 8c7de5a485f7b794ba0cd9b15c92e6bf, type: 3}
   dashAttemptSound5: {fileID: 8300000, guid: 9bf626cfaa2f03f47971ef693772ab33, type: 3}
+  dashAttemptFX: {fileID: 0}
   blockAttemptSound1: {fileID: 8300000, guid: 15899ed3bce6cd8469ed42562764e797, type: 3}
   blockAttemptSound2: {fileID: 8300000, guid: 0a9eed00329497b4f9b7d8bfac139d35, type: 3}
   blockAttemptSound3: {fileID: 8300000, guid: 26f39121e21a10d47adec2020f7dee8a, type: 3}
   blockAttemptSound4: {fileID: 0}
   blockAttemptSound5: {fileID: 0}
+  blockAttemptFX: {fileID: 0}
   specialSound1: {fileID: 8300000, guid: f2410eb580405d845824f031ab07b996, type: 3}
   specialSound2: {fileID: 8300000, guid: 8976510f4c90f804eb46c1735c2238c2, type: 3}
   specialSound3: {fileID: 8300000, guid: 90e5d4a218440174da411bbf4e9e69ee, type: 3}
   specialSound4: {fileID: 0}
   specialSound5: {fileID: 0}
+  specialFX: {fileID: 0}
   attackSuccessSound1: {fileID: 8300000, guid: 15998bcbe676b364bad286708c3761ae, type: 3}
   attackSuccessSound2: {fileID: 8300000, guid: 446ddc34e3cc7f649b224e109ab197c2, type: 3}
   attackSuccessSound3: {fileID: 0}
   attackSuccessSound4: {fileID: 0}
   attackSuccessSound5: {fileID: 0}
+  attackSuccessFX: {fileID: 0}
   dashSuccessSound1: {fileID: 0}
   dashSuccessSound2: {fileID: 0}
   dashSuccessSound3: {fileID: 0}
@@ -56652,6 +56696,7 @@ MonoBehaviour:
   blockBrokenSound3: {fileID: 0}
   blockBrokenSound4: {fileID: 0}
   blockBrokenSound5: {fileID: 0}
+  blockBrokenFX: {fileID: 0}
 --- !u!1 &2037705794
 GameObject:
   m_ObjectHideFlags: 0

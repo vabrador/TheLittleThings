@@ -5,8 +5,6 @@ using SmoothMoves;
 public class CombatScript : MonoBehaviour {
 	// Reference to the MovementAnimationScript on this GameObject.
 	MovementAnimationScript mover;
-	ComboManager combo;
-	ComboManager otherCombo;
 
     // Reference to the OTHER VocalFighter for success sounds
     public VocalFighter otherVocalFighter;
@@ -75,14 +73,6 @@ public class CombatScript : MonoBehaviour {
 		startTime = Time.time;
 		mover = GetComponent<MovementAnimationScript> ();
 		mover.fighterAnimation.RegisterColliderTriggerDelegate (receiveColliderTriggerEvent);
-		ComboManager[] comboManagers = GameObject.Find ("God").GetComponents<ComboManager> ();
-		foreach(ComboManager comboMan in comboManagers) {
-			if (comboMan.playerChar == gameObject) {
-				combo = comboMan;
-			} else {
-				otherCombo = comboMan;
-			}
-		}
 	}
 	
 	// Update is called once per frame
@@ -119,17 +109,16 @@ public class CombatScript : MonoBehaviour {
 		} 
 		else if (mover.stateBools["specialing"]) {
 			// If you're in the process of a special attack, you're pretty much invulnerable.
-			// Therefore, all that happens is one more point to your combo counter.
+			// Therefore, nothing happens to your character.
 		}
 		else if (mover.stateBools["attacking"]){
 			// If you're attacking at the same time, first guy to throw the punch wins.  If you
 			// throw a punch into a dash and it *isn'* counterable, you get knocked back.  If
 			// somebody blocks while your punch is counterable, you get countered.
-			if ((otherMover.stateBools["attacking"]) && (mover.attackStart >= otherMover.attackStart)) {
-				GetsHurt(otherCombat.attackStrength); 
-			}
-			else if (otherMover.stateBools["dashing"]) {
-				if (!otherCombat.dashCounterable) { GetsKnocked(); }
+			if ((otherMover.stateBools["attacking"]) && (mover.attackStart >= otherMover.attackStart)) { GetsHurt(otherCombat.attackStrength); }
+			else if ((otherMover.stateBools["dashing"]) && (!otherCombat.dashCounterable)) {
+//				otherMover.Bounce();
+				GetsKnocked(); 
 			}
 			else if ((otherMover.stateBools["blocking"]) && (punchCounterable)) { GetsCountered(otherCounter); }
 			else if (otherMover.stateBools["specialing"]){ GetsHurt(otherCombat.specialStrength); }
@@ -153,10 +142,8 @@ public class CombatScript : MonoBehaviour {
 		else if (mover.stateBools["dashing"]) {
 			// If you're dashing into their punch and your dash is counterable, get countered.
 			// Otherwise, no enemy state will changes yours mid-dash
-
-            if ((otherMover.stateBools["attacking"]) && (dashCounterable)) { 
-				GetsCountered(otherCounter); 
-				otherVocalFighter.OnAttackSuccess(); }
+//			otherMover.Bounce ();
+            if ((otherMover.stateBools["attacking"]) && (dashCounterable)) { GetsCountered(otherCounter); otherVocalFighter.OnAttackSuccess(); }
 			else if (otherMover.stateBools["specialing"]){ GetsHurt(otherCombat.specialStrength); }
 			else{ otherMover.Idle(); }
 		}
@@ -174,14 +161,14 @@ public class CombatScript : MonoBehaviour {
 	// Function which CollisionCatcherScript passes colliderTriggerEvents to.  
 	public void receiveColliderTriggerEvent(ColliderTriggerEvent colliderTriggerEvent) {
 		GameObject otherChar = colliderTriggerEvent.otherCollider.gameObject.transform.root.gameObject;
-//		Debug.Log (gameObject + " just received a ColliderTriggerEvent from " + otherChar);
+		Debug.Log (gameObject + " just received a ColliderTriggerEvent from " + otherChar);
 		performCollisionResponse (otherChar);
 	}
 
 	// Function which CollisionCatcherScript passes collisions to.  
 	public void receiveCollision(Collision2D collision) {
 		GameObject otherChar = collision.gameObject.transform.root.gameObject;
-//		Debug.Log (gameObject + " just received a collision from " + otherChar);
+		Debug.Log (gameObject + " just received a collision from " + otherChar);
 		performCollisionResponse (otherChar);
 	}
 
@@ -190,14 +177,10 @@ public class CombatScript : MonoBehaviour {
 	// FUNCTIONS TO CHANGE HEALTH & ANIMATIONS ///////
 	//////////////////////////////////////////////////
 
-	// Subtracts from the health and triggers whatever happens upon Death.
-	// Also tells the character's ComboManager that the character just took
-	// damage and should have its comboCount reset.
+	// Subtracts from the health and triggers whatever happens upon Death
 	void TakeDamage(int damageAmount) {
-//		Debug.Log (gameObject + " just lost " + damageAmount + " health!");
+		Debug.Log (gameObject + " just lost " + damageAmount + " health!");
 		currentHealth -= damageAmount;
-		combo.hitTaken ();
-		otherCombo.hitLanded ();
 		if (currentHealth <= 0) {
 			currentHealth = 0;
 			mover.EndGame();
@@ -221,7 +204,7 @@ public class CombatScript : MonoBehaviour {
 	
 	// Used when damage is taken -- calls TakeDamage and the actual Hurt animation
 	void GetsHurt(int damageAmount) {
-		Debug.Log (gameObject + " got hurt!");
+		Debug.Log (gameObject + " triggered the GetsHurt function!");
 		TakeDamage (damageAmount);
 		mover.Hurt ();
         otherVocalFighter.OnAttackSuccess();

@@ -4079,6 +4079,7 @@ MonoBehaviour:
   leftEdge: {fileID: 1934390856}
   rightEdge: {fileID: 694397916}
   centerPoint: {fileID: 1583141}
+  playerCenter: {x: 0, y: 0, z: 0}
 --- !u!1 &694397915
 GameObject:
   m_ObjectHideFlags: 0
@@ -4477,6 +4478,9 @@ GameObject:
   - 114: {fileID: 834318962}
   - 82: {fileID: 834318961}
   - 82: {fileID: 834318960}
+  - 114: {fileID: 834318965}
+  - 114: {fileID: 834318963}
+  - 114: {fileID: 834318964}
   m_Layer: 0
   m_Name: God
   m_TagString: Untagged
@@ -4644,7 +4648,49 @@ MonoBehaviour:
   musicPlayerAudioSource: {fileID: 834318961}
   mainTheme: {fileID: 8300000, guid: 317552566dd1ff9488d5d34e0c3ba4f4, type: 3}
   musicVolume: .200000003
---- !u!1 &881854434
+--- !u!114 &834318963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 834318957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36d911c394d97904faf104090c37fcd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerChar: {fileID: 1482902034}
+  combatWindowDuration: 2.5
+  spriteWidth: .25
+--- !u!114 &834318964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 834318957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36d911c394d97904faf104090c37fcd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerChar: {fileID: 2009908449}
+  combatWindowDuration: 2.5
+  spriteWidth: .25
+--- !u!114 &834318965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 834318957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd056831fbbb1746a5ee185fc82ed13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteScreenDuration: .75
+  counterGraphicScale: .300000012
+  counterGraphicHeight: .649999976
+--- !u!1 &836272136
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -4664,7 +4710,7 @@ Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 881854434}
+  m_GameObject: {fileID: 836272136}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -4881,9 +4927,9 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 0}
   m_AABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
-  m_DirtyAABB: 1
+    m_Center: {x: -2.88499451, y: 448.487885, z: 0}
+    m_Extent: {x: 201.275772, y: 509.681854, z: 0}
+  m_DirtyAABB: 0
 --- !u!114 &1024004833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30123,9 +30169,9 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 0}
   m_AABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
-  m_DirtyAABB: 1
+    m_Center: {x: 2.02031708, y: 562.055603, z: -3.84222818e-12}
+    m_Extent: {x: 229.98938, y: 631.565735, z: 4.91032605e-12}
+  m_DirtyAABB: 0
 --- !u!111 &1025474881
 Animation:
   m_ObjectHideFlags: 0

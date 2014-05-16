@@ -5,6 +5,7 @@ using SmoothMoves;
 public class CombatScript : MonoBehaviour {
 	// Reference to the MovementAnimationScript on this GameObject.
 	MovementAnimationScript mover;
+	CounteredSpawner counterSpawner;
 
     // Reference to the OTHER VocalFighter for success sounds
     public VocalFighter otherVocalFighter;
@@ -73,6 +74,7 @@ public class CombatScript : MonoBehaviour {
 		startTime = Time.time;
 		mover = GetComponent<MovementAnimationScript> ();
 		mover.fighterAnimation.RegisterColliderTriggerDelegate (receiveColliderTriggerEvent);
+		counterSpawner = GameObject.Find ("God").GetComponent<CounteredSpawner> ();
 	}
 	
 	// Update is called once per frame
@@ -200,6 +202,7 @@ public class CombatScript : MonoBehaviour {
 		TakeDamage (counterStrength);
 		mover.Reel ();
         otherVocalFighter.OnCounterSuccess();
+		counterSpawner.registerCounter ();
 	}
 	
 	// Used when damage is taken -- calls TakeDamage and the actual Hurt animation

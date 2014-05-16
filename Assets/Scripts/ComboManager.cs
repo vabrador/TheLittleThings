@@ -47,8 +47,8 @@ public class ComboManager : MonoBehaviour {
 		if (spriteRendering) {
 			Texture2D comboTexture = resourceMap[currentComboCount];
 			float scaleFactor = (Screen.width * spriteWidth) / (float) comboTexture.width;
-			Debug.Log (playerChar + " 's current scaleFactor is " + scaleFactor);
-			Debug.Log ("Based on: " + Screen.width + "*" + spriteWidth + "/" + comboTexture.width);
+//			Debug.Log (playerChar + " 's current scaleFactor is " + scaleFactor);
+//			Debug.Log ("Based on: " + Screen.width + "*" + spriteWidth + "/" + comboTexture.width);
 			GUI.DrawTexture(new Rect(spritePos.x, spritePos.y, (comboTexture.width * scaleFactor), (comboTexture.height * scaleFactor)) , comboTexture);
 		}
 	}

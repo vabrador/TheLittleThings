@@ -7,6 +7,7 @@ public class CameraFollower : MonoBehaviour {
 	public Transform leftEdge;
 	public Transform rightEdge;
 	public Transform centerPoint;
+	public Vector3 playerCenter;
 	// Use this for initialization
 	void Start () {
 		leftEdge = GameObject.Find ("leftEdgePoint").transform;
@@ -30,6 +31,7 @@ public class CameraFollower : MonoBehaviour {
 //			if (Time.time % 3 < 0.01) Debug.Log ("Using average for xPos");
 		}
 		transform.position = newPos;
+		playerCenter = newPos;
 //		if (Time.time % 3 < 1) Debug.Log ("Camera X should be: " + newPos + " and is, in fact: " + transform.position.x);
 	}	
 }

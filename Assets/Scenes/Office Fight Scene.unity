@@ -4206,6 +4206,7 @@ MonoBehaviour:
   leftEdge: {fileID: 1934390856}
   rightEdge: {fileID: 694397916}
   centerPoint: {fileID: 1583141}
+  playerCenter: {x: 0, y: 0, z: 0}
 --- !u!1 &694397915
 GameObject:
   m_ObjectHideFlags: 0
@@ -4326,6 +4327,7 @@ GameObject:
   - 82: {fileID: 834318960}
   - 114: {fileID: 834318964}
   - 114: {fileID: 834318963}
+  - 114: {fileID: 834318965}
   m_Layer: 0
   m_Name: God
   m_TagString: Untagged
@@ -4521,6 +4523,20 @@ MonoBehaviour:
   playerChar: {fileID: 2009908449}
   combatWindowDuration: 2.5
   spriteWidth: .25
+--- !u!114 &834318965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 834318957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd056831fbbb1746a5ee185fc82ed13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteScreenDuration: .75
+  counterGraphicScale: .300000012
+  counterGraphicHeight: .649999976
 --- !u!1 &836272136
 GameObject:
   m_ObjectHideFlags: 0

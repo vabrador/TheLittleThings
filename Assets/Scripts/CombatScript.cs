@@ -7,6 +7,7 @@ public class CombatScript : MonoBehaviour {
 	MovementAnimationScript mover;
 	ComboManager combo;
 	ComboManager otherCombo;
+	CounteredSpawner counterSpawner;
 
     // Reference to the OTHER VocalFighter for success sounds
     public VocalFighter otherVocalFighter;
@@ -83,6 +84,7 @@ public class CombatScript : MonoBehaviour {
 				otherCombo = comboMan;
 			}
 		}
+		counterSpawner = GameObject.Find ("God").GetComponent<CounteredSpawner> ();
 	}
 	
 	// Update is called once per frame
@@ -217,6 +219,7 @@ public class CombatScript : MonoBehaviour {
 		TakeDamage (counterStrength);
 		mover.Reel ();
         otherVocalFighter.OnCounterSuccess();
+		counterSpawner.registerCounter ();
 	}
 	
 	// Used when damage is taken -- calls TakeDamage and the actual Hurt animation

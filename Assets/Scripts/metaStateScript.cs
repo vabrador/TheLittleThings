@@ -19,10 +19,13 @@ public class metaStateScript : MonoBehaviour {
 	void Start () {
 		leftControl = leftChar.GetComponent<PlayerControl>();
 		rightControl = rightChar.GetComponent<PlayerControl>();
-		announcerAudioSource.clip = startSound;
-		announcerAudioSource.volume = announcerVolume;
-		announcerAudioSource.Play ();
 	}
+
+    void Awak() {
+        announcerAudioSource.clip = startSound;
+        announcerAudioSource.volume = announcerVolume;
+        announcerAudioSource.Play();
+    }
 	
 	// Update is called once per frame
 	void Update () {

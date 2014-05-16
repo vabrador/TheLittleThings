@@ -9,6 +9,7 @@ public class VocalFighter : MonoBehaviour {
     ///////////////////////
 
     public AudioSource fighterAudioSource;
+    public AudioSource fighterSFXSource;
 
     public float speechProbability = 0.5f;
 
@@ -33,6 +34,7 @@ public class VocalFighter : MonoBehaviour {
     public AudioClip dashAttemptSound4;
     public AudioClip dashAttemptSound5;
     private ArrayList dashAttemptSounds = new ArrayList();
+    public AudioClip dashAttemptFX;
 
     public AudioClip blockAttemptSound1;
     public AudioClip blockAttemptSound2;
@@ -40,6 +42,7 @@ public class VocalFighter : MonoBehaviour {
     public AudioClip blockAttemptSound4;
     public AudioClip blockAttemptSound5;
     private ArrayList blockAttemptSounds = new ArrayList();
+    public AudioClip blockAttemptFX;
 
     public AudioClip specialSound1;
     public AudioClip specialSound2;
@@ -47,6 +50,7 @@ public class VocalFighter : MonoBehaviour {
     public AudioClip specialSound4;
     public AudioClip specialSound5;
     private ArrayList specialSounds = new ArrayList();
+    public AudioClip specialFX;
 
     ////////////////////
     // Success Sounds //
@@ -61,6 +65,7 @@ public class VocalFighter : MonoBehaviour {
     public AudioClip attackSuccessSound4;
     public AudioClip attackSuccessSound5;
     private ArrayList attackSuccessSounds = new ArrayList();
+    public AudioClip attackSuccessFX;
 
     public AudioClip dashSuccessSound1;
     public AudioClip dashSuccessSound2;
@@ -111,6 +116,7 @@ public class VocalFighter : MonoBehaviour {
     public AudioClip blockBrokenSound4;
     public AudioClip blockBrokenSound5;
     private ArrayList blockBrokenSounds = new ArrayList();
+    public AudioClip blockBrokenFX;
 
     //////////////////////////////
     // Initialization Functions //
@@ -195,6 +201,9 @@ public class VocalFighter : MonoBehaviour {
 
         }
 
+        // SFX
+        fighterSFXSource.PlayOneShot(dashAttemptFX);
+
     }
     public void OnBlockAttempt() {
 
@@ -208,6 +217,10 @@ public class VocalFighter : MonoBehaviour {
             }
 
         }
+
+        // SFX
+        if (blockAttemptFX != null)
+            fighterSFXSource.PlayOneShot(blockAttemptFX);
 
     }
     public void OnSpecial() {
@@ -224,6 +237,9 @@ public class VocalFighter : MonoBehaviour {
 
         }
 
+        // SFX
+        fighterSFXSource.PlayOneShot(specialFX);
+
     }
     public void OnAttackSuccess() {
 
@@ -237,6 +253,9 @@ public class VocalFighter : MonoBehaviour {
             }
 
         }
+
+        // SFX
+        fighterSFXSource.PlayOneShot(attackSuccessFX);
 
     }
     public void OnDashSuccess() {
@@ -321,6 +340,9 @@ public class VocalFighter : MonoBehaviour {
             }
 
         }
+
+        // SFX
+        fighterSFXSource.PlayOneShot(blockAttemptFX);
 
     }
 

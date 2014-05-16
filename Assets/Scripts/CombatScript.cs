@@ -153,11 +153,10 @@ public class CombatScript : MonoBehaviour {
 		else if (mover.stateBools["dashing"]) {
 			// If you're dashing into their punch and your dash is counterable, get countered.
 			// Otherwise, no enemy state will changes yours mid-dash
-			if (otherMover.stateBools["attacking"]) {
-				if (dashCounterable) {
-					GetsCountered(otherCounter); 
-				}
-			}
+
+            if ((otherMover.stateBools["attacking"]) && (dashCounterable)) { 
+				GetsCountered(otherCounter); 
+				otherVocalFighter.OnAttackSuccess(); }
 			else if (otherMover.stateBools["specialing"]){ GetsHurt(otherCombat.specialStrength); }
 			else{ otherMover.Idle(); }
 		}

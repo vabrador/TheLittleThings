@@ -10,7 +10,8 @@ public class JukeBox : MonoBehaviour {
 	void Start () {
 		musicPlayerAudioSource.volume = musicVolume;
 		musicPlayerAudioSource.clip = mainTheme;
-		musicPlayerAudioSource.Play ();
+        musicPlayerAudioSource.loop = true;
+        musicPlayerAudioSource.Play();
 	}
 	
 	// Update is called once per frame

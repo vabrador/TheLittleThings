@@ -41,6 +41,15 @@ public class HealthBars : MonoBehaviour {
 	int yOffsetHealth;
 	int yOffsetSpecial;
 
+	public Vector3 bottomExteriorCornerPos {
+		get{
+			Vector3 cornerPosition = barPosition;
+			cornerPosition.y += barTextureHeight;
+			if (!charOnLeft) { cornerPosition.x += barTextureLength; }
+			return cornerPosition;
+		}
+	}
+
 	// Use this for initialization
 	void Awake () {   
 		// First, set barScaleFactor such that the height of the health bars is the upper 20% of the screen.
@@ -83,12 +92,15 @@ public class HealthBars : MonoBehaviour {
 	
 	void OnGUI () {
 		// Draw the red health bar.
+
 		GUI.Box (new Rect (barPosition.x + xOffset, 
 		                   barPosition.y + yOffsetHealth, 
 		                   ((float) currentHealth / startHealth) * barTextureLength * healthFillXScale, 
 		                   barTextureHeight * healthFillYScale), 
 		         healthBar, 
 		         healthBarStyle);
+//		Debug.Log ("George's Health width is: " + ((float) currentHealth / startHealth) * barTextureLength * healthFillXScale);
+//		Debug.Log ("Bar position of " + gameObject + " is :" + barPosition);
 
 		// Draw the yellow special bar.
 		GUI.Box (new Rect (barPosition.x + xOffset, 

@@ -83,7 +83,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1583141}
   - 212: {fileID: 1583140}
-  - 114: {fileID: 1583142}
   m_Layer: 0
   m_Name: centerPoint
   m_TagString: Untagged
@@ -121,28 +120,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1583139}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.5, y: -32.1069679, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
---- !u!114 &1583142
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1583139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e20295858ae6e114180613f02911b418, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftChar: {fileID: 1482902034}
-  rightChar: {fileID: 2009908449}
-  announcerAudioSource: {fileID: 0}
-  announcerVolume: 1
-  startSound: {fileID: 0}
-  winSound: {fileID: 0}
-  loseSound: {fileID: 0}
+  m_Father: {fileID: 657265034}
 --- !u!1 &8180429
 GameObject:
   m_ObjectHideFlags: 0
@@ -4075,9 +4056,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 657265028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.17467499, y: 10.2393036, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 9.7804451, y: 9.7804594, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1583141}
+  - {fileID: 1934390856}
+  - {fileID: 694397916}
   m_Father: {fileID: 0}
 --- !u!1 &680453385
 GameObject:
@@ -4183,7 +4167,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 691252716}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 10, z: -410.408936}
+  m_LocalPosition: {x: 0, y: 0, z: -410.408936}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4225,10 +4209,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 694397915}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 143.537064, y: -29.6632652, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 14.2490854, y: -4.0798254, z: 0}
+  m_LocalScale: {x: .102244839, y: .102244683, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 657265034}
 --- !u!1 &708907516
 GameObject:
   m_ObjectHideFlags: 0
@@ -4321,6 +4305,8 @@ GameObject:
   - 114: {fileID: 834318962}
   - 82: {fileID: 834318961}
   - 82: {fileID: 834318960}
+  - 114: {fileID: 834318964}
+  - 114: {fileID: 834318963}
   m_Layer: 0
   m_Name: God
   m_TagString: Untagged
@@ -4488,6 +4474,34 @@ MonoBehaviour:
   musicPlayerAudioSource: {fileID: 834318961}
   mainTheme: {fileID: 8300000, guid: 317552566dd1ff9488d5d34e0c3ba4f4, type: 3}
   musicVolume: .200000003
+--- !u!114 &834318963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 834318957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36d911c394d97904faf104090c37fcd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerChar: {fileID: 1482902034}
+  combatWindowDuration: 2
+  spriteWidth: .150000006
+--- !u!114 &834318964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 834318957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36d911c394d97904faf104090c37fcd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerChar: {fileID: 2009908449}
+  combatWindowDuration: 2
+  spriteWidth: .150000006
 --- !u!1 &836272136
 GameObject:
   m_ObjectHideFlags: 0
@@ -55475,6 +55489,7 @@ GameObject:
   - 114: {fileID: 1482902043}
   - 82: {fileID: 1482902044}
   - 114: {fileID: 1482902042}
+  - 114: {fileID: 1482902045}
   m_Layer: 11
   m_Name: Linda Left
   m_TagString: Player
@@ -55489,7 +55504,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1482902034}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -43.0891037, y: -6.1587925, z: 0}
+  m_LocalPosition: {x: -40, y: -30, z: 0}
   m_LocalScale: {x: .0549999997, y: .0549999997, z: 1}
   m_Children:
   - {fileID: 1024004830}
@@ -55599,7 +55614,7 @@ MonoBehaviour:
   dashLength: .899999976
   blockLength: .699999988
   hurtLength: 1.20000005
-  reelLength: 2
+  reelLength: 1
   specialLength: 2
   bounceLength: .25
   attackStart: 0
@@ -55623,10 +55638,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5313d7897cdfd82428b56e74a7d1a03e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  friendly: 1
   friendlyAxes: []
   enemyAxes: []
   gameRunning: 1
+  buttonQuarantineLength: .25
 --- !u!114 &1482902043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55756,6 +55771,20 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!114 &1482902045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1482902034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36d911c394d97904faf104090c37fcd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerChar: {fileID: 1482902034}
+  combatWindowDuration: 4
+  spriteWidth: .150000006
 --- !u!1 &1513858257
 GameObject:
   m_ObjectHideFlags: 0
@@ -56185,10 +56214,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1934390855}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -132.928787, y: -34.8217049, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -14.0181208, y: -4.60724831, z: 0}
+  m_LocalScale: {x: .102244839, y: .102244683, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 657265034}
 --- !u!212 &1934390857
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -56313,6 +56342,7 @@ GameObject:
   - 114: {fileID: 2009908460}
   - 82: {fileID: 2009908459}
   - 114: {fileID: 2009908457}
+  - 114: {fileID: 2009908461}
   m_Layer: 12
   m_Name: George Right
   m_TagString: Enemy
@@ -56327,7 +56357,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2009908449}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 56.9506454, y: 4.67996788, z: 0}
+  m_LocalPosition: {x: 40, y: -20, z: 0}
   m_LocalScale: {x: .0500000007, y: .0500000007, z: 1}
   m_Children:
   - {fileID: 1025474879}
@@ -56439,7 +56469,7 @@ MonoBehaviour:
   dashLength: .899999976
   blockLength: .699999988
   hurtLength: 1.20000005
-  reelLength: 2
+  reelLength: 1
   specialLength: 2
   bounceLength: .25
   attackStart: 0
@@ -56463,10 +56493,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5313d7897cdfd82428b56e74a7d1a03e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  friendly: 0
   friendlyAxes: []
   enemyAxes: []
   gameRunning: 1
+  buttonQuarantineLength: .25
 --- !u!82 &2009908458
 AudioSource:
   m_ObjectHideFlags: 0
@@ -56652,6 +56682,20 @@ MonoBehaviour:
   blockBrokenSound3: {fileID: 0}
   blockBrokenSound4: {fileID: 0}
   blockBrokenSound5: {fileID: 0}
+--- !u!114 &2009908461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2009908449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36d911c394d97904faf104090c37fcd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerChar: {fileID: 2009908449}
+  combatWindowDuration: 4
+  spriteWidth: .150000006
 --- !u!1 &2037705794
 GameObject:
   m_ObjectHideFlags: 0

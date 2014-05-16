@@ -17,6 +17,7 @@ public class metaStateScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		announcerAudioSource = gameObject.GetComponent<AudioSource> ();
 		leftControl = leftChar.GetComponent<PlayerControl>();
 		rightControl = rightChar.GetComponent<PlayerControl>();
 		announcerAudioSource.clip = startSound;
